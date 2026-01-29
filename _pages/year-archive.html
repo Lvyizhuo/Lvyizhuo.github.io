@@ -28,9 +28,26 @@ redirect_from:
     --blog-card-hover-transform: translateY(-3px);
   }
 
-  /* Dark 主题 */
+  /* Dark 主题 - 通过选择器 */
   [data-theme="dark"],
   .dark-theme,
+  .dark,
+  html.dark-mode {
+    --blog-bg-primary: #0f172a;
+    --blog-bg-secondary: #1e293b;
+    --blog-bg-card: #1e293b;
+    --blog-text-primary: #f1f5f9;
+    --blog-text-secondary: #cbd5e1;
+    --blog-text-muted: #94a3b8;
+    --blog-border-color: #334155;
+    --blog-accent-color: #818cf8;
+    --blog-accent-light: #a5b4fc;
+    --blog-shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --blog-shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+    --blog-shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+  }
+
+  /* Dark 主题 - 通过系统偏好 */
   @media (prefers-color-scheme: dark) {
     :root {
       --blog-bg-primary: #0f172a;
@@ -46,20 +63,6 @@ redirect_from:
       --blog-shadow-md: 0 4px 12px rgba(0,0,0,0.4);
       --blog-shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
     }
-  }
-
-  /* 强制 dark 类支持 */
-  .dark [data-theme="dark"],
-  html.dark-mode {
-    --blog-bg-primary: #0f172a;
-    --blog-bg-secondary: #1e293b;
-    --blog-bg-card: #1e293b;
-    --blog-text-primary: #f1f5f9;
-    --blog-text-secondary: #cbd5e1;
-    --blog-text-muted: #94a3b8;
-    --blog-border-color: #334155;
-    --blog-accent-color: #818cf8;
-    --blog-accent-light: #a5b4fc;
   }
 
   /* ===== 页面容器 ===== */
@@ -319,9 +322,10 @@ redirect_from:
 
   .archive__subtitle {
     color: var(--blog-text-primary);
-    border-bottom: 2px solid var(--blog-accent-color);
+    border-bottom: none;
     padding-bottom: 0.3em;
     margin-top: 2em;
+    font-weight: 600;
   }
 
   /* ===== 响应式调整 ===== */
