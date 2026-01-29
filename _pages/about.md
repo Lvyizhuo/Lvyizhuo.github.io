@@ -12,10 +12,6 @@ redirect_from:
   Hey! Nice to see you.
 </h1>
 
-<div style="font-size: 1.1em; line-height: 1.6; color: #333;">
-Welcome to my homepage! I am a passionate researcher and developer.
-</div>
-
 ---
 
 ### <i class="fa fa-fw fa-user-circle"></i> About Me
