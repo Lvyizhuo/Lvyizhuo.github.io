@@ -333,11 +333,34 @@ def save_to_yaml(articles):
     print(f"💾 文章列表已保存到: {OUTPUT_FILE}")
 
 
+def load_existing_data():
+    """
+    加载现有的文章数据
+    
+    Returns:
+        dict: 现有数据，如果文件不存在则返回 None
+    """
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f)
+                if data and isinstance(data, dict) and 'articles' in data:
+                    print(f"📂 已加载现有数据: {data.get('total_count', 0)} 篇文章")
+                    return data
+        except Exception as e:
+            print(f"⚠️  读取现有数据失败: {str(e)}")
+    return None
+
+
 def main():
     """主函数"""
     print("=" * 60)
-    print("CSDN博客文章同步工具")
+    print("CSDN博客文章同步工具 (本地执行版)")
     print("=" * 60)
+    
+    # 加载现有数据，以便在抓取失败时保留
+    existing_data = load_existing_data()
+    existing_count = existing_data.get('total_count', 0) if existing_data else 0
     
     try:
         # 首先尝试使用 API 方法
@@ -354,19 +377,27 @@ def main():
             # 保存到YAML
             save_to_yaml(articles)
             print("\n🎉 同步完成！")
+            print(f"📊 共获取 {len(articles)} 篇文章")
             return 0
         else:
+            # 抓取失败，保护原有数据
             print("\n⚠️  未抓取到任何文章")
-            # 即使没有文章也不算错误，可能博客确实是空的
-            # 创建一个空的数据文件
-            save_to_yaml([])
-            print("💾 已保存空的文章列表")
+            if existing_data and existing_count > 0:
+                print(f"🛡️  保留原有 {existing_count} 篇文章数据，不进行覆盖")
+                print("\n💡 提示：本地执行通常不会被拦截，请检查网络连接")
+            else:
+                print("⚠️  没有现有数据可保留")
             return 0
             
     except Exception as e:
         print(f"\n❌ 发生错误: {str(e)}")
         import traceback
         traceback.print_exc()
+        
+        # 发生异常时也保留原有数据
+        if existing_data and existing_count > 0:
+            print(f"\n🛡️  发生异常，保留原有 {existing_count} 篇文章数据")
+        
         return 1
 
 
