@@ -1,4 +1,4 @@
-last_updated: '2026-01-30 16:56:56'
+last_updated: '2026-01-30 17:06:30'
 total_count: 36
 articles:
 - title: 【LangChain】—— Document Loaders文档加载器
@@ -116,7 +116,7 @@ articles:
   date: '2025-08-18'
   excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
     调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
-  views: '3396'
+  views: '3397'
 - title: 【Linux服务器】——模型训练技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
   date: '2025-08-13'
@@ -173,7 +173,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143058421
   date: '2024-10-18'
   excerpt: Conda常用操作、conda常用指令
-  views: '683'
+  views: '684'
 - title: 【开源项目】2048-Python经典小游戏
   link: https://blog.csdn.net/Lvyizhuo/article/details/143026018
   date: '2024-10-17'
@@ -188,4 +188,4 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/142965718
   date: '2024-10-15'
   excerpt: 影响力最大化（Influence Maximization）是一种经典的组合优化问题，旨在选择少数用户，从而最大限度地扩大在线社交网络的影响力
-  views: '2219'
+  views: '2220'
