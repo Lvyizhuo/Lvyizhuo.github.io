@@ -304,15 +304,18 @@ redirect_from:
   <!-- 头部横幅 -->
   <div class="blog-hero">
     <div class="blog-hero-content">
-      <h2>
+      <!-- <h2>
         <i class="fa fa-pencil-square-o"></i> Blog
-      </h2>
+      </h2> -->
       <p class="blog-hero-desc">
         Articles synced from 
         <a href="https://blog.csdn.net/Lvyizhuo?type=blog" target="_blank" rel="noopener noreferrer">
           CSDN <i class="fa fa-external-link" style="font-size: 0.75em;"></i>
         </a>
       </p>
+      <h2>
+        <i class="fa fa-pencil-square-o"></i> 花间相见的博客文章
+      </h2>
     </div>
   </div>
 
@@ -322,11 +325,11 @@ redirect_from:
     <div class="blog-stats">
       <div class="blog-stats-item">
         <i class="fa fa-newspaper-o"></i>
-        <span>Total <strong>{{ site.data.csdn_posts.total_count }}</strong> articles</span>
+        <span>共 <strong>{{ site.data.csdn_posts.total_count }}</strong> 篇文章</span>
       </div>
       <div class="blog-stats-item">
         <i class="fa fa-refresh"></i>
-        <span>Updated: <strong>{{ site.data.csdn_posts.last_updated }}</strong></span>
+        <span>更新于: <strong>{{ site.data.csdn_posts.last_updated }}</strong></span>
       </div>
     </div>
 
