@@ -18,49 +18,14 @@ redirect_from:
     margin: 0 auto;
   }
 
-  /* ===== 头部横幅 - 简约学术风格 ===== */
-  .blog-hero {
-    background: var(--global-bg-color);
-    color: var(--global-text-color);
-    padding: 1.5em 0;
-    margin-bottom: 2em;
-    border-bottom: 1px solid var(--global-border-color);
-  }
-
-  .blog-hero-content {
-    position: relative;
-  }
-
-  .blog-hero h2 {
-    margin: 0 0 0.4em 0;
-    font-size: 1.6em;
+  /* ===== CSDN 区域标题 ===== */
+  .csdn-section-title {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-size: 1.4em;
     font-weight: 600;
-    border-bottom: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
     color: var(--global-text-color);
-  }
-
-  .blog-hero h2 i {
-    font-size: 0.85em;
-    color: var(--global-link-color);
-  }
-
-  .blog-hero-desc {
-    margin: 0;
-    font-size: 0.95em;
-    color: var(--global-text-color-light);
-  }
-
-  .blog-hero-desc a {
-    color: var(--global-link-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .blog-hero-desc a:hover {
-    text-decoration: underline;
+    border-bottom: none;
   }
 
   /* ===== 统计信息栏 ===== */
@@ -280,14 +245,6 @@ redirect_from:
 
   /* ===== 响应式调整 ===== */
   @media (max-width: 600px) {
-    .blog-hero {
-      padding: 1.2em 0;
-    }
-
-    .blog-hero h2 {
-      font-size: 1.3em;
-    }
-
     .blog-stats {
       flex-direction: column;
       align-items: flex-start;
@@ -299,25 +256,12 @@ redirect_from:
   }
 </style>
 
+<div class="wordwrap">You can also find my articles on <a href="https://blog.csdn.net/Lvyizhuo?type=blog" target="_blank" rel="noopener noreferrer">my CSDN blog</a>.</div>
+
 <div class="blog-container">
 
-  <!-- 头部横幅 -->
-  <div class="blog-hero">
-    <div class="blog-hero-content">
-      <!-- <h2>
-        <i class="fa fa-pencil-square-o"></i> Blog
-      </h2> -->
-      <p class="blog-hero-desc">
-        Articles synced from 
-        <a href="https://blog.csdn.net/Lvyizhuo?type=blog" target="_blank" rel="noopener noreferrer">
-          CSDN <i class="fa fa-external-link" style="font-size: 0.75em;"></i>
-        </a>
-      </p>
-      <h2>
-        <i class="fa fa-pencil-square-o"></i> 花间相见的博客文章
-      </h2>
-    </div>
-  </div>
+  <!-- CSDN 文章区域 -->
+  <h2 class="csdn-section-title">花间相见的博客文章</h2>
 
   {% if site.data.csdn_posts.articles.size > 0 %}
     
