@@ -1,113 +1,191 @@
-last_updated: '2026-01-29 15:15:31'
-total_count: 20
-source: RSS Feed
+last_updated: '2026-01-30 16:56:56'
+total_count: 36
 articles:
+- title: 【LangChain】—— Document Loaders文档加载器
+  link: https://blog.csdn.net/Lvyizhuo/article/details/157513267
+  date: '2026-01-29'
+  excerpt: 本文全面解析LangChain文档加载器的类型及使用方法。文档加载是LangChain开发的基础环节，主要分为5大类：本地文件格式（如PDF、Word、Excel）、网页/网络资源、云服务/远程存储、数据库以及特殊类型文件（音频、代码等）。文章提供了详细的实操教程，包括安装核心依赖和具体加载示例，如...
+  views: '427'
 - title: 【Linux】—— FTP服务搭建与使用（Ubuntu实操版，适配办公内网）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
-  excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步骤。重点解决了办公内网中常见的网段隔离、目录权限、连接超时等实际问题，提供了一套开箱即用的FTP解决...
-  views: ''
+  excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
+  views: '644'
 - title: 【LangChain】—— History模块使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
-  excerpt: 摘要：LangChain的History模块为对话式AI提供会话记忆管理功能，支持临时和长期两种存储方式。临时会话通过RunnableWithMessageHistory和InMemoryChatMessageHistory实现内存级存储，适用于单次对话；长期会话使用FileChatMessageHistory进行文件持久化，并可继承BaseChatMessageHistory自定义数据库等存储方...
-  views: ''
+  excerpt: 摘要：LangChain的History模块为对话式AI提供会话记忆管理功能，支持临时和长期两种存储方式。临时会话通过RunnableWithMessageHistory和InMemoryChatMessageHistory实现内存级存储，适用于单次对话；长期会话使用FileChatMessageH...
+  views: '650'
 - title: 【LangChain】—— Prompt、Model、Chain与多模型执行链
   link: https://blog.csdn.net/Lvyizhuo/article/details/157471043
   date: '2026-01-28'
   excerpt: LangChain核心组件数据流解析 本文系统梳理了LangChain三大核心组件的输入输出格式，帮助开发者理解数据流逻辑： Prompt模板：将动态参数转化为模型可识别格式
-    PromptTemplate：基础文本模板，输出纯字符串 FewShotTemplate：带示例模板，输出含示例的完整提示词 ChatPromptTemplate：对话模板，输出BaseMessage列表
-    Model模型：执...
-  views: ''
+    PromptTemplate：基础文本模板，输出纯字符串 FewShotTemplate：带示例模板，输出含示例的完整提示词...
+  views: '980'
 - title: 【LLM基础】—— 余弦相似度算法
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432704
   date: '2026-01-28'
-  excerpt: 本文介绍了大语言模型（LLM）中的核心算法——余弦相似度，重点解析其原理与应用。余弦相似度通过计算向量夹角来衡量文本语义相似度，具有&quot;重方向、轻长度&quot;的特性，成为LLM语义匹配的基础工具。文章详细讲解了向量在LLM中的作用、余弦相似度的几何原理和数学公式，并展示了在RAG检索、文本聚类等场景的实际应用。通过Python代码示例演示了文本向量化和相似度计算过程，同时指出算法的局限...
-  views: ''
+  excerpt: 本文介绍了大语言模型（LLM）中的核心算法——余弦相似度，重点解析其原理与应用。余弦相似度通过计算向量夹角来衡量文本语义相似度，具有"重方向、轻长度"的特性，成为LLM语义匹配的基础工具。文章详细讲解了向量在LLM中的作用、余弦相似度的几何原理和数学公式，并展示了在RAG检索、文本聚类等场景的实际应...
+  views: '794'
 - title: 【LLM基础】—— RAG检索增强生成
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432322
   date: '2026-01-27'
-  excerpt: 摘要 RAG（检索增强生成）技术通过将外部知识库与LLM结合，有效解决大语言模型的知识幻觉和过期问题。其核心是&quot;检索-生成&quot;两阶段流程：离线构建向量化知识库，在线检索相关片段并生成回答。相比微调和Prompt硬塞方案，RAG在准确性、灵活性和成本间取得平衡。本文提供从原型到生产的全栈技术选型建议，并演示基于Ollama+Chroma的本地化实现方案，包括文档分块、向量检索和Pr...
-  views: ''
+  excerpt: 摘要 RAG（检索增强生成）技术通过将外部知识库与LLM结合，有效解决大语言模型的知识幻觉和过期问题。其核心是"检索-生成"两阶段流程：离线构建向量化知识库，在线检索相关片段并生成回答。相比微调和Prompt硬塞方案，RAG在准确性、灵活性和成本间取得平衡。本文提供从原型到生产的全栈技术选型建议，并...
+  views: '854'
 - title: 【AI开发】—— LangChain框架
   link: https://blog.csdn.net/Lvyizhuo/article/details/157431774
   date: '2026-01-27'
   excerpt: 在大语言模型（LLM）应用落地过程中，“幻觉输出”和“知识滞后”是两大核心痛点。检索增强生成（Retrieval-Augmented Generation,
-    RAG）通过将LLM与外部知识库联动，让模型基于真实、最新的数据生成回答，成为解决这两个问题的主流方案。而LangChain作为LLM应用开发的“瑞士军刀”，凭借其灵活的组件化设计，能快速实现从原型到生产级RAG系统的落地。本文将从核心原理出...
-  views: ''
+    RAG）通过将LLM与外部知识库联动，让模型基于真实、最新的数据生成回答，成为解决这两个问题的主流方案。而LangChain作为LLM应用开发...
+  views: '1008'
 - title: 【AI开发】—— Ollama安装与部署
   link: https://blog.csdn.net/Lvyizhuo/article/details/157399944
   date: '2026-01-26'
-  excerpt: 摘要： 本文详细介绍如何在Ubuntu系统上通过Ollama本地部署大模型，并结合LangChain搭建私有化AI开发助手。文章包含五个核心部分：环境准备（需8GB+内存）、Ollama安装与模型部署（支持phi3/qwen/llama3等模型）、LangChain集成方法、基础代码实现（以Python代码解释生成为例），以及实用优化技巧（国内镜像加速、资源占用降低等）。该方案完全本地运行，无需依...
-  views: ''
+  excerpt: 摘要： 本文详细介绍如何在Ubuntu系统上通过Ollama本地部署大模型，并结合LangChain搭建私有化AI开发助手。文章包含五个核心部分：环境准备（需8GB+内存）、Ollama安装与模型部署（支持phi3/qwen/llama3等模型）、LangChain集成方法、基础代码实现（以Pyth...
+  views: '796'
 - title: 【个人网站搭建】—— Academic Pages 个人学术网站完整配置指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157391122
   date: '2026-01-26'
   excerpt: 📚 Academic Pages 学术网站模板 核心功能 基于 Jekyll + GitHub Pages 的学术网站解决方案 提供论文展示、项目介绍、教学经历等模块
-    支持响应式设计和多终端适配 部署方式 GitHub Pages 自动部署（推荐） 使用模板创建仓库 自动构建发布 本地Jekyll环境 需安装Ruby、Node.js等依赖
-    Docker容器 跨平台一键部署 VS Code DevC...
-  views: ''
-- title: 【JAVA开发】—— Apifox测试教程
-  link: https://blog.csdn.net/Lvyizhuo/article/details/157299968
-  date: '2026-01-25'
-  excerpt: 本文介绍了使用Apifox进行接口测试的完整流程。首先概述了软件开发的5个阶段（需求分析、设计、编码、测试、上线运维），然后以苍穹外卖项目为例，详细演示了单元测试和集成测试的操作步骤。在单元测试部分，展示了新增员工接口的测试过程；在集成测试部分，构建了包含登录、查询、修改等操作的全流程测试场景，并通过参数传递和结果验证确保接口协同工作的正确性。文章还提供了测试用例保存、自动化测试配置等实用技巧，帮...
-  views: ''
+    支持响应式设计和多终端适配 部署方式 GitHub Pages 自动部署（推荐） 使用模板创建仓库 自动构建发布 本地Jekyll环...
+  views: '919'
 - title: 【JAVA开发】—— HTTP请求参数及类型
   link: https://blog.csdn.net/Lvyizhuo/article/details/157295268
   date: '2026-01-25'
-  excerpt: 本文系统梳理了HTTP请求参数的类型、特点与适用场景，帮助开发者合理选择参数传递方式。文章将参数分为业务参数（Query、Body、Path）、元信息参数（Header、Cookie）和特殊参数三类，通过快递类比形象说明其差异。详细解析了Query（公开筛选）、Header（元数据）、Body（核心业务数据）、Path（资源标识）等参数的定义、位置示例、核心特点和适用场景，并指出常见误区。最后提供...
-  views: ''
+  excerpt: 本文系统梳理了HTTP请求参数的类型、特点与适用场景，帮助开发者合理选择参数传递方式。文章将参数分为业务参数（Query、Body、Path）、元信息参数（Header、Cookie）和特殊参数三类，通过快递类比形象说明其差异。详细解析了Query（公开筛选）、Header（元数据）、Body（核心...
+  views: '912'
+- title: 【JAVA开发】—— Apifox测试教程
+  link: https://blog.csdn.net/Lvyizhuo/article/details/157299968
+  date: '2026-01-25'
+  excerpt: 本文介绍了使用Apifox进行接口测试的完整流程。首先概述了软件开发的5个阶段（需求分析、设计、编码、测试、上线运维），然后以苍穹外卖项目为例，详细演示了单元测试和集成测试的操作步骤。在单元测试部分，展示了新增员工接口的测试过程；在集成测试部分，构建了包含登录、查询、修改等操作的全流程测试场景，并通...
+  views: '862'
 - title: 【JAVA基础】—— 面向对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/157293376
   date: '2026-01-24'
-  excerpt: 本文深入解析Java面向对象编程的三大核心特性（封装、继承、多态）和UML类图关系。封装通过隐藏实现细节、暴露接口降低耦合度；继承实现代码复用与功能扩展；多态则通过方法重写和向上转型实现&quot;同一调用，不同效果&quot;。类图以三层矩形框可视化类结构，并展示泛化（继承）、实现、关联等六种类间关系，是设计Java程序的重要工具。文章结合实战代码示例，帮助开发者掌握OOP核心思想与可视化设计方...
-  views: ''
+  excerpt: 本文深入解析Java面向对象编程的三大核心特性（封装、继承、多态）和UML类图关系。封装通过隐藏实现细节、暴露接口降低耦合度；继承实现代码复用与功能扩展；多态则通过方法重写和向上转型实现"同一调用，不同效果"。类图以三层矩形框可视化类结构，并展示泛化（继承）、实现、关联等六种类间关系，是设计Java...
+  views: '1266'
 - title: 【JAVA基础】—— 类与对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/157292639
   date: '2026-01-24'
-  excerpt: 本文详细介绍了Java面向对象编程中类与对象的核心概念，从基础语法到进阶用法。主要内容包括：1）类与对象的基本概念解析，包括变量分类（局部变量、成员变量、类变量）和方法基础；2）构造方法的定义与使用，包括构造方法重载和this/super关键字；3）对象的创建过程及访问控制，强调封装原则和getter/setter方法；4）Java源文件声明规则，包括包声明、导入语句和类定义规范。通过代码示例演示...
-  views: ''
+  excerpt: 本文详细介绍了Java面向对象编程中类与对象的核心概念，从基础语法到进阶用法。主要内容包括：1）类与对象的基本概念解析，包括变量分类（局部变量、成员变量、类变量）和方法基础；2）构造方法的定义与使用，包括构造方法重载和this/super关键字；3）对象的创建过程及访问控制，强调封装原则和gette...
+  views: '771'
 - title: 【JAVA开发】—— HTTP常见请求方法
   link: https://blog.csdn.net/Lvyizhuo/article/details/157283764
   date: '2026-01-23'
-  excerpt: 本文详细解析了HTTP协议中的核心请求方法，包括GET、POST、PUT、DELETE、PATCH等常用方法，以及HEAD、OPTIONS等辅助方法。文章从方法定义、核心特点、适用场景和实操示例四个方面进行阐述，特别强调了幂等性和安全性这两个关键概念。通过对比表格清晰展示了GET与POST的核心区别，并指出常见误区。这些HTTP方法是客户端与服务器交互的基础指令，遵循协议规范并正确使用它们，可以降...
-  views: ''
+  excerpt: 本文详细解析了HTTP协议中的核心请求方法，包括GET、POST、PUT、DELETE、PATCH等常用方法，以及HEAD、OPTIONS等辅助方法。文章从方法定义、核心特点、适用场景和实操示例四个方面进行阐述，特别强调了幂等性和安全性这两个关键概念。通过对比表格清晰展示了GET与POST的核心区别...
+  views: '846'
 - title: 【JAVA开发】—— MySQL基础
   link: https://blog.csdn.net/Lvyizhuo/article/details/157257809
   date: '2026-01-23'
   excerpt: MySQL 核心知识点速览 本文整理了MySQL数据库的核心操作指南，涵盖五大SQL语言分类（DDL/DML/DQL/DCL/TCL）和实用场景：
-    基础操作：包括登录MySQL、数据库切换、表结构管理等常用命令 数据查询：详解SELECT语句及其子句（WHERE/ORDER BY/GROUP BY等）的灵活应用
-    表管理：创建/删除表操作，区分DELETE/TRUNCATE/DROP的不同作用 服务...
-  views: ''
+    基础操作：包括登录MySQL、数据库切换、表结构管理等常用命令 数据查询：详解SELECT语句及其子句（WHERE/ORDER BY/GROUP BY等...
+  views: '1147'
 - title: 【AI审稿提示词】—— 严肃的审稿人
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
-  excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求所有批评必须具体、可操作且具有建设性，旨在实质性提升论文质量。该设定适用于各类学术评审场景，特别强调...
-  views: ''
+  excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
+  views: '133'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
-  excerpt: Apifox是一款全生命周期API管理工具，集设计、Mock、调试、测试、文档功能于一体。核心优势包括多协议支持、智能Mock服务、自动化测试和团队协作能力。安装后通过新建项目→设计接口→Mock调试→自动化测试→文档生成的流程，实现高效API管理。支持可视化接口设计、自定义Mock规则、批量测试场景运行和自动文档生成，显著提升前后端协作效率。适用于开发、测试及团队协作场景，是替代Postman、...
-  views: ''
+  excerpt: Apifox是一款全生命周期API管理工具，集设计、Mock、调试、测试、文档功能于一体。核心优势包括多协议支持、智能Mock服务、自动化测试和团队协作能力。安装后通过新建项目→设计接口→Mock调试→自动化测试→文档生成的流程，实现高效API管理。支持可视化接口设计、自定义Mock规则、批量测试场...
+  views: '1067'
 - title: 【JAVA开发】—— Maven核心用法与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157207460
   date: '2026-01-21'
-  excerpt: Maven是Java项目的主流构建工具，通过标准化项目结构和自动化构建流程提升开发效率。核心功能包括依赖管理（自动下载jar包并解决版本冲突）和项目构建（一键完成编译、测试、打包等）。关键配置文件pom.xml定义了项目信息、依赖关系和构建配置。Maven采用三级仓库体系（本地/私服/中央）管理依赖，并遵循标准项目目录结构。构建过程分为Clean（清理）、Default（核心构建）和Site（文档...
-  views: ''
+  excerpt: Maven是Java项目的主流构建工具，通过标准化项目结构和自动化构建流程提升开发效率。核心功能包括依赖管理（自动下载jar包并解决版本冲突）和项目构建（一键完成编译、测试、打包等）。关键配置文件pom.xml定义了项目信息、依赖关系和构建配置。Maven采用三级仓库体系（本地/私服/中央）管理依赖...
+  views: '344'
 - title: 【JAVA开发】—— Git常用操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
-  excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管理（创建、推送、删除）。Git作为分布式版本控制系统，具有轻量、快速、离线工作等优势，支持代码变更追...
-  views: ''
+  excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
+  views: '1343'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
   excerpt: Nginx核心功能与应用摘要 Nginx是一款高性能的HTTP服务器和反向代理服务器，具有高并发处理能力、低资源占用等特点，广泛用于网站部署、API代理和负载均衡。核心功能包括：
-    反向代理：通过proxy_pass指令将请求转发到后端服务器 负载均衡：支持多种策略（权重、IP哈希等）分配请求 性能优化：包含高效文件传输、连接管理等配置
-    典型应用场景： 前端静态资源服务与缓存 API接口反向代理 后...
-  views: ''
+    反向代理：通过proxy_pass指令将请求转发到后端服务器 负载均衡：支持多种策略（权重、IP哈希等）分配请求 性能优...
+  views: '488'
 - title: 【ClaudeCode】——常用指令
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487398
   date: '2025-08-18'
-  excerpt: 《ClaudeCode常用指令指南》摘要： 本文系统介绍了ClaudeCode交互式会话中的核心命令与使用技巧。通过20余种斜杠命令可完成对话管理、配置修改、代码审查等操作，包括/clear清空历史、/review请求代码审查、/model切换AI模型等。特别提供了&quot;深度思考&quot;触发词、Bash命令行模式、记忆模式等进阶技巧，并支持文件引用、图片读取等功能。用户可通过/help获...
-  views: ''
+  excerpt: 《ClaudeCode常用指令指南》摘要： 本文系统介绍了ClaudeCode交互式会话中的核心命令与使用技巧。通过20余种斜杠命令可完成对话管理、配置修改、代码审查等操作，包括/clear清空历史、/review请求代码审查、/model切换AI模型等。特别提供了"深度思考"触发词、Bash命令行...
+  views: '1826'
+- title: 【ClaudeCode】——使用技巧
+  link: https://blog.csdn.net/Lvyizhuo/article/details/150487217
+  date: '2025-08-18'
+  excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
+    调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
+  views: '3396'
+- title: 【Linux服务器】——模型训练技巧
+  link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
+  date: '2025-08-13'
+  excerpt: 本文介绍了深度学习模型训练中的两个实用技巧：1）使用TensorBoard实时监控训练过程，通过启动TensorBoard服务并访问6006端口查看训练曲线；2）服务器后台训练方法，使用nohup命令让训练任务在后台持续运行，并详细说明了如何查看进程状态、监控日志文件、终止进程以及查看CPU使用情况...
+  views: '574'
+- title: 【Linux】——Vim编辑器基本操作
+  link: https://blog.csdn.net/Lvyizhuo/article/details/149192547
+  date: '2025-07-08'
+  excerpt: Vim编辑器操作指南摘要（150字） Vim是Linux内置的文本编辑器，拥有三种模式：正常模式（默认模式，进行快捷操作）、编辑模式（按i进入，修改内容）和终端模式（按:进入，执行命令）。三种模式通过i、Esc和:相互转换。文件打开方式包括直接打开(vim路径)、指定行打开(vim+行号路径)和关键...
+  views: '493'
+- title: 【Linux】—— Linux常用操作
+  link: https://blog.csdn.net/Lvyizhuo/article/details/144236510
+  date: '2024-12-04'
+  excerpt: Liunx常用操作命令
+  views: '346'
+- title: 【深度学习】—— 线性回归模型
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143403724
+  date: '2024-10-31'
+  excerpt: 为了更好的学习深度神经网络，本文介绍了线性神经网络中较为简单的线性回归模型，并演示了神经网络的整个训练过程，包括：定义简单的神经网络架构、数据处理、指定损失函数和如何训练模型。模型相对简单，但包含深度学习中模型训练的基本思想，为以后学习更复杂的模型打下基础。
+  views: '1829'
+- title: 【docker】—— 部署python项目
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143323046
+  date: '2024-10-29'
+  excerpt: Docker 是一个开源平台，用于自动化应用程序的部署、扩展和管理。它通过容器技术实现轻量级、可移植的应用打包，确保在不同环境中应用的一致性。本文使用docker简单演示了如何部署一个python项目。
+  views: '5815'
+- title: 【docker】—— docker常用操作
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143313858
+  date: '2024-10-28'
+  excerpt: docker常用操作、Dockerfile文件配置
+  views: '785'
+- title: 【强化学习】—— Q-learning算法
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143187183
+  date: '2024-10-23'
+  excerpt: Q-learning 是一种无模型的强化学习算法，用于寻找最优策略以最大化累积奖励。它通过学习一个状态-动作值函数Qsa，该函数表示在状态 (
+    s ) 下执行动作 ( a ) 的预期收益。
+  views: '1579'
+- title: 【影响力最大化】—— 次模性理论和应用
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143097956
+  date: '2024-10-20'
+  excerpt: 传播模型的次模性（Submodularity of propagation models）通常指的是在影响力最大化等传播问题中，影响力函数具有次模性特征。次模性是一种集合函数性质，它类似于“递减增益”的概念
+  views: '971'
+- title: 【影响力最大化】——影响力扩展度计算（蒙特卡洛模拟近似）
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143084663
+  date: '2024-10-19'
+  excerpt: 计算影响力拓展度的一个简单的方法是反复模拟在某个种子结点集合S之下影响力的传播过程，统计这些模拟过程中被激活结点个数的平均值，用这个平均值作为种子集合S的影响力扩展度σ
+    (S)的估计值。这种模拟估计的方法通常被称为蒙特卡洛模拟（Monte Carlo Simulation）。
+  views: '822'
+- title: 【Python调试】 —— 常见异常类型
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143082109
+  date: '2024-10-19'
+  excerpt: 在Python程序运行报错时，参考相关的易错类型，找到问题的根源从而调试我们的程序。
+  views: '405'
+- title: 【Anaconda】—— Conda常用操作
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143058421
+  date: '2024-10-18'
+  excerpt: Conda常用操作、conda常用指令
+  views: '683'
+- title: 【开源项目】2048-Python经典小游戏
+  link: https://blog.csdn.net/Lvyizhuo/article/details/143026018
+  date: '2024-10-17'
+  excerpt: 2048小游戏
+  views: '418'
+- title: 【文献阅读】用迁移学习促进竞争影响最大化中的强化学习
+  link: https://blog.csdn.net/Lvyizhuo/article/details/142992883
+  date: '2024-10-16'
+  excerpt: 本文提出了一种基于TV-CLT模型的迁移学习强化学习方法来解决TC-CIM问题。具体来说，我们将源网络和目标网络的状态表示归一化，以便有效地利用源网络上获得的知识。进一步，我们在RL域扩展了TL的起点方法，提出了NSQ-TL算法来解决源目标网络和代理设置之间的异构性。
+  views: '1419'
+- title: 【大数据网络传播模型和算法-陈卫】——影响力最大化【持续更新】
+  link: https://blog.csdn.net/Lvyizhuo/article/details/142965718
+  date: '2024-10-15'
+  excerpt: 影响力最大化（Influence Maximization）是一种经典的组合优化问题，旨在选择少数用户，从而最大限度地扩大在线社交网络的影响力
+  views: '2219'
