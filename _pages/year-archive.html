@@ -25,12 +25,33 @@ redirect_from:
     padding: 1em 1.5em;
     border-radius: 12px;
     margin-bottom: 2em;
+    margin-top: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  .blog-stats-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  .blog-stats-title i {
+    color: var(--global-link-color);
+  }
+
+  .blog-stats-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
   }
 
   .blog-stats-item {
@@ -251,25 +272,22 @@ redirect_from:
 
 <div class="blog-container">
 
-  <!-- CSDN 文章区域 -->
-  <h2 class="section-header">
-    <i class="fa fa-rss"></i> 花间相见的博客文章
-  </h2>
-  <!-- <p class="section-desc">
-        以下是同步于CSDN博客的文章列表，欢迎阅读和分享！
-  </p> -->
-
   {% if site.data.csdn_posts.articles.size > 0 %}
     
     <!-- 统计信息 -->
     <div class="blog-stats">
-      <div class="blog-stats-item">
-        <i class="fa fa-newspaper-o"></i>
-        <span>共 <strong>{{ site.data.csdn_posts.total_count }}</strong> 篇文章</span>
+      <div class="blog-stats-title">
+        <i class="fa fa-rss"></i> 花间相见的博客文章
       </div>
-      <div class="blog-stats-item">
-        <i class="fa fa-refresh"></i>
-        <span>更新于: <strong>{{ site.data.csdn_posts.last_updated }}</strong></span>
+      <div class="blog-stats-info">
+        <div class="blog-stats-item">
+          <i class="fa fa-newspaper-o"></i>
+          <span>共 <strong>{{ site.data.csdn_posts.total_count }}</strong> 篇文章</span>
+        </div>
+        <div class="blog-stats-item">
+          <i class="fa fa-refresh"></i>
+          <span>更新于: <strong>{{ site.data.csdn_posts.last_updated }}</strong></span>
+        </div>
       </div>
     </div>
 
