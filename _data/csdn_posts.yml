@@ -1,4 +1,4 @@
-last_updated: '2026-02-03 13:56:15'
+last_updated: '2026-02-03 21:49:08'
 total_count: 42
 articles:
 - title: 【AI开发】—— OpenCode双插件协同开发指南
@@ -6,44 +6,44 @@ articles:
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '16'
+  views: '402'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '100'
+  views: '136'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '589'
+  views: '734'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '455'
-- title: 【阿里云】—— 云服务器 ECS搭建与使用
+  views: '470'
+- title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
   excerpt: 摘要： 本文为阿里云ECS主机新手配置指南，涵盖选购建议与实操配置。选购推荐1核2G/2核2G+CentOS 8.x+40G云盘+1M带宽，优先就近地域。配置步骤包括：1）通过控制台或Xshell登录；2）更新系统、重置密码、修改主机名；3）安全组必开22/80/443端口，限制授权IP提升安全；4...
-  views: '769'
+  views: '789'
 - title: 【LangChain】—— RAG核心向量存储Vector Stores
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552645
   date: '2026-01-30'
   excerpt: 本文详细介绍了LangChain中的Vector Stores（向量存储）组件，这是RAG（检索增强生成）架构的核心部分。文章首先解释了为什么RAG需要Vector
     Stores来解决大模型的三大痛点：上下文窗口有限、知识无法实时更新和语义理解落地问题。然后阐述了LangChain Vector S...
-  views: '521'
+  views: '541'
 - title: 【LangChain】—— Document Loaders文档加载器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157513267
   date: '2026-01-29'
   excerpt: 本文全面解析LangChain文档加载器的类型及使用方法。文档加载是LangChain开发的基础环节，主要分为5大类：本地文件格式（如PDF、Word、Excel）、网页/网络资源、云服务/远程存储、数据库以及特殊类型文件（音频、代码等）。文章提供了详细的实操教程，包括安装核心依赖和具体加载示例，如...
-  views: '575'
+  views: '581'
 - title: 【Linux】—— FTP服务搭建与使用（Ubuntu实操版，适配办公内网）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
   excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
-  views: '964'
+  views: '965'
 - title: 【LangChain】—— History模块使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
@@ -59,7 +59,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432704
   date: '2026-01-28'
   excerpt: 本文介绍了大语言模型（LLM）中的核心算法——余弦相似度，重点解析其原理与应用。余弦相似度通过计算向量夹角来衡量文本语义相似度，具有"重方向、轻长度"的特性，成为LLM语义匹配的基础工具。文章详细讲解了向量在LLM中的作用、余弦相似度的几何原理和数学公式，并展示了在RAG检索、文本聚类等场景的实际应...
-  views: '853'
+  views: '854'
 - title: 【LLM基础】—— RAG检索增强生成
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432322
   date: '2026-01-27'
@@ -75,18 +75,18 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157399944
   date: '2026-01-26'
   excerpt: 摘要： 本文详细介绍如何在Ubuntu系统上通过Ollama本地部署大模型，并结合LangChain搭建私有化AI开发助手。文章包含五个核心部分：环境准备（需8GB+内存）、Ollama安装与模型部署（支持phi3/qwen/llama3等模型）、LangChain集成方法、基础代码实现（以Pyth...
-  views: '901'
+  views: '902'
 - title: 【个人网站搭建】—— Academic Pages 个人学术网站完整配置指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157391122
   date: '2026-01-26'
   excerpt: 📚 Academic Pages 学术网站模板 核心功能 基于 Jekyll + GitHub Pages 的学术网站解决方案 提供论文展示、项目介绍、教学经历等模块
     支持响应式设计和多终端适配 部署方式 GitHub Pages 自动部署（推荐） 使用模板创建仓库 自动构建发布 本地Jekyll环...
-  views: '954'
+  views: '957'
 - title: 【JAVA开发】—— HTTP请求参数及类型
   link: https://blog.csdn.net/Lvyizhuo/article/details/157295268
   date: '2026-01-25'
   excerpt: 本文系统梳理了HTTP请求参数的类型、特点与适用场景，帮助开发者合理选择参数传递方式。文章将参数分为业务参数（Query、Body、Path）、元信息参数（Header、Cookie）和特殊参数三类，通过快递类比形象说明其差异。详细解析了Query（公开筛选）、Header（元数据）、Body（核心...
-  views: '914'
+  views: '915'
 - title: 【JAVA开发】—— Apifox测试教程
   link: https://blog.csdn.net/Lvyizhuo/article/details/157299968
   date: '2026-01-25'
@@ -96,7 +96,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157293376
   date: '2026-01-24'
   excerpt: 本文深入解析Java面向对象编程的三大核心特性（封装、继承、多态）和UML类图关系。封装通过隐藏实现细节、暴露接口降低耦合度；继承实现代码复用与功能扩展；多态则通过方法重写和向上转型实现"同一调用，不同效果"。类图以三层矩形框可视化类结构，并展示泛化（继承）、实现、关联等六种类间关系，是设计Java...
-  views: '1271'
+  views: '1272'
 - title: 【JAVA基础】—— 类与对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/157292639
   date: '2026-01-24'
@@ -106,7 +106,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157283764
   date: '2026-01-23'
   excerpt: 本文详细解析了HTTP协议中的核心请求方法，包括GET、POST、PUT、DELETE、PATCH等常用方法，以及HEAD、OPTIONS等辅助方法。文章从方法定义、核心特点、适用场景和实操示例四个方面进行阐述，特别强调了幂等性和安全性这两个关键概念。通过对比表格清晰展示了GET与POST的核心区别...
-  views: '848'
+  views: '850'
 - title: 【JAVA开发】—— MySQL基础
   link: https://blog.csdn.net/Lvyizhuo/article/details/157257809
   date: '2026-01-23'
@@ -117,12 +117,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '146'
+  views: '148'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
   excerpt: Apifox是一款全生命周期API管理工具，集设计、Mock、调试、测试、文档功能于一体。核心优势包括多协议支持、智能Mock服务、自动化测试和团队协作能力。安装后通过新建项目→设计接口→Mock调试→自动化测试→文档生成的流程，实现高效API管理。支持可视化接口设计、自定义Mock规则、批量测试场...
-  views: '1076'
+  views: '1077'
 - title: 【JAVA开发】—— Maven核心用法与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157207460
   date: '2026-01-21'
@@ -132,13 +132,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
   excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
-  views: '1357'
+  views: '1359'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
   excerpt: Nginx核心功能与应用摘要 Nginx是一款高性能的HTTP服务器和反向代理服务器，具有高并发处理能力、低资源占用等特点，广泛用于网站部署、API代理和负载均衡。核心功能包括：
     反向代理：通过proxy_pass指令将请求转发到后端服务器 负载均衡：支持多种策略（权重、IP哈希等）分配请求 性能优...
-  views: '491'
+  views: '492'
 - title: 【ClaudeCode】——常用指令
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487398
   date: '2025-08-18'
@@ -149,12 +149,12 @@ articles:
   date: '2025-08-18'
   excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
     调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
-  views: '3431'
+  views: '3434'
 - title: 【Linux服务器】——模型训练技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
   date: '2025-08-13'
   excerpt: 本文介绍了深度学习模型训练中的两个实用技巧：1）使用TensorBoard实时监控训练过程，通过启动TensorBoard服务并访问6006端口查看训练曲线；2）服务器后台训练方法，使用nohup命令让训练任务在后台持续运行，并详细说明了如何查看进程状态、监控日志文件、终止进程以及查看CPU使用情况...
-  views: '578'
+  views: '579'
 - title: 【Linux】——Vim编辑器基本操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/149192547
   date: '2025-07-08'
@@ -190,7 +190,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143097956
   date: '2024-10-20'
   excerpt: 传播模型的次模性（Submodularity of propagation models）通常指的是在影响力最大化等传播问题中，影响力函数具有次模性特征。次模性是一种集合函数性质，它类似于“递减增益”的概念
-  views: '973'
+  views: '974'
 - title: 【影响力最大化】——影响力扩展度计算（蒙特卡洛模拟近似）
   link: https://blog.csdn.net/Lvyizhuo/article/details/143084663
   date: '2024-10-19'
@@ -206,7 +206,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143058421
   date: '2024-10-18'
   excerpt: Conda常用操作、conda常用指令
-  views: '685'
+  views: '686'
 - title: 【开源项目】2048-Python经典小游戏
   link: https://blog.csdn.net/Lvyizhuo/article/details/143026018
   date: '2024-10-17'
@@ -221,4 +221,4 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/142965718
   date: '2024-10-15'
   excerpt: 影响力最大化（Influence Maximization）是一种经典的组合优化问题，旨在选择少数用户，从而最大限度地扩大在线社交网络的影响力
-  views: '2227'
+  views: '2228'
