@@ -1,4 +1,4 @@
-last_updated: '2026-02-04 10:59:34'
+last_updated: '2026-02-04 11:11:20'
 total_count: 44
 articles:
 - title: 【个人网站搭建】—— 用阿里云服务器实现博客内容自动同步
@@ -85,7 +85,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157399944
   date: '2026-01-26'
   excerpt: 摘要： 本文详细介绍如何在Ubuntu系统上通过Ollama本地部署大模型，并结合LangChain搭建私有化AI开发助手。文章包含五个核心部分：环境准备（需8GB+内存）、Ollama安装与模型部署（支持phi3/qwen/llama3等模型）、LangChain集成方法、基础代码实现（以Pyth...
-  views: '903'
+  views: '904'
 - title: 【个人网站搭建】—— Academic Pages 个人学术网站完整配置指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157391122
   date: '2026-01-26'
