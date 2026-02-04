@@ -1,3 +1,7 @@
+# Activate Conda base environment
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate base
+
 #!/bin/bash
 # 脚本功能：自动执行CSDN爬虫脚本 + Git提交推送
 # 日志文件路径（记录执行过程，方便排查问题）
