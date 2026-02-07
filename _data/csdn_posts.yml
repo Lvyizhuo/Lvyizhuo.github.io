@@ -1,38 +1,38 @@
-last_updated: '2026-02-07 18:00:07'
+last_updated: '2026-02-08 00:00:07'
 total_count: 44
 articles:
 - title: 【个人网站搭建】—— 用阿里云服务器实现博客内容自动同步
   link: https://blog.csdn.net/Lvyizhuo/article/details/157690897
   date: '2026-02-04'
   excerpt: 本文介绍了使用阿里云服务器实现CSDN博客自动同步到GitHub Pages的技术方案。由于GitHub Actions的IP被CSDN封禁，作者改用阿里云轻量服务器部署Python爬虫，通过Shell脚本整合爬取、提交、推送全流程，并配置crontab定时任务实现自动化。方案包含服务器环境配置、S...
-  views: '564'
+  views: '570'
 - title: 【家庭服务器】—— 无需公网IP！用Termius+Tailscale实现跨网络远程访问终端（实操全指南）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '1219'
+  views: '1226'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '978'
+  views: '996'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '939'
+  views: '978'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '831'
+  views: '832'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '690'
+  views: '693'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
@@ -53,12 +53,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
   excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
-  views: '987'
+  views: '989'
 - title: 【LangChain】—— History模块使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
   excerpt: 摘要：LangChain的History模块为对话式AI提供会话记忆管理功能，支持临时和长期两种存储方式。临时会话通过RunnableWithMessageHistory和InMemoryChatMessageHistory实现内存级存储，适用于单次对话；长期会话使用FileChatMessageH...
-  views: '884'
+  views: '885'
 - title: 【LangChain】—— Prompt、Model、Chain与多模型执行链
   link: https://blog.csdn.net/Lvyizhuo/article/details/157471043
   date: '2026-01-28'
@@ -91,7 +91,7 @@ articles:
   date: '2026-01-26'
   excerpt: 📚 Academic Pages 学术网站模板 核心功能 基于 Jekyll + GitHub Pages 的学术网站解决方案 提供论文展示、项目介绍、教学经历等模块
     支持响应式设计和多终端适配 部署方式 GitHub Pages 自动部署（推荐） 使用模板创建仓库 自动构建发布 本地Jekyll环...
-  views: '984'
+  views: '985'
 - title: 【JAVA开发】—— HTTP请求参数及类型
   link: https://blog.csdn.net/Lvyizhuo/article/details/157295268
   date: '2026-01-25'
@@ -127,7 +127,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '160'
+  views: '163'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -142,7 +142,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
   excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
-  views: '1362'
+  views: '1363'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
@@ -153,7 +153,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487398
   date: '2025-08-18'
   excerpt: 《ClaudeCode常用指令指南》摘要： 本文系统介绍了ClaudeCode交互式会话中的核心命令与使用技巧。通过20余种斜杠命令可完成对话管理、配置修改、代码审查等操作，包括/clear清空历史、/review请求代码审查、/model切换AI模型等。特别提供了"深度思考"触发词、Bash命令行...
-  views: '1848'
+  views: '1849'
 - title: 【ClaudeCode】——使用技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487217
   date: '2025-08-18'
@@ -184,7 +184,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143323046
   date: '2024-10-29'
   excerpt: Docker 是一个开源平台，用于自动化应用程序的部署、扩展和管理。它通过容器技术实现轻量级、可移植的应用打包，确保在不同环境中应用的一致性。本文使用docker简单演示了如何部署一个python项目。
-  views: '5822'
+  views: '5823'
 - title: 【docker】—— docker常用操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/143313858
   date: '2024-10-28'
@@ -231,4 +231,4 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/142965718
   date: '2024-10-15'
   excerpt: 影响力最大化（Influence Maximization）是一种经典的组合优化问题，旨在选择少数用户，从而最大限度地扩大在线社交网络的影响力
-  views: '2232'
+  views: '2233'
