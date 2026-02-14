@@ -1,4 +1,4 @@
-last_updated: '2026-02-14 18:00:07'
+last_updated: '2026-02-15 00:00:07'
 total_count: 54
 articles:
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
@@ -6,12 +6,12 @@ articles:
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '281'
+  views: '284'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
   excerpt: 在AI智能体（Agent）爆发的今天，我们聊到的Manus、AutoGPT、GPT-4o Agent，甚至LangChain里的各类工具调用框架，背后都藏着一个共同的“底层密码”——ReAct。很多人第一次接触ReAct，会把它和具体的智能体产品混淆（比如之前有人问“Manus是不是ReAct的一种...
-  views: '306'
+  views: '999'
 - title: 【AI开发】——Agent开发框架之Agent SDK详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010594
   date: '2026-02-13'
@@ -23,40 +23,40 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '1085'
+  views: '1100'
 - title: 【AI开发】—— LangChain、LangChain4j 与 Spring AI三大核心工具详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/157982070
   date: '2026-02-12'
   excerpt: 本文详解了LLM开发的三大核心工具：LangChain、LangChain4j和Spring AI。它们各有定位且协同工作：LangChain主导Python生态编排，LangChain4j适配JVM生态，Spring
     AI打通Spring生态与大模型的衔接。文章系统拆解了三者的核心定位、区别与关联...
-  views: '313'
+  views: '314'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
   excerpt: 本文详细介绍了LangChain4j这一JVM生态下的LLM应用开发框架。作为Java生态对标Python中LangChain的工具，LangChain4j能与Spring
     AI无缝集成，解决企业级LLM应用开发痛点。文章从核心定位、价值优势、组件架构等方面解析LangChain4j，并厘清其与La...
-  views: '556'
+  views: '564'
 - title: 【手搓项目-AI政策咨询智能体】—— 多模态处理01：图片识别功能落地实录
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981087
   date: '2026-02-11'
   excerpt: 摘要：本文详细介绍了为AI政策咨询智能体集成图片识别功能的实现过程。文章首先分析了图片识别在政策咨询场景中的必要性，指出用户常通过图片咨询家电补贴、发票验证等问题。技术方案采用阿里云DashScope的多模态模型，支持Base64和URL两种输入方式，实现分层架构设计。重点拆解了前端图片处理、后端控...
-  views: '1537'
+  views: '1538'
 - title: 【AI开发】—— Spring AI 入门指南：核心特性与基础用法实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981029
   date: '2026-02-11'
   excerpt: 随着大模型技术的普及，越来越多开发者希望将AI能力快速集成到Spring项目中，但不同大模型（OpenAI、百度文心一言、阿里通义千问等）的API差异大、开发繁琐，且需手动处理Prompt设计、上下文管理、输出解析等问题。Spring
     AI的出现，正是为了解决这个痛点——它为Spring生态提供了统...
-  views: '402'
+  views: '404'
 - title: 【AI开发】—— AI开发基础之LLM、Agent、MCP、Skill
   link: https://blog.csdn.net/Lvyizhuo/article/details/157907026
   date: '2026-02-09'
   excerpt: 本文系统解析了LLM、Agent、MCP、Skill四大核心概念的区别与联系。LLM作为基础认知层提供语言理解能力；Skill是原子执行单元，实现具体任务；Agent整合LLM和Skill，具备自主完成复杂任务的能力；MCP则是多智能体协同的平台支撑。文章通过层级关系梳理、易混点辨析和工程案例，阐明...
-  views: '662'
+  views: '663'
 - title: 【JAVA开发】—— 使用SDK管理Ubuntu的jdk
   link: https://blog.csdn.net/Lvyizhuo/article/details/157903120
   date: '2026-02-09'
   excerpt: 摘要：本文介绍如何在Ubuntu系统中使用SDKMAN!工具高效管理Java版本，重点演示JDK 21的安装流程。SDKMAN!支持免sudo权限安装、多版本切换、自动配置环境变量等功能，极大简化Java开发环境管理。安装过程仅需3步：安装依赖、执行安装脚本、加载环境变量。随后可通过简单命令一键安装...
-  views: '632'
+  views: '633'
 - title: 【个人网站搭建】—— 用阿里云服务器实现博客内容自动同步
   link: https://blog.csdn.net/Lvyizhuo/article/details/157690897
   date: '2026-02-04'
@@ -72,28 +72,28 @@ articles:
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '1388'
+  views: '1402'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '1856'
+  views: '1876'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '858'
+  views: '860'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '793'
+  views: '794'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
   excerpt: 摘要： 本文为阿里云ECS主机新手配置指南，涵盖选购建议与实操配置。选购推荐1核2G/2核2G+CentOS 8.x+40G云盘+1M带宽，优先就近地域。配置步骤包括：1）通过控制台或Xshell登录；2）更新系统、重置密码、修改主机名；3）安全组必开22/80/443端口，限制授权IP提升安全；4...
-  views: '890'
+  views: '893'
 - title: 【LangChain】—— RAG核心向量存储Vector Stores
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552645
   date: '2026-01-30'
@@ -109,7 +109,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
   excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
-  views: '997'
+  views: '999'
 - title: 【LangChain】—— History模块使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
@@ -172,7 +172,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157283764
   date: '2026-01-23'
   excerpt: 本文详细解析了HTTP协议中的核心请求方法，包括GET、POST、PUT、DELETE、PATCH等常用方法，以及HEAD、OPTIONS等辅助方法。文章从方法定义、核心特点、适用场景和实操示例四个方面进行阐述，特别强调了幂等性和安全性这两个关键概念。通过对比表格清晰展示了GET与POST的核心区别...
-  views: '862'
+  views: '863'
 - title: 【JAVA开发】—— MySQL基础
   link: https://blog.csdn.net/Lvyizhuo/article/details/157257809
   date: '2026-01-23'
@@ -183,7 +183,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '190'
+  views: '191'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -209,7 +209,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487398
   date: '2025-08-18'
   excerpt: 《ClaudeCode常用指令指南》摘要： 本文系统介绍了ClaudeCode交互式会话中的核心命令与使用技巧。通过20余种斜杠命令可完成对话管理、配置修改、代码审查等操作，包括/clear清空历史、/review请求代码审查、/model切换AI模型等。特别提供了"深度思考"触发词、Bash命令行...
-  views: '1881'
+  views: '1884'
 - title: 【ClaudeCode】——使用技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487217
   date: '2025-08-18'
