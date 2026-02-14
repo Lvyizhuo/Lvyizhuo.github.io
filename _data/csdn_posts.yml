@@ -1,41 +1,52 @@
-last_updated: '2026-02-14 06:00:08'
-total_count: 52
+last_updated: '2026-02-14 12:00:08'
+total_count: 54
 articles:
+- title: 【OpenCode插件】—— oh-my-opencode详解及使用
+  link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
+  date: '2026-02-14'
+  excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
+    Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
+  views: '128'
+- title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
+  link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
+  date: '2026-02-14'
+  excerpt: 在AI智能体（Agent）爆发的今天，我们聊到的Manus、AutoGPT、GPT-4o Agent，甚至LangChain里的各类工具调用框架，背后都藏着一个共同的“底层密码”——ReAct。很多人第一次接触ReAct，会把它和具体的智能体产品混淆（比如之前有人问“Manus是不是ReAct的一种...
+  views: '80'
 - title: 【AI开发】——Agent开发框架之Agent SDK详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010594
   date: '2026-02-13'
   excerpt: 摘要： Agent SDK是降低AI智能体开发门槛的工具包，封装了核心组件和工作流程，让开发者无需从零造轮子。它连接大语言模型（LLM）与外部工具，支持智能体生命周期管理、工具集成、多智能体协作等功能，显著提升开发效率。主流选项包括OpenAI
     Agents SDK（多Agent协作）、Micros...
-  views: '658'
+  views: '1046'
 - title: 【OpenCode插件】—— Superpowers的Skills详细介绍与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010538
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '1050'
+  views: '1067'
 - title: 【AI开发】—— LangChain、LangChain4j 与 Spring AI三大核心工具详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/157982070
   date: '2026-02-12'
   excerpt: 本文详解了LLM开发的三大核心工具：LangChain、LangChain4j和Spring AI。它们各有定位且协同工作：LangChain主导Python生态编排，LangChain4j适配JVM生态，Spring
     AI打通Spring生态与大模型的衔接。文章系统拆解了三者的核心定位、区别与关联...
-  views: '311'
+  views: '313'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
   excerpt: 本文详细介绍了LangChain4j这一JVM生态下的LLM应用开发框架。作为Java生态对标Python中LangChain的工具，LangChain4j能与Spring
     AI无缝集成，解决企业级LLM应用开发痛点。文章从核心定位、价值优势、组件架构等方面解析LangChain4j，并厘清其与La...
-  views: '553'
+  views: '555'
 - title: 【手搓项目-AI政策咨询智能体】—— 多模态处理01：图片识别功能落地实录
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981087
   date: '2026-02-11'
   excerpt: 摘要：本文详细介绍了为AI政策咨询智能体集成图片识别功能的实现过程。文章首先分析了图片识别在政策咨询场景中的必要性，指出用户常通过图片咨询家电补贴、发票验证等问题。技术方案采用阿里云DashScope的多模态模型，支持Base64和URL两种输入方式，实现分层架构设计。重点拆解了前端图片处理、后端控...
-  views: '1530'
+  views: '1535'
 - title: 【AI开发】—— Spring AI 入门指南：核心特性与基础用法实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981029
   date: '2026-02-11'
   excerpt: 随着大模型技术的普及，越来越多开发者希望将AI能力快速集成到Spring项目中，但不同大模型（OpenAI、百度文心一言、阿里通义千问等）的API差异大、开发繁琐，且需手动处理Prompt设计、上下文管理、输出解析等问题。Spring
     AI的出现，正是为了解决这个痛点——它为Spring生态提供了统...
-  views: '397'
+  views: '401'
 - title: 【AI开发】—— AI开发基础之LLM、Agent、MCP、Skill
   link: https://blog.csdn.net/Lvyizhuo/article/details/157907026
   date: '2026-02-09'
@@ -55,29 +66,29 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '1305'
+  views: '1307'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '1368'
+  views: '1375'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '1820'
+  views: '1834'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '856'
+  views: '857'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '787'
+  views: '793'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
@@ -187,7 +198,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
   excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
-  views: '1374'
+  views: '1376'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
@@ -204,7 +215,7 @@ articles:
   date: '2025-08-18'
   excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
     调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
-  views: '3499'
+  views: '3500'
 - title: 【Linux服务器】——模型训练技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
   date: '2025-08-13'
