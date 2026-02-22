@@ -1,4 +1,4 @@
-last_updated: '2026-02-22 06:00:08'
+last_updated: '2026-02-22 12:00:07'
 total_count: 54
 articles:
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
@@ -6,7 +6,7 @@ articles:
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '1582'
+  views: '1594'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -23,13 +23,13 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '1482'
+  views: '1489'
 - title: 【AI开发】—— LangChain、LangChain4j 与 Spring AI三大核心工具详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/157982070
   date: '2026-02-12'
   excerpt: 本文详解了LLM开发的三大核心工具：LangChain、LangChain4j和Spring AI。它们各有定位且协同工作：LangChain主导Python生态编排，LangChain4j适配JVM生态，Spring
     AI打通Spring生态与大模型的衔接。文章系统拆解了三者的核心定位、区别与关联...
-  views: '333'
+  views: '336'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -40,7 +40,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981087
   date: '2026-02-11'
   excerpt: 摘要：本文详细介绍了为AI政策咨询智能体集成图片识别功能的实现过程。文章首先分析了图片识别在政策咨询场景中的必要性，指出用户常通过图片咨询家电补贴、发票验证等问题。技术方案采用阿里云DashScope的多模态模型，支持Base64和URL两种输入方式，实现分层架构设计。重点拆解了前端图片处理、后端控...
-  views: '1583'
+  views: '1585'
 - title: 【AI开发】—— Spring AI 入门指南：核心特性与基础用法实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981029
   date: '2026-02-11'
@@ -51,7 +51,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157907026
   date: '2026-02-09'
   excerpt: 本文系统解析了LLM、Agent、MCP、Skill四大核心概念的区别与联系。LLM作为基础认知层提供语言理解能力；Skill是原子执行单元，实现具体任务；Agent整合LLM和Skill，具备自主完成复杂任务的能力；MCP则是多智能体协同的平台支撑。文章通过层级关系梳理、易混点辨析和工程案例，阐明...
-  views: '713'
+  views: '714'
 - title: 【JAVA开发】—— 使用SDK管理Ubuntu的jdk
   link: https://blog.csdn.net/Lvyizhuo/article/details/157903120
   date: '2026-02-09'
@@ -66,29 +66,29 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '1342'
+  views: '1348'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '1589'
+  views: '1596'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '2143'
+  views: '2148'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '874'
+  views: '877'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '843'
+  views: '845'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
@@ -183,7 +183,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '213'
+  views: '214'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -198,7 +198,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
   excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
-  views: '1393'
+  views: '1394'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
@@ -251,7 +251,7 @@ articles:
   date: '2024-10-23'
   excerpt: Q-learning 是一种无模型的强化学习算法，用于寻找最优策略以最大化累积奖励。它通过学习一个状态-动作值函数Qsa，该函数表示在状态 (
     s ) 下执行动作 ( a ) 的预期收益。
-  views: '1588'
+  views: '1590'
 - title: 【影响力最大化】—— 次模性理论和应用
   link: https://blog.csdn.net/Lvyizhuo/article/details/143097956
   date: '2024-10-20'
