@@ -1,4 +1,4 @@
-last_updated: '2026-03-06 18:00:32'
+last_updated: '2026-03-07 00:00:47'
 total_count: 64
 articles:
 - title: 【Claude Code】—— Claude Code 最全启动参数+权限配置｜彻底告别确认弹窗，实现全自动执行
@@ -6,7 +6,7 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '1331'
+  views: '1395'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
@@ -18,23 +18,23 @@ articles:
   date: '2026-02-27'
   excerpt: 作为一名长期关注 AI 辅助开发的工程师，我在使用 Copilot 的过程中逐渐发现：**默认的 Copilot 虽然强大，但想要真正贴合后端开发场景、提升团队协作效率，就必须深入挖掘其自定义能力**。很多开发者仅停留在
     Tab 补全和基础聊天的层面，未能发挥 Copilot 作为"开发智能体编排平...
-  views: '618'
+  views: '619'
 - title: 【AI开发】—— Agent Hooks的详解与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
   excerpt: VS Code Copilot Hooks 实战摘要 Copilot Hooks是VS Code新增的Agent行为管控功能，解决了传统Prompt引导的三大痛点：非确定性（Agent可能忽略约束）、无自动化流程、无统一管控。Hooks通过8个生命周期事件实现"强制触发、代码驱动"，核心场景包括安全...
-  views: '617'
+  views: '618'
 - title: 【AI开发】—— Copilot自定义智能体与User profile配置及默认智能体查看指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
   excerpt: 本文汇总VS Code中GitHub Copilot自定义智能体与User profile（用户配置文件）的关联配置、操作步骤，以及Copilot默认智能体的查看方法，覆盖Windows/macOS/Linux三系统，兼顾基础操作与进阶技巧，适配日常开发中的智能体管理需求。
-  views: '637'
+  views: '641'
 - title: 【AI开发】—— Agent Skills详解及Copilot 进阶玩法
   link: https://blog.csdn.net/Lvyizhuo/article/details/158387100
   date: '2026-02-26'
   excerpt: 简单来说，**Agent Skills 是包含指令、脚本、资源的标准化文件夹**，GitHub Copilot 能根据任务相关性自动加载这些技能，完成专业化的开发任务。它是一套**开放标准**，不仅能在
     VS Code 的 Copilot 中使用，还能无缝兼容 Copilot CLI、Copilot...
-  views: '1363'
+  views: '1365'
 - title: 【Copilot配置】—— Copilot 设置全解析 + 最佳实践｜解锁 AI 辅助开发效率天花板
   link: https://blog.csdn.net/Lvyizhuo/article/details/158383327
   date: '2026-02-25'
@@ -45,25 +45,25 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158382558
   date: '2026-02-25'
   excerpt: 本文解析了Copilot指令文件的三种类型：.github/copilot-instructions.md（项目全局规则）、AGENTS.md（Agent任务配置）和.instructions.md（目录级规则）。通过表格对比了三者的定位、生效范围和使用场景，并提供了Python项目的实战配置示例。...
-  views: '758'
+  views: '759'
 - title: 【Ubuntu实用工具】—— Gnome拓展管理器及实用拓展
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322723
   date: '2026-02-23'
   excerpt: Ubuntu系统通过Gnome拓展管理器可轻松安装和管理桌面拓展，显著提升使用体验。本文详细介绍拓展管理器的安装方法（支持APT和Flatpak两种方式）及基础使用指南，并分类推荐9款实用拓展：效率类如Dash
     to Panel和PaperWM优化多任务处理；美化类如Hanabi动态壁纸增强视觉体验...
-  views: '624'
+  views: '625'
 - title: 【Ubuntu实用工具】—— Fcitx5 输入法安装与完整配置指南（新手友好+避坑版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322639
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '1200'
+  views: '1205'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '2836'
+  views: '2845'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -80,13 +80,13 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '2809'
+  views: '2833'
 - title: 【AI开发】—— LangChain、LangChain4j 与 Spring AI三大核心工具详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/157982070
   date: '2026-02-12'
   excerpt: 本文详解了LLM开发的三大核心工具：LangChain、LangChain4j和Spring AI。它们各有定位且协同工作：LangChain主导Python生态编排，LangChain4j适配JVM生态，Spring
     AI打通Spring生态与大模型的衔接。文章系统拆解了三者的核心定位、区别与关联...
-  views: '382'
+  views: '383'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -123,18 +123,18 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '1437'
+  views: '1438'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '2701'
+  views: '2717'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '3989'
+  views: '4009'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
@@ -145,7 +145,7 @@ articles:
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '1114'
+  views: '1119'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
@@ -156,7 +156,7 @@ articles:
   date: '2026-01-30'
   excerpt: 本文详细介绍了LangChain中的Vector Stores（向量存储）组件，这是RAG（检索增强生成）架构的核心部分。文章首先解释了为什么RAG需要Vector
     Stores来解决大模型的三大痛点：上下文窗口有限、知识无法实时更新和语义理解落地问题。然后阐述了LangChain Vector S...
-  views: '582'
+  views: '583'
 - title: 【LangChain】—— Document Loaders文档加载器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157513267
   date: '2026-01-29'
@@ -171,7 +171,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
   excerpt: 摘要：LangChain的History模块为对话式AI提供会话记忆管理功能，支持临时和长期两种存储方式。临时会话通过RunnableWithMessageHistory和InMemoryChatMessageHistory实现内存级存储，适用于单次对话；长期会话使用FileChatMessageH...
-  views: '921'
+  views: '922'
 - title: 【LangChain】—— Prompt、Model、Chain与多模型执行链
   link: https://blog.csdn.net/Lvyizhuo/article/details/157471043
   date: '2026-01-28'
@@ -187,7 +187,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432322
   date: '2026-01-27'
   excerpt: 摘要 RAG（检索增强生成）技术通过将外部知识库与LLM结合，有效解决大语言模型的知识幻觉和过期问题。其核心是"检索-生成"两阶段流程：离线构建向量化知识库，在线检索相关片段并生成回答。相比微调和Prompt硬塞方案，RAG在准确性、灵活性和成本间取得平衡。本文提供从原型到生产的全栈技术选型建议，并...
-  views: '872'
+  views: '873'
 - title: 【AI开发】—— LangChain框架
   link: https://blog.csdn.net/Lvyizhuo/article/details/157431774
   date: '2026-01-27'
@@ -219,7 +219,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157293376
   date: '2026-01-24'
   excerpt: 本文深入解析Java面向对象编程的三大核心特性（封装、继承、多态）和UML类图关系。封装通过隐藏实现细节、暴露接口降低耦合度；继承实现代码复用与功能扩展；多态则通过方法重写和向上转型实现"同一调用，不同效果"。类图以三层矩形框可视化类结构，并展示泛化（继承）、实现、关联等六种类间关系，是设计Java...
-  views: '1280'
+  views: '1281'
 - title: 【JAVA基础】—— 类与对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/157292639
   date: '2026-01-24'
@@ -240,7 +240,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '323'
+  views: '326'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -255,7 +255,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
   excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
-  views: '1411'
+  views: '1412'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
@@ -266,13 +266,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487398
   date: '2025-08-18'
   excerpt: 《ClaudeCode常用指令指南》摘要： 本文系统介绍了ClaudeCode交互式会话中的核心命令与使用技巧。通过20余种斜杠命令可完成对话管理、配置修改、代码审查等操作，包括/clear清空历史、/review请求代码审查、/model切换AI模型等。特别提供了"深度思考"触发词、Bash命令行...
-  views: '1962'
+  views: '1964'
 - title: 【ClaudeCode】——使用技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487217
   date: '2025-08-18'
   excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
     调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
-  views: '3598'
+  views: '3602'
 - title: 【Linux服务器】——模型训练技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
   date: '2025-08-13'
@@ -292,12 +292,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143403724
   date: '2024-10-31'
   excerpt: 为了更好的学习深度神经网络，本文介绍了线性神经网络中较为简单的线性回归模型，并演示了神经网络的整个训练过程，包括：定义简单的神经网络架构、数据处理、指定损失函数和如何训练模型。模型相对简单，但包含深度学习中模型训练的基本思想，为以后学习更复杂的模型打下基础。
-  views: '1851'
+  views: '1852'
 - title: 【docker】—— 部署python项目
   link: https://blog.csdn.net/Lvyizhuo/article/details/143323046
   date: '2024-10-29'
   excerpt: Docker 是一个开源平台，用于自动化应用程序的部署、扩展和管理。它通过容器技术实现轻量级、可移植的应用打包，确保在不同环境中应用的一致性。本文使用docker简单演示了如何部署一个python项目。
-  views: '5843'
+  views: '5846'
 - title: 【docker】—— docker常用操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/143313858
   date: '2024-10-28'
@@ -313,13 +313,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143097956
   date: '2024-10-20'
   excerpt: 传播模型的次模性（Submodularity of propagation models）通常指的是在影响力最大化等传播问题中，影响力函数具有次模性特征。次模性是一种集合函数性质，它类似于“递减增益”的概念
-  views: '1001'
+  views: '1002'
 - title: 【影响力最大化】——影响力扩展度计算（蒙特卡洛模拟近似）
   link: https://blog.csdn.net/Lvyizhuo/article/details/143084663
   date: '2024-10-19'
   excerpt: 计算影响力拓展度的一个简单的方法是反复模拟在某个种子结点集合S之下影响力的传播过程，统计这些模拟过程中被激活结点个数的平均值，用这个平均值作为种子集合S的影响力扩展度σ
     (S)的估计值。这种模拟估计的方法通常被称为蒙特卡洛模拟（Monte Carlo Simulation）。
-  views: '830'
+  views: '831'
 - title: 【Python调试】 —— 常见异常类型
   link: https://blog.csdn.net/Lvyizhuo/article/details/143082109
   date: '2024-10-19'
@@ -339,9 +339,9 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/142992883
   date: '2024-10-16'
   excerpt: 本文提出了一种基于TV-CLT模型的迁移学习强化学习方法来解决TC-CIM问题。具体来说，我们将源网络和目标网络的状态表示归一化，以便有效地利用源网络上获得的知识。进一步，我们在RL域扩展了TL的起点方法，提出了NSQ-TL算法来解决源目标网络和代理设置之间的异构性。
-  views: '1421'
+  views: '1423'
 - title: 【大数据网络传播模型和算法-陈卫】——影响力最大化【持续更新】
   link: https://blog.csdn.net/Lvyizhuo/article/details/142965718
   date: '2024-10-15'
   excerpt: 影响力最大化（Influence Maximization）是一种经典的组合优化问题，旨在选择少数用户，从而最大限度地扩大在线社交网络的影响力
-  views: '2270'
+  views: '2271'
