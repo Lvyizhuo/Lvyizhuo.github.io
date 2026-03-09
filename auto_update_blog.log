@@ -1,53 +1,3 @@
-From github.com:Lvyizhuo/Lvyizhuo.github.io
- * branch            main       -> FETCH_HEAD
-Already up-to-date.
-[2026-02-27 12:00:04] Git拉取成功
-[2026-02-27 12:00:04] 开始执行爬虫脚本：/root/Project/Lvyizhuo.github.io/scripts/fetch_csdn_articles.py
-============================================================
-CSDN博客文章同步工具 (本地执行版)
-============================================================
-📂 已加载现有数据: 60 篇文章
-
-方法1: 尝试使用 API...
-🔍 开始使用 API 抓取CSDN博客: Lvyizhuo
-📡 正在请求第 1 页 (尝试 1/3)...
-❌ 请求失败 (尝试 1/3): HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /community/home-api/v1/get-business-list?page=1&size=40&businessType=blog&orderby=&noMore=false&year=&month=&username=Lvyizhuo (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fbb7e8b9390>, 'Connection to blog.csdn.net timed out. (connect timeout=15)'))
-📡 正在请求第 1 页 (尝试 2/3)...
-✅ 第 1 页找到 40 篇文章
-📡 正在请求第 2 页 (尝试 1/3)...
-✅ 第 2 页找到 22 篇文章
-✅ 已获取所有文章
-
-✨ 总共抓取到 62 篇文章
-💾 文章列表已保存到: _data/csdn_posts.yml
-
-🎉 同步完成！
-📊 共获取 62 篇文章
-[2026-02-27 12:00:58] 爬虫脚本执行成功
-[2026-02-27 12:00:58] 执行git add .
-[2026-02-27 12:00:58] Git添加缓存区成功
-[2026-02-27 12:00:58] 检查是否有文件更改...
-[2026-02-27 12:00:58] 执行git commit -m '自动更新博客 2026-02-27 12:00:58'
-[main dcbe053] 自动更新博客 2026-02-27 12:00:58
- 2 files changed, 93 insertions(+), 80 deletions(-)
-[2026-02-27 12:00:58] Git提交成功，提交信息：自动更新博客 2026-02-27 12:00:58
-[2026-02-27 12:00:58] 执行git push origin main
-remote: To git@github.com:Lvyizhuo/Lvyizhuo.github.io.git
-   def3500..dcbe053  main -> main
-[2026-02-27 12:01:01] Git推送到远程仓库成功
-[2026-02-27 12:01:01] 自动更新博客流程执行完毕
-[2026-02-27 12:01:01] ==============================================自动更新博客流程执行完毕==========================================================================================================================================================
-
-[2026-02-27 18:00:01] =======================================================================开始执行自动更新博客流程=========================================================================================
-[2026-02-27 18:00:01] 开始执行自动更新博客流程
-[2026-02-27 18:00:01] 当前用户: root
-[2026-02-27 18:00:01] 当前PATH: /root/miniconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin:/bin
-[2026-02-27 18:00:01] 验证关键路径...
-[2026-02-27 18:00:01] 路径验证通过
-[2026-02-27 18:00:01] 开始激活conda base环境...
-[2026-02-27 18:00:01] conda base环境激活成功
-[2026-02-27 18:00:01] 当前Python路径：/root/miniconda3/bin/python
-[2026-02-27 18:00:01] Python版本：Python 3.7.4
 [2026-02-27 18:00:01] 切换到项目目录：/root/Project/Lvyizhuo.github.io
 [2026-02-27 18:00:01] 执行git pull origin main
 From github.com:Lvyizhuo/Lvyizhuo.github.io
@@ -2035,3 +1985,55 @@ CSDN博客文章同步工具 (本地执行版)
 📊 共获取 66 篇文章
 [2026-03-09 12:00:08] 爬虫脚本执行成功
 [2026-03-09 12:00:08] 执行git add .
+[2026-03-09 12:00:08] Git添加缓存区成功
+[2026-03-09 12:00:08] 检查是否有文件更改...
+[2026-03-09 12:00:08] 执行git commit -m '自动更新博客 2026-03-09 12:00:08'
+[main 18441f9] 自动更新博客 2026-03-09 12:00:08
+ 2 files changed, 81 insertions(+), 81 deletions(-)
+[2026-03-09 12:00:08] Git提交成功，提交信息：自动更新博客 2026-03-09 12:00:08
+[2026-03-09 12:00:08] 执行git push origin main
+remote: To git@github.com:Lvyizhuo/Lvyizhuo.github.io.git
+   c232137..18441f9  main -> main
+[2026-03-09 12:00:11] Git推送到远程仓库成功
+[2026-03-09 12:00:11] 自动更新博客流程执行完毕
+[2026-03-09 12:00:11] ==============================================自动更新博客流程执行完毕==========================================================================================================================================================
+
+[2026-03-09 18:00:01] =======================================================================开始执行自动更新博客流程=========================================================================================
+[2026-03-09 18:00:01] 开始执行自动更新博客流程
+[2026-03-09 18:00:01] 当前用户: root
+[2026-03-09 18:00:01] 当前PATH: /root/miniconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin:/bin
+[2026-03-09 18:00:01] 验证关键路径...
+[2026-03-09 18:00:01] 路径验证通过
+[2026-03-09 18:00:01] 开始激活conda base环境...
+[2026-03-09 18:00:02] conda base环境激活成功
+[2026-03-09 18:00:02] 当前Python路径：/root/miniconda3/bin/python
+[2026-03-09 18:00:02] Python版本：Python 3.7.4
+[2026-03-09 18:00:02] 切换到项目目录：/root/Project/Lvyizhuo.github.io
+[2026-03-09 18:00:02] 执行git pull origin main
+From github.com:Lvyizhuo/Lvyizhuo.github.io
+ * branch            main       -> FETCH_HEAD
+Already up-to-date.
+[2026-03-09 18:00:05] Git拉取成功
+[2026-03-09 18:00:05] 开始执行爬虫脚本：/root/Project/Lvyizhuo.github.io/scripts/fetch_csdn_articles.py
+============================================================
+CSDN博客文章同步工具 (本地执行版)
+============================================================
+📂 已加载现有数据: 66 篇文章
+
+方法1: 尝试使用 API...
+🔍 开始使用 API 抓取CSDN博客: Lvyizhuo
+📡 正在请求第 1 页 (尝试 1/3)...
+❌ 请求失败 (尝试 1/3): HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /community/home-api/v1/get-business-list?page=1&size=40&businessType=blog&orderby=&noMore=false&year=&month=&username=Lvyizhuo (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+📡 正在请求第 1 页 (尝试 2/3)...
+✅ 第 1 页找到 40 篇文章
+📡 正在请求第 2 页 (尝试 1/3)...
+✅ 第 2 页找到 26 篇文章
+✅ 已获取所有文章
+
+✨ 总共抓取到 66 篇文章
+💾 文章列表已保存到: _data/csdn_posts.yml
+
+🎉 同步完成！
+📊 共获取 66 篇文章
+[2026-03-09 18:00:18] 爬虫脚本执行成功
+[2026-03-09 18:00:18] 执行git add .
