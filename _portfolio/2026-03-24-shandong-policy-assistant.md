@@ -7,8 +7,6 @@ week: "2026-W12"
 status: "更新"
 summary: "基于 RAG 的以旧换新政策智能问答系统"
 link: "http://mmgg.dpdns.org/home"
-cover_image: "/images/projects/shandong-policy-assistant-cover.png"
-cover_image_alt: "山东省智能政策咨询助手项目封面"
 show_in_projects: true
 card_highlights:
   - "RAG 向量知识库整合 PDF、Docx、网页与联网搜索结果，支持审核入库、去重与重排序。"
@@ -26,6 +24,10 @@ tech_tags:
   - MinIO
   - JWT
 ---
+
+<div class="project-detail-cover">
+  <img src="/images/projects/shandong-policy-assistant-cover.png" alt="山东省智能政策咨询助手项目封面">
+</div>
 
 在线访问: [http://mmgg.dpdns.org/home](http://mmgg.dpdns.org/home){: target="_blank" rel="noopener noreferrer" }
 

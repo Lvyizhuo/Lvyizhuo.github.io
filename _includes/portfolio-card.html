@@ -10,21 +10,7 @@
   {% assign project_is_external = false %}
 {% endif %}
 
-{% if project.cover_image %}
-  {% if project.cover_image contains '://' %}
-    {% assign project_cover = project.cover_image %}
-  {% else %}
-    {% assign project_cover = project.cover_image | prepend: base_path %}
-  {% endif %}
-{% endif %}
-
 <article class="project-card" itemscope itemtype="http://schema.org/SoftwareApplication">
-  {% if project_cover %}
-    <div class="project-card__media">
-      <img src="{{ project_cover }}" alt="{{ project.cover_image_alt | default: project.title }}" loading="lazy">
-    </div>
-  {% endif %}
-
   <div class="project-card__inner">
     <div class="project-card__header">
       <p class="project-card__eyebrow">项目精选</p>
