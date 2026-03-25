@@ -9,8 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
+{% assign projects = site.portfolio | where_exp: "item", "item.show_in_projects != false" | sort: "date" | reverse %}
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+{% if projects.size > 0 %}
+<div class="projects-showcase">
+  {% for post in projects %}
+    {% include portfolio-card.html post=post %}
+  {% endfor %}
+</div>
+{% else %}
+<p class="projects-showcase__empty">项目内容即将上线。</p>
+{% endif %}
