@@ -1,4 +1,4 @@
-last_updated: '2026-04-04 06:00:18'
+last_updated: '2026-04-04 12:00:11'
 total_count: 94
 articles:
 - title: 【Agent开发】—— ToolCall 、 FunctionCall 底层原理与极简实现
@@ -32,17 +32,17 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159532805
   date: '2026-03-27'
   excerpt: 本文整理了MySQL面试中的高频考点，涵盖索引、事务、MVCC、锁机制和性能优化等核心内容。重点解析了索引失效的8种情况、MVCC原理与ReadView创建场景、行锁与表锁的区别、死锁避免方案等难点。同时提供了从SQL优化到架构设计的性能调优策略，包括索引设计、配置调优、读写分离和分库分表等实战建议...
-  views: '684'
+  views: '686'
 - title: 【AI应用开发/后端开发面经】——常见问题
   link: https://blog.csdn.net/Lvyizhuo/article/details/159513614
   date: '2026-03-26'
   excerpt: 本文总结了技术面试常见问题，涵盖异步处理、事务、Redis、数据库、大模型及综合场景六大模块。异步处理部分解析了其概念、实现方式及失败处理方案；事务部分详解了ACID特性、隔离级别及分布式事务方案；Redis章节介绍了数据结构、持久化机制及分布式锁实现；数据库部分聚焦索引优化与分库分表；大模型部分阐...
-  views: '582'
+  views: '583'
 - title: 【计算机网络基础01】—— 深入理解TCP/IP协议栈：互联网通信的基石
   link: https://blog.csdn.net/Lvyizhuo/article/details/159498756
   date: '2026-03-26'
   excerpt: 摘要： TCP/IP协议栈是互联网通信的核心框架，采用分层架构设计，包括应用层（HTTP/DNS等）、传输层（TCP/UDP）、网络层（IP/ICMP）和网络接口层。应用层处理用户数据，传输层实现端到端通信，网络层负责寻址与路由，网络接口层完成物理传输。数据通过封装（添加头部信息）与解封装流程在协议...
-  views: '505'
+  views: '506'
 - title: 【JAVA基础15】—— JVM 核心知识全解析：从架构到调优，一篇搞定
   link: https://blog.csdn.net/Lvyizhuo/article/details/159470154
   date: '2026-03-25'
@@ -57,12 +57,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355791
   date: '2026-03-22'
   excerpt: 阿里云学生认证2026最新教程：在校大学生可领取300元无门槛代金券+低价云服务器（年付低至99元）。认证条件包括全日制学籍、个人实名认证和18-28岁年龄限制。通过支付宝扫码5分钟即可完成认证，自动发放优惠券。推荐选购2核2G配置服务器，用券后近乎免费。常见问题包括学籍不一致、毕业失效等，需注意实...
-  views: '834'
+  views: '835'
 - title: 阿里云大模型工程师 ACA 认证通关笔记｜思维导图 + 逐章精讲 + 一站式复习（附开源地址）
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355669
   date: '2026-03-22'
   excerpt: 本文分享一套阿里云大模型工程师 ACA 认证完整学习资料，包含10 章体系化思维导图 + 逐章详细笔记，覆盖大模型基础、应用场景、API 调用、提示词工程、RAG、微调、Agent、安全合规等全考点。文中直接展示前两章思维导图框架与核心笔记，可快速上手复习。资料免费开源、拿来即用，适合备考、系统入门...
-  views: '855'
+  views: '857'
 - title: 【JAVA基础13】—— JAVA数组从入门到实战：一篇吃透核心用法
   link: https://blog.csdn.net/Lvyizhuo/article/details/159174422
   date: '2026-03-18'
@@ -77,7 +77,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159122662
   date: '2026-03-16'
   excerpt: 计算机采用原码、反码和补码来解决带符号数的存储与运算问题。原码最直观但存在运算缺陷；反码通过数值位取反改进运算，但仍存在±0问题；补码在反码基础上末位加1，统一了±0表示，使加减法运算可直接通过加法实现，成为计算机标准方案。正数的三种码相同，负数则通过取反加一转换为补码，最终实现了高效准确的二进制运...
-  views: '527'
+  views: '529'
 - title: 【JAVA基础10】—— 彻底搞懂Java四种进制：从底层原理到实操避坑指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/159119496
   date: '2026-03-16'
@@ -93,7 +93,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159087631
   date: '2026-03-15'
   excerpt: 本文详细讲解了Java中的关系运算符和逻辑运算符。关系运算符（如==、!=、>、<等）用于比较两个值，返回布尔类型结果，注意避免混淆==和=。逻辑运算符（&&、||、!、^等）用于连接布尔表达式，其中短路特性（&&左假右不执，||左真右不执）是面试重点。文章通过多个代码示例演示了运算符的使用场景，并...
-  views: '207'
+  views: '208'
 - title: 【知识库笔记管理】—— 使用PARA方法高效建立自己个人知识库
   link: https://blog.csdn.net/Lvyizhuo/article/details/159054261
   date: '2026-03-14'
@@ -153,7 +153,7 @@ articles:
   date: '2026-03-07'
   excerpt: 本文为开发者提供了一套稳定部署AI应用的可执行方案。文章首先厘清部署不仅是代码更新，而是包含环境、配置、服务等完整闭环。推荐采用Docker
     Compose+宝塔Nginx的反向代理方案，详细列出了从准备环境变量、构建服务到健康检查的5个实战步骤，并给出标准更新和回滚流程。关键要点包括：先验证容器健...
-  views: '454'
+  views: '455'
 - title: 【MacOS配置】——新Mac开发环境配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158772053
   date: '2026-03-07'
@@ -165,19 +165,19 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '7841'
+  views: '7861'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
   excerpt: 本人使用过很多智能体开发工具，Claude Code、Codex、Cursor、Google Studio、Coze，其实千篇一律，大同小异。各厂商对
     Agent 的 Prompt 设定与思考逻辑等略有差异，例如 Claude Code、Codex 等都有内置的系统提示词，作为开箱即用的 Codin...
-  views: '2092'
+  views: '2095'
 - title: 【Copilot高阶技巧】—— 自定义智能体与后端开发工作流实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430161
   date: '2026-02-27'
   excerpt: 作为一名长期关注 AI 辅助开发的工程师，我在使用 Copilot 的过程中逐渐发现：**默认的 Copilot 虽然强大，但想要真正贴合后端开发场景、提升团队协作效率，就必须深入挖掘其自定义能力**。很多开发者仅停留在
     Tab 补全和基础聊天的层面，未能发挥 Copilot 作为"开发智能体编排平...
-  views: '840'
+  views: '841'
 - title: 【AI开发】—— Agent Hooks的详解与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
@@ -187,13 +187,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
   excerpt: 本文汇总VS Code中GitHub Copilot自定义智能体与User profile（用户配置文件）的关联配置、操作步骤，以及Copilot默认智能体的查看方法，覆盖Windows/macOS/Linux三系统，兼顾基础操作与进阶技巧，适配日常开发中的智能体管理需求。
-  views: '928'
+  views: '929'
 - title: 【AI开发】—— Agent Skills详解及Copilot 进阶玩法
   link: https://blog.csdn.net/Lvyizhuo/article/details/158387100
   date: '2026-02-26'
   excerpt: 简单来说，**Agent Skills 是包含指令、脚本、资源的标准化文件夹**，GitHub Copilot 能根据任务相关性自动加载这些技能，完成专业化的开发任务。它是一套**开放标准**，不仅能在
     VS Code 的 Copilot 中使用，还能无缝兼容 Copilot CLI、Copilot...
-  views: '2001'
+  views: '2002'
 - title: 【Copilot配置】—— Copilot 设置全解析 + 最佳实践｜解锁 AI 辅助开发效率天花板
   link: https://blog.csdn.net/Lvyizhuo/article/details/158383327
   date: '2026-02-25'
@@ -204,7 +204,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158382558
   date: '2026-02-25'
   excerpt: 本文解析了Copilot指令文件的三种类型：.github/copilot-instructions.md（项目全局规则）、AGENTS.md（Agent任务配置）和.instructions.md（目录级规则）。通过表格对比了三者的定位、生效范围和使用场景，并提供了Python项目的实战配置示例。...
-  views: '1417'
+  views: '1420'
 - title: 【Ubuntu实用工具】—— Gnome拓展管理器及实用拓展
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322723
   date: '2026-02-23'
@@ -216,13 +216,13 @@ articles:
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '2392'
+  views: '2395'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '5379'
+  views: '5393'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -233,19 +233,19 @@ articles:
   date: '2026-02-13'
   excerpt: 摘要： Agent SDK是降低AI智能体开发门槛的工具包，封装了核心组件和工作流程，让开发者无需从零造轮子。它连接大语言模型（LLM）与外部工具，支持智能体生命周期管理、工具集成、多智能体协作等功能，显著提升开发效率。主流选项包括OpenAI
     Agents SDK（多Agent协作）、Micros...
-  views: '1265'
+  views: '1266'
 - title: 【OpenCode插件】—— Superpowers的Skills详细介绍与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010538
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '6186'
+  views: '6211'
 - title: 【AI开发】—— LangChain、LangChain4j 与 Spring AI三大核心工具详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/157982070
   date: '2026-02-12'
   excerpt: 本文详解了LLM开发的三大核心工具：LangChain、LangChain4j和Spring AI。它们各有定位且协同工作：LangChain主导Python生态编排，LangChain4j适配JVM生态，Spring
     AI打通Spring生态与大模型的衔接。文章系统拆解了三者的核心定位、区别与关联...
-  views: '696'
+  views: '697'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -262,12 +262,12 @@ articles:
   date: '2026-02-11'
   excerpt: 随着大模型技术的普及，越来越多开发者希望将AI能力快速集成到Spring项目中，但不同大模型（OpenAI、百度文心一言、阿里通义千问等）的API差异大、开发繁琐，且需手动处理Prompt设计、上下文管理、输出解析等问题。Spring
     AI的出现，正是为了解决这个痛点——它为Spring生态提供了统...
-  views: '492'
+  views: '493'
 - title: 【AI开发】—— AI开发基础之LLM、Agent、MCP、Skill
   link: https://blog.csdn.net/Lvyizhuo/article/details/157907026
   date: '2026-02-09'
   excerpt: 本文系统解析了LLM、Agent、MCP、Skill四大核心概念的区别与联系。LLM作为基础认知层提供语言理解能力；Skill是原子执行单元，实现具体任务；Agent整合LLM和Skill，具备自主完成复杂任务的能力；MCP则是多智能体协同的平台支撑。文章通过层级关系梳理、易混点辨析和工程案例，阐明...
-  views: '1015'
+  views: '1018'
 - title: 【JAVA开发】—— 使用SDK管理Ubuntu的jdk
   link: https://blog.csdn.net/Lvyizhuo/article/details/157903120
   date: '2026-02-09'
@@ -282,34 +282,34 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '1763'
+  views: '1771'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '4993'
+  views: '5008'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '7964'
+  views: '7980'
 - title: 【AI开发】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '1058'
+  views: '1059'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '1758'
+  views: '1759'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
   excerpt: 摘要： 本文为阿里云ECS主机新手配置指南，涵盖选购建议与实操配置。选购推荐1核2G/2核2G+CentOS 8.x+40G云盘+1M带宽，优先就近地域。配置步骤包括：1）通过控制台或Xshell登录；2）更新系统、重置密码、修改主机名；3）安全组必开22/80/443端口，限制授权IP提升安全；4...
-  views: '1079'
+  views: '1080'
 - title: 【LangChain】—— RAG核心向量存储Vector Stores
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552645
   date: '2026-01-30'
@@ -399,12 +399,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '756'
+  views: '757'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
   excerpt: Apifox是一款全生命周期API管理工具，集设计、Mock、调试、测试、文档功能于一体。核心优势包括多协议支持、智能Mock服务、自动化测试和团队协作能力。安装后通过新建项目→设计接口→Mock调试→自动化测试→文档生成的流程，实现高效API管理。支持可视化接口设计、自定义Mock规则、批量测试场...
-  views: '1442'
+  views: '1443'
 - title: 【JAVA开发】—— Maven核心用法与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157207460
   date: '2026-01-21'
@@ -431,7 +431,7 @@ articles:
   date: '2025-08-18'
   excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
     调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
-  views: '3798'
+  views: '3799'
 - title: 【Linux服务器】——模型训练技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
   date: '2025-08-13'
@@ -483,12 +483,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/143082109
   date: '2024-10-19'
   excerpt: 在Python程序运行报错时，参考相关的易错类型，找到问题的根源从而调试我们的程序。
-  views: '421'
+  views: '422'
 - title: 【Anaconda】—— Conda常用操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/143058421
   date: '2024-10-18'
   excerpt: Conda常用操作、conda常用指令
-  views: '710'
+  views: '711'
 - title: 【开源项目】2048-Python经典小游戏
   link: https://blog.csdn.net/Lvyizhuo/article/details/143026018
   date: '2024-10-17'
