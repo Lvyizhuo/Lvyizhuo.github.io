@@ -6,7 +6,7 @@
 # Miniconda安装路径（硬编码，避免cron环境中找不到conda命令）
 CONDA_BASE="/root/miniconda3"
 # 项目根目录
-PROJECT_DIR="/root/Project/Lvyizhuo.github.io"
+PROJECT_DIR="/root/Project/i/Lvyizhuo.github.io"
 # 日志文件路径
 LOG_FILE="${PROJECT_DIR}/auto_update_blog.log"
 # Python脚本路径
