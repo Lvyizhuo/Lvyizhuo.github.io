@@ -1,4 +1,4 @@
-last_updated: '2026-05-09 00:00:40'
+last_updated: '2026-05-09 06:00:11'
 total_count: 112
 articles:
 - title: 【LangGraph01】—— “从零认识 LangGraph：一个 Hello World 搞懂图编排“
@@ -6,13 +6,13 @@ articles:
   date: '2026-05-07'
   excerpt: 本文介绍了LangGraph框架的核心概念及其在AI应用开发中的作用。LangGraph是LangChain生态中的图编排框架，专注于构建有状态、多步骤的AI
     Agent工作流。通过一个简单的Hello World示例，文章拆解了LangGraph的核心组件：StateGraph（状态图）、Mess...
-  views: '439'
+  views: '459'
 - title: 【Ubuntu实用工具】—— 高颜值实用ls命令工具lsd
   link: https://blog.csdn.net/Lvyizhuo/article/details/160852470
   date: '2026-05-07'
   excerpt: 摘要： LSD 是一款基于 Rust 的现代化 ls 替代工具，通过彩色分类、文件图标（需 Nerd Font 支持）、树形视图和 Git 集成等功能大幅提升终端文件浏览体验。安装简单（支持主流包管理器），兼容原生
     ls 命令，支持别名配置无缝切换。核心亮点包括： 直观展示：图标/颜色区分文件类型，...
-  views: '207'
+  views: '209'
 - title: 【大模型推理01】—— 初探VLLM：高性能LLM推理引擎，让开源模型跑起来更快更省
   link: https://blog.csdn.net/Lvyizhuo/article/details/160544469
   date: '2026-04-27'
@@ -30,13 +30,13 @@ articles:
   date: '2026-04-22'
   excerpt: 摘要： 偏好对齐训练（Preference Alignment）是提升大模型输出质量的关键步骤，解决SFT后模型可能存在的风格不符、安全性不足等问题。其核心流程包括构建偏好数据集（标注人类偏好的响应对比）、模型对齐训练（优化输出偏好）和评估迭代。主流方法包括：
     RLHF：通过强化学习（奖励模型+PP...
-  views: '433'
+  views: '434'
 - title: 【大模型微调02】—— 后训练之大模型微调（Fine Tuning）详解：SFT、FFT核心流程及常见微调方法详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/160408713
   date: '2026-04-22'
   excerpt: 文章摘要 大模型微调（Fine-Tuning）是适配特定任务或垂直领域的关键环节，成本远低于重新预训练。微调流程分为数据准备、模型调优、评估迭代和部署落地四步。微调方法分为全参数微调（Full
     FT）和参数高效微调（PEFT），后者因低成本成为主流。本文重点解析了5种PEFT方法：LoRA通过低秩矩...
-  views: '428'
+  views: '430'
 - title: 【MS-Swift实战】：LoRA原理+核心参数（r/alpha）调参指南（适配Qwen-1.8B医疗场景）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160362554
   date: '2026-04-21'
@@ -68,7 +68,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160256916
   date: '2026-04-18'
   excerpt: 本文介绍ms-swift 3.12框架，这是一个支持大模型训练、微调、推理、量化和部署的一体化工具。文章详细说明了ms-swift的核心优势，包括支持600+文本模型和300+多模态模型、多种微调方法和显存优化技术。提供了安装指南和快速上手示例，展示如何在单卡3090上10分钟完成Qwen2.5-7...
-  views: '402'
+  views: '403'
 - title: 【大模型微调01】—— LoRA核心参数r和alpha详解：原理+实战+调参指南（MS-Swift适用）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160256948
   date: '2026-04-18'
@@ -88,7 +88,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160216054
   date: '2026-04-16'
   excerpt: Yazi是一款基于Rust编写的现代化终端文件管理器，以其高效流畅的操作体验和强大的功能特性脱颖而出。它采用异步I/O架构，支持极速加载和预览各种文件类型（包括图片、视频、PDF等），无需启动外部程序。Yazi提供Vim式键盘操作、多工具联动（集成fzf/zoxide/fd/rg等）、多标签页支持和...
-  views: '420'
+  views: '423'
 - title: 【Linux进阶01】—— tmux原理与实战教程
   link: https://blog.csdn.net/Lvyizhuo/article/details/160215130
   date: '2026-04-16'
@@ -135,12 +135,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159532805
   date: '2026-03-27'
   excerpt: 本文整理了MySQL面试中的高频考点，涵盖索引、事务、MVCC、锁机制和性能优化等核心内容。重点解析了索引失效的8种情况、MVCC原理与ReadView创建场景、行锁与表锁的区别、死锁避免方案等难点。同时提供了从SQL优化到架构设计的性能调优策略，包括索引设计、配置调优、读写分离和分库分表等实战建议...
-  views: '724'
+  views: '725'
 - title: 【AI应用开发/后端开发面经】——常见问题
   link: https://blog.csdn.net/Lvyizhuo/article/details/159513614
   date: '2026-03-26'
   excerpt: 本文总结了技术面试常见问题，涵盖异步处理、事务、Redis、数据库、大模型及综合场景六大模块。异步处理部分解析了其概念、实现方式及失败处理方案；事务部分详解了ACID特性、隔离级别及分布式事务方案；Redis章节介绍了数据结构、持久化机制及分布式锁实现；数据库部分聚焦索引优化与分库分表；大模型部分阐...
-  views: '637'
+  views: '638'
 - title: 【计算机网络基础01】—— 深入理解TCP/IP协议栈：互联网通信的基石
   link: https://blog.csdn.net/Lvyizhuo/article/details/159498756
   date: '2026-03-26'
@@ -202,7 +202,7 @@ articles:
   date: '2026-03-14'
   excerpt: 摘要： 知识管理的核心是高效复用而非堆积。本文提出一套基于PARA分类法的极简管理方法论： 分类架构：用Projects（项目）、Areas（领域）、Resources（资源）、Archives（归档）四大类构建导航系统，层级不超过3层；
     记录规范：统一命名格式，采用4要素模板（标题/来源/要点/应...
-  views: '817'
+  views: '818'
 - title: 【JAVA基础07】—— Java 算术运算符全解析：从基础到避坑，实战必备
   link: https://blog.csdn.net/Lvyizhuo/article/details/159054098
   date: '2026-03-14'
@@ -268,7 +268,7 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '12773'
+  views: '12786'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
@@ -280,7 +280,7 @@ articles:
   date: '2026-02-27'
   excerpt: 作为一名长期关注 AI 辅助开发的工程师，我在使用 Copilot 的过程中逐渐发现：**默认的 Copilot 虽然强大，但想要真正贴合后端开发场景、提升团队协作效率，就必须深入挖掘其自定义能力**。很多开发者仅停留在
     Tab 补全和基础聊天的层面，未能发挥 Copilot 作为"开发智能体编排平...
-  views: '1137'
+  views: '1139'
 - title: 【AI开发】—— Agent Hooks的详解与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
@@ -319,13 +319,13 @@ articles:
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '3132'
+  views: '3135'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '7020'
+  views: '7023'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -342,7 +342,7 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '7989'
+  views: '7992'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -379,13 +379,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '2034'
+  views: '2035'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '6244'
+  views: '6246'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
@@ -412,7 +412,7 @@ articles:
   date: '2026-01-30'
   excerpt: 本文详细介绍了LangChain中的Vector Stores（向量存储）组件，这是RAG（检索增强生成）架构的核心部分。文章首先解释了为什么RAG需要Vector
     Stores来解决大模型的三大痛点：上下文窗口有限、知识无法实时更新和语义理解落地问题。然后阐述了LangChain Vector S...
-  views: '689'
+  views: '690'
 - title: 【LangChain】—— Document Loaders文档加载器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157513267
   date: '2026-01-29'
@@ -427,13 +427,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
   excerpt: 摘要：LangChain的History模块为对话式AI提供会话记忆管理功能，支持临时和长期两种存储方式。临时会话通过RunnableWithMessageHistory和InMemoryChatMessageHistory实现内存级存储，适用于单次对话；长期会话使用FileChatMessageH...
-  views: '1009'
+  views: '1010'
 - title: 【LangChain】—— Prompt、Model、Chain与多模型执行链
   link: https://blog.csdn.net/Lvyizhuo/article/details/157471043
   date: '2026-01-28'
   excerpt: LangChain核心组件数据流解析 本文系统梳理了LangChain三大核心组件的输入输出格式，帮助开发者理解数据流逻辑： Prompt模板：将动态参数转化为模型可识别格式
     PromptTemplate：基础文本模板，输出纯字符串 FewShotTemplate：带示例模板，输出含示例的完整提示词...
-  views: '1141'
+  views: '1142'
 - title: 【LLM基础】—— 余弦相似度算法
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432704
   date: '2026-01-28'
