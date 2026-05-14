@@ -1,17 +1,17 @@
-last_updated: '2026-05-15 00:00:14'
+last_updated: '2026-05-15 06:00:42'
 total_count: 118
 articles:
 - title: 【Langchain进阶01】—— LangSmith 全面指南：LLM 应用的可观测性、调试与评估平台
   link: https://blog.csdn.net/Lvyizhuo/article/details/161053832
   date: '2026-05-13'
   excerpt: 文章摘要： LangSmith是专为LLM应用开发设计的全生命周期观测平台，提供四大核心功能：链路追踪(Tracing)、效果评估(Evaluation)、提示词管理和监控。它能解决开发者最头疼的问题——快速定位LLM应用中的错误来源，无论是prompt问题、检索上下文还是模型异常。平台支持多种开发...
-  views: '183'
+  views: '194'
 - title: 【PaddleOCR教程01】PP-OCRv5 全面指南：从模型架构到实战部署
   link: https://blog.csdn.net/Lvyizhuo/article/details/161052840
   date: '2026-05-13'
   excerpt: 本文全面介绍了PaddleOCR 3.5.0中的PP-OCRv5模型，包括其架构特点、性能提升和使用方法。主要内容包括：1) PP-OCRv5相比v4在检测和识别精度上的显著提升；2)
     详细的环境搭建指南和常见问题解决方案；3) 完整的模型体系说明，涵盖文本检测、识别及辅助预处理模型；4) 核心AP...
-  views: '288'
+  views: '295'
 - title: 【全栈开发03】—— FastAPI 实战：从 Flask 迁移到 FastAPI，我踩过的坑和学到的东西
   link: https://blog.csdn.net/Lvyizhuo/article/details/160990333
   date: '2026-05-11'
@@ -22,7 +22,7 @@ articles:
   date: '2026-05-11'
   excerpt: 本文总结了Docker常用命令速查表，涵盖镜像管理、容器操作、数据卷管理、网络配置等核心功能。主要内容包括：基础服务管理（启停/清理）、镜像操作（拉取/构建/导出）、容器生命周期管理（创建/启停/日志）、数据卷与网络配置，以及Docker
     Compose多容器编排。特别提供了常用命令速查表，如容器启...
-  views: '334'
+  views: '336'
 - title: 【全栈开发03】—— curl 常用参数详解与 HTTP 请求实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/160929447
   date: '2026-05-09'
@@ -86,7 +86,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160260751
   date: '2026-04-20'
   excerpt: 摘要： pnpm是一款高效的前端包管理器，通过硬链接和符号链接技术实现依赖复用，显著节省磁盘空间（多项目可节省70%以上）并提升安装速度（比npm快2-5倍）。其严格依赖管理杜绝“幽灵依赖”，保障项目稳定性。兼容npm/yarn命令，迁移成本低，支持镜像配置和存储路径优化。提供丰富的命令集，涵盖依赖...
-  views: '1046'
+  views: '1047'
 - title: 【大模型微调与部署03】—— ms-swift-3.12-Megatron-SWIFT命令行参数（训练、推理、对齐、量化、部署全参数）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160257052
   date: '2026-04-19'
@@ -107,7 +107,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160256948
   date: '2026-04-18'
   excerpt: 本文基于MS-Swift框架实战，聚焦LoRA微调中最关键的两个参数`lora_rank (r)`和`lora_alpha`，从原理到实战，讲清作用、关系、调参技巧，适配Qwen-1.8B等小模型、医疗等垂直领域场景，看完直接套用。
-  views: '378'
+  views: '379'
 - title: 【大模型微调与部署03】—— ms-swift-4.1命令行参数（训练、推理、对齐、量化、部署全参数）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160254064
   date: '2026-04-17'
@@ -122,7 +122,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160216054
   date: '2026-04-16'
   excerpt: Yazi是一款基于Rust编写的现代化终端文件管理器，以其高效流畅的操作体验和强大的功能特性脱颖而出。它采用异步I/O架构，支持极速加载和预览各种文件类型（包括图片、视频、PDF等），无需启动外部程序。Yazi提供Vim式键盘操作、多工具联动（集成fzf/zoxide/fd/rg等）、多标签页支持和...
-  views: '462'
+  views: '464'
 - title: 【Linux进阶01】—— tmux原理与实战教程
   link: https://blog.csdn.net/Lvyizhuo/article/details/160215130
   date: '2026-04-16'
@@ -132,7 +132,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160173549
   date: '2026-04-15'
   excerpt: 本文介绍了大模型微调开发环境的配置过程，针对服务器（Ubuntu20.04+V100）和本地（1660s显卡）两种场景提供了详细指导。核心内容包括：使用Anaconda创建Python3.11虚拟环境，安装兼容的Torch2.4.0+cu121版本，通过源码安装ms-swift3.12.6微调工具，...
-  views: '918'
+  views: '919'
 - title: 【AI私人家庭医生day01】—— 项目介绍
   link: https://blog.csdn.net/Lvyizhuo/article/details/160172421
   date: '2026-04-15'
@@ -302,7 +302,7 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '13779'
+  views: '13798'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
@@ -353,13 +353,13 @@ articles:
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '3315'
+  views: '3316'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '7288'
+  views: '7291'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -376,7 +376,7 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '8401'
+  views: '8404'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -387,7 +387,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981087
   date: '2026-02-11'
   excerpt: 摘要：本文详细介绍了为AI政策咨询智能体集成图片识别功能的实现过程。文章首先分析了图片识别在政策咨询场景中的必要性，指出用户常通过图片咨询家电补贴、发票验证等问题。技术方案采用阿里云DashScope的多模态模型，支持Base64和URL两种输入方式，实现分层架构设计。重点拆解了前端图片处理、后端控...
-  views: '1692'
+  views: '1693'
 - title: 【AI开发】—— Spring AI 入门指南：核心特性与基础用法实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981029
   date: '2026-02-11'
@@ -413,18 +413,18 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '2089'
+  views: '2090'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '6403'
+  views: '6405'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '12181'
+  views: '12187'
 - title: 【Node.js管理01】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
@@ -530,7 +530,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '1660'
+  views: '1661'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -545,7 +545,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178989
   date: '2026-01-20'
   excerpt: 本文介绍了Git版本控制系统的核心概念与常用操作。主要内容包括：1）Git基础配置（用户信息、编辑器、换行符设置）；2）基础操作（仓库初始化、克隆、提交、日志查看）；3）分支管理（创建、合并、冲突解决）；4）远程仓库操作（关联、推送、拉取）；5）撤销与回滚操作（工作区、暂存区、提交回滚）；6）标签管...
-  views: '1459'
+  views: '1460'
 - title: 【JAVA开发】—— Nginx服务器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157178336
   date: '2026-01-20'
