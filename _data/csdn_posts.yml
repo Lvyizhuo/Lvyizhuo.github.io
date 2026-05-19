@@ -1,29 +1,41 @@
-last_updated: '2026-05-19 06:00:44'
-total_count: 120
+last_updated: '2026-05-19 12:00:14'
+total_count: 122
 articles:
+- title: 【RAG进阶03】—— RAGFlow — 当 RAG 引擎学会了“看懂“文档
+  link: https://blog.csdn.net/Lvyizhuo/article/details/161186023
+  date: '2026-05-19'
+  excerpt: RAGFlow：深度文档理解的RAG引擎 RAGFlow是一款开箱即用的RAG引擎，其核心创新在于"深度文档理解"技术。与传统RAG框架不同，它针对不同文档类型（论文、法律文书、PPT等）提供专门的解析模板，在切块前就保留文档的语义结构，解决了常规RAG系统中表格错乱、图片丢失等痛点。
+    该引擎采用微...
+  views: '67'
+- title: 【RAG进阶04】—— RAG 技术选型 — 传统 RAG、GraphRAG、LlamaIndex、RAGFlow 怎么选？
+  link: https://blog.csdn.net/Lvyizhuo/article/details/161186063
+  date: '2026-05-19'
+  excerpt: RAG技术选型指南：四种主流方案对比 本文对比了四种主流RAG技术方案的特点和适用场景： 传统RAG：基础模式，适合快速验证想法，成本低但全局理解能力弱
+    GraphRAG：微软提出的增强方案，擅长跨文档分析和全局推理，但构建成本高 LlamaIndex：灵活的开发框架，适合需要高度定制的场景，生态丰...
+  views: '189'
 - title: 【RAG进阶02】—— LlamaIndex — 用数据框架给 LLM 装上“外脑“
   link: https://blog.csdn.net/Lvyizhuo/article/details/161185970
   date: '2026-05-18'
   excerpt: LlamaIndex是一个专为LLM设计的框架，旨在解决大语言模型无法直接访问私有数据的问题。它通过RAG（检索增强生成）技术，充当LLM与用户数据之间的桥梁，提供数据连接、索引、检索和生成的一站式解决方案。核心功能包括：1）150+数据连接器支持多种数据源；2）灵活的文档切分和节点管理；3）多种索...
-  views: '109'
+  views: '160'
 - title: 【RAG进阶01】—— GraphRAG — 当 RAG 遇上知识图谱，全局理解不再是奢望
   link: https://blog.csdn.net/Lvyizhuo/article/details/161185895
   date: '2026-05-18'
   excerpt: GraphRAG：知识图谱赋能的下一代RAG技术 微软研究院提出的GraphRAG通过构建知识图谱突破了传统RAG的局限性。其核心创新在于：
     索引阶段使用LLM抽取实体关系构建知识图谱，通过社区检测算法形成层次化语义结构 查询时提供四种搜索模式，既能回答具体事实查询，也能处理需要全局视角的综合问题
     ...
-  views: '313'
+  views: '321'
 - title: 【Langchain进阶01】—— LangSmith 全面指南：LLM 应用的可观测性、调试与评估平台
   link: https://blog.csdn.net/Lvyizhuo/article/details/161053832
   date: '2026-05-13'
   excerpt: 文章摘要： LangSmith是专为LLM应用开发设计的全生命周期观测平台，提供四大核心功能：链路追踪(Tracing)、效果评估(Evaluation)、提示词管理和监控。它能解决开发者最头疼的问题——快速定位LLM应用中的错误来源，无论是prompt问题、检索上下文还是模型异常。平台支持多种开发...
-  views: '217'
+  views: '220'
 - title: 【PaddleOCR教程01】PP-OCRv5 全面指南：从模型架构到实战部署
   link: https://blog.csdn.net/Lvyizhuo/article/details/161052840
   date: '2026-05-13'
   excerpt: 本文全面介绍了PaddleOCR 3.5.0中的PP-OCRv5模型，包括其架构特点、性能提升和使用方法。主要内容包括：1) PP-OCRv5相比v4在检测和识别精度上的显著提升；2)
     详细的环境搭建指南和常见问题解决方案；3) 完整的模型体系说明，涵盖文本检测、识别及辅助预处理模型；4) 核心AP...
-  views: '482'
+  views: '487'
 - title: 【全栈开发03】—— FastAPI 实战：从 Flask 迁移到 FastAPI，我踩过的坑和学到的东西
   link: https://blog.csdn.net/Lvyizhuo/article/details/160990333
   date: '2026-05-11'
@@ -34,7 +46,7 @@ articles:
   date: '2026-05-11'
   excerpt: 本文总结了Docker常用命令速查表，涵盖镜像管理、容器操作、数据卷管理、网络配置等核心功能。主要内容包括：基础服务管理（启停/清理）、镜像操作（拉取/构建/导出）、容器生命周期管理（创建/启停/日志）、数据卷与网络配置，以及Docker
     Compose多容器编排。特别提供了常用命令速查表，如容器启...
-  views: '354'
+  views: '356'
 - title: 【全栈开发03】—— curl 常用参数详解与 HTTP 请求实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/160929447
   date: '2026-05-09'
@@ -52,7 +64,7 @@ articles:
   date: '2026-05-07'
   excerpt: 本文介绍了LangGraph框架的核心概念及其在AI应用开发中的作用。LangGraph是LangChain生态中的图编排框架，专注于构建有状态、多步骤的AI
     Agent工作流。通过一个简单的Hello World示例，文章拆解了LangGraph的核心组件：StateGraph（状态图）、Mess...
-  views: '595'
+  views: '596'
 - title: 【Ubuntu实用工具】—— 高颜值实用ls命令工具lsd
   link: https://blog.csdn.net/Lvyizhuo/article/details/160852470
   date: '2026-05-07'
@@ -76,13 +88,13 @@ articles:
   date: '2026-04-22'
   excerpt: 摘要： 偏好对齐训练（Preference Alignment）是提升大模型输出质量的关键步骤，解决SFT后模型可能存在的风格不符、安全性不足等问题。其核心流程包括构建偏好数据集（标注人类偏好的响应对比）、模型对齐训练（优化输出偏好）和评估迭代。主流方法包括：
     RLHF：通过强化学习（奖励模型+PP...
-  views: '467'
+  views: '468'
 - title: 【大模型微调02】—— 后训练之大模型微调（Fine Tuning）详解：SFT、FFT核心流程及常见微调方法详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/160408713
   date: '2026-04-22'
   excerpt: 文章摘要 大模型微调（Fine-Tuning）是适配特定任务或垂直领域的关键环节，成本远低于重新预训练。微调流程分为数据准备、模型调优、评估迭代和部署落地四步。微调方法分为全参数微调（Full
     FT）和参数高效微调（PEFT），后者因低成本成为主流。本文重点解析了5种PEFT方法：LoRA通过低秩矩...
-  views: '465'
+  views: '466'
 - title: 【MS-Swift实战】：LoRA原理+核心参数（r/alpha）调参指南（适配Qwen-1.8B医疗场景）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160362554
   date: '2026-04-21'
@@ -104,7 +116,7 @@ articles:
   date: '2026-04-19'
   excerpt: 本文基于 MS-Swift 3.12 官方文档整理，详细介绍了该版本的核心参数及使用规范。内容涵盖基本参数、模型参数、数据参数、模板参数、训练参数和
     LoRA 参数六大模块，重点说明 3.12 版本的改进特性与注意事项。文章提供了参数的标准用法和实战示例，适用于 SFT 微调、RLHF 对齐、模型导...
-  views: '456'
+  views: '457'
 - title: 【大模型微调与部署03】—— ms-swift-3.12 命令行参数（训练、推理、对齐、量化、部署全参数）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160257454
   date: '2026-04-19'
@@ -134,12 +146,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160216054
   date: '2026-04-16'
   excerpt: Yazi是一款基于Rust编写的现代化终端文件管理器，以其高效流畅的操作体验和强大的功能特性脱颖而出。它采用异步I/O架构，支持极速加载和预览各种文件类型（包括图片、视频、PDF等），无需启动外部程序。Yazi提供Vim式键盘操作、多工具联动（集成fzf/zoxide/fd/rg等）、多标签页支持和...
-  views: '475'
+  views: '477'
 - title: 【Linux进阶01】—— tmux原理与实战教程
   link: https://blog.csdn.net/Lvyizhuo/article/details/160215130
   date: '2026-04-16'
   excerpt: 摘要： tmux是解决终端操作痛点的神器，支持会话持久化、多任务管理和环境恢复。其核心原理基于客户端-服务器模型和终端虚拟化技术，通过会话-窗口-面板的三层结构实现高效管理。教程涵盖安装、基础操作（会话、窗口、面板管理）及配置优化，帮助用户快速上手。从新建会话到多面板分割，tmux显著提升终端工作效...
-  views: '1175'
+  views: '1176'
 - title: 【AI私人医生项目day02】—— 模型微调（环境配置篇）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160173549
   date: '2026-04-15'
@@ -149,17 +161,17 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160172421
   date: '2026-04-15'
   excerpt: 《从零搭建AI私人家庭医生项目：技术方案与实施规划》摘要 本文介绍了一个完整的AI私人家庭医生项目开发教程。该项目旨在通过大模型技术为家庭提供专业健康管理服务，包括医学报告解读、健康跟踪、风险评估等功能。技术方案采用Qwen-1_8B-Chat模型进行医疗微调，结合LangChain、RAG等核心技...
-  views: '409'
+  views: '410'
 - title: 【Agent开发】—— ToolCall 、 FunctionCall 底层原理与极简实现
   link: https://blog.csdn.net/Lvyizhuo/article/details/159617129
   date: '2026-03-29'
   excerpt: 摘要： ToolCall（工具调用）并非LLM的黑科技，本质是通过提示词引导模型输出结构化指令（如JSON），后端解析后执行真实工具并返回结果。实现流程分三步：定义工具函数（如加法）、用提示词约束输出格式、解析并执行指令。早期FunctionCall仅支持单函数调用，而ToolCall升级为多工具并...
-  views: '690'
+  views: '691'
 - title: 【MySQL基础】—— MySQL入门｜从零开始学基本操作，看完就能上手
   link: https://blog.csdn.net/Lvyizhuo/article/details/159617115
   date: '2026-03-29'
   excerpt: 本文是一篇MySQL入门教程，适合零基础新手学习。文章首先介绍如何创建数据库和表，然后重点讲解MySQL的核心操作：增删改查（CRUD），包括插入数据(INSERT)、查询数据(SELECT)、修改数据(UPDATE)和删除数据(DELETE)的基本语法和使用场景。文中提供了大量可直接执行的SQL示...
-  views: '453'
+  views: '454'
 - title: 【面试题05】—— MySQL+Redis+PostgreSQL 核心面试题=索引优化+持久化+向量存储
   link: https://blog.csdn.net/Lvyizhuo/article/details/159537393
   date: '2026-03-28'
@@ -176,7 +188,7 @@ articles:
   date: '2026-03-27'
   excerpt: 本文总结了Java和Python的核心面试知识点，包括语法基础、集合框架、JVM等。主要内容涵盖：1) Java与Python的语法区别，如类型系统、运行方式、性能差异；2)
     面向对象特性及实现；3) 集合框架对比，包括List/Set/Map的实现原理；4) Java并发机制和内存模型；5) 设计...
-  views: '399'
+  views: '401'
 - title: 【MySQL面试题】—— MySQL面试高频问题汇总：从原理到实战，覆盖90%考点
   link: https://blog.csdn.net/Lvyizhuo/article/details/159532805
   date: '2026-03-27'
@@ -186,12 +198,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159513614
   date: '2026-03-26'
   excerpt: 本文总结了技术面试常见问题，涵盖异步处理、事务、Redis、数据库、大模型及综合场景六大模块。异步处理部分解析了其概念、实现方式及失败处理方案；事务部分详解了ACID特性、隔离级别及分布式事务方案；Redis章节介绍了数据结构、持久化机制及分布式锁实现；数据库部分聚焦索引优化与分库分表；大模型部分阐...
-  views: '659'
+  views: '660'
 - title: 【计算机网络基础01】—— 深入理解TCP/IP协议栈：互联网通信的基石
   link: https://blog.csdn.net/Lvyizhuo/article/details/159498756
   date: '2026-03-26'
   excerpt: 摘要： TCP/IP协议栈是互联网通信的核心框架，采用分层架构设计，包括应用层（HTTP/DNS等）、传输层（TCP/UDP）、网络层（IP/ICMP）和网络接口层。应用层处理用户数据，传输层实现端到端通信，网络层负责寻址与路由，网络接口层完成物理传输。数据通过封装（添加头部信息）与解封装流程在协议...
-  views: '577'
+  views: '578'
 - title: 【JAVA基础15】—— JVM 核心知识全解析：从架构到调优，一篇搞定
   link: https://blog.csdn.net/Lvyizhuo/article/details/159470154
   date: '2026-03-25'
@@ -206,12 +218,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355791
   date: '2026-03-22'
   excerpt: 阿里云学生认证2026最新教程：在校大学生可领取300元无门槛代金券+低价云服务器（年付低至99元）。认证条件包括全日制学籍、个人实名认证和18-28岁年龄限制。通过支付宝扫码5分钟即可完成认证，自动发放优惠券。推荐选购2核2G配置服务器，用券后近乎免费。常见问题包括学籍不一致、毕业失效等，需注意实...
-  views: '1724'
+  views: '1737'
 - title: 阿里云大模型工程师 ACA 认证通关笔记｜思维导图 + 逐章精讲 + 一站式复习（附开源地址）
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355669
   date: '2026-03-22'
   excerpt: 本文分享一套阿里云大模型工程师 ACA 认证完整学习资料，包含10 章体系化思维导图 + 逐章详细笔记，覆盖大模型基础、应用场景、API 调用、提示词工程、RAG、微调、Agent、安全合规等全考点。文中直接展示前两章思维导图框架与核心笔记，可快速上手复习。资料免费开源、拿来即用，适合备考、系统入门...
-  views: '1205'
+  views: '1208'
 - title: 【JAVA基础13】—— JAVA数组从入门到实战：一篇吃透核心用法
   link: https://blog.csdn.net/Lvyizhuo/article/details/159174422
   date: '2026-03-18'
@@ -308,19 +320,19 @@ articles:
   date: '2026-03-07'
   excerpt: Mac开发者配置指南摘要 本文提供完整的Mac开发者配置流程，涵盖三大核心模块： 系统优化：调整触摸板、程序坞、键盘等设置，提升操作效率 必备工具：安装Homebrew、oh-my-zsh、Git等开发必备工具，配置GitHub
     SSH连接 开发环境：搭建前端(Node/NVM/PNPM)、Rust...
-  views: '840'
+  views: '844'
 - title: 【Claude Code】—— Claude Code 最全启动参数+权限配置｜彻底告别确认弹窗，实现全自动执行
   link: https://blog.csdn.net/Lvyizhuo/article/details/158509613
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '14394'
+  views: '14445'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
   excerpt: 本人使用过很多智能体开发工具，Claude Code、Codex、Cursor、Google Studio、Coze，其实千篇一律，大同小异。各厂商对
     Agent 的 Prompt 设定与思考逻辑等略有差异，例如 Claude Code、Codex 等都有内置的系统提示词，作为开箱即用的 Codin...
-  views: '2584'
+  views: '2585'
 - title: 【Copilot高阶技巧】—— 自定义智能体与后端开发工作流实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430161
   date: '2026-02-27'
@@ -331,7 +343,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
   excerpt: VS Code Copilot Hooks 实战摘要 Copilot Hooks是VS Code新增的Agent行为管控功能，解决了传统Prompt引导的三大痛点：非确定性（Agent可能忽略约束）、无自动化流程、无统一管控。Hooks通过8个生命周期事件实现"强制触发、代码驱动"，核心场景包括安全...
-  views: '974'
+  views: '980'
 - title: 【AI开发】—— Copilot自定义智能体与User profile配置及默认智能体查看指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
@@ -348,30 +360,30 @@ articles:
   date: '2026-02-25'
   excerpt: '# Copilot 设置全解析 + 最佳实践｜解锁 AI 辅助开发效率天花板使用 GitHub Copilot 有一段时间的开发者，大概率会有一个共同感受：默认设置能满足基础需求，但想要让它真正贴合自己的开发习惯、兼顾效率与安全，就必须深入挖掘其设置面板的细节。很多人忽略了
     Copilot 丰富的可...'
-  views: '1849'
+  views: '1850'
 - title: 【Copilot配置】—— copilot-instructions.md vs AGENTS.md vs .instructions.md三种指令文件解析与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158382558
   date: '2026-02-25'
   excerpt: 本文解析了Copilot指令文件的三种类型：.github/copilot-instructions.md（项目全局规则）、AGENTS.md（Agent任务配置）和.instructions.md（目录级规则）。通过表格对比了三者的定位、生效范围和使用场景，并提供了Python项目的实战配置示例。...
-  views: '2258'
+  views: '2263'
 - title: 【Ubuntu实用工具】—— Gnome拓展管理器及实用拓展
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322723
   date: '2026-02-23'
   excerpt: Ubuntu系统通过Gnome拓展管理器可轻松安装和管理桌面拓展，显著提升使用体验。本文详细介绍拓展管理器的安装方法（支持APT和Flatpak两种方式）及基础使用指南，并分类推荐9款实用拓展：效率类如Dash
     to Panel和PaperWM优化多任务处理；美化类如Hanabi动态壁纸增强视觉体验...
-  views: '1102'
+  views: '1103'
 - title: 【Ubuntu实用工具】—— Fcitx5 输入法安装与完整配置指南（新手友好+避坑版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322639
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '3433'
+  views: '3436'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '7436'
+  views: '7447'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -388,13 +400,13 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '8701'
+  views: '8716'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
   excerpt: 本文详细介绍了LangChain4j这一JVM生态下的LLM应用开发框架。作为Java生态对标Python中LangChain的工具，LangChain4j能与Spring
     AI无缝集成，解决企业级LLM应用开发痛点。文章从核心定位、价值优势、组件架构等方面解析LangChain4j，并厘清其与La...
-  views: '962'
+  views: '963'
 - title: 【手搓项目-AI政策咨询智能体】—— 多模态处理01：图片识别功能落地实录
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981087
   date: '2026-02-11'
@@ -425,18 +437,18 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '2113'
+  views: '2115'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '6472'
+  views: '6476'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '12434'
+  views: '12472'
 - title: 【Node.js管理01】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
@@ -447,7 +459,7 @@ articles:
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '2020'
+  views: '2021'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
@@ -468,7 +480,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
   excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
-  views: '1131'
+  views: '1132'
 - title: 【LangChain】—— History模块使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
@@ -531,7 +543,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157283764
   date: '2026-01-23'
   excerpt: 本文详细解析了HTTP协议中的核心请求方法，包括GET、POST、PUT、DELETE、PATCH等常用方法，以及HEAD、OPTIONS等辅助方法。文章从方法定义、核心特点、适用场景和实操示例四个方面进行阐述，特别强调了幂等性和安全性这两个关键概念。通过对比表格清晰展示了GET与POST的核心区别...
-  views: '908'
+  views: '909'
 - title: 【JAVA开发】—— MySQL基础
   link: https://blog.csdn.net/Lvyizhuo/article/details/157257809
   date: '2026-01-23'
@@ -542,7 +554,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '1764'
+  views: '1770'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -568,18 +580,18 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487398
   date: '2025-08-18'
   excerpt: 《ClaudeCode常用指令指南》摘要： 本文系统介绍了ClaudeCode交互式会话中的核心命令与使用技巧。通过20余种斜杠命令可完成对话管理、配置修改、代码审查等操作，包括/clear清空历史、/review请求代码审查、/model切换AI模型等。特别提供了"深度思考"触发词、Bash命令行...
-  views: '2187'
+  views: '2189'
 - title: 【ClaudeCode】——使用技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150487217
   date: '2025-08-18'
   excerpt: 【ClaudeCode使用技巧摘要】 ClaudeCode是一款智能开发辅助工具，主要提供以下使用技巧： 通过创建CLAUDE.md文件自定义设置，记录常用命令、代码风格和项目规范等关键信息，支持多级目录放置。
     调优CLAUDE.md文件内容，可通过#键快速记录指令，并定期优化以提高遵循效果。 灵活...
-  views: '4097'
+  views: '4098'
 - title: 【Linux服务器】——模型训练技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/150344137
   date: '2025-08-13'
   excerpt: 本文介绍了深度学习模型训练中的两个实用技巧：1）使用TensorBoard实时监控训练过程，通过启动TensorBoard服务并访问6006端口查看训练曲线；2）服务器后台训练方法，使用nohup命令让训练任务在后台持续运行，并详细说明了如何查看进程状态、监控日志文件、终止进程以及查看CPU使用情况...
-  views: '618'
+  views: '619'
 - title: 【Linux】——Vim编辑器基本操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/149192547
   date: '2025-07-08'
