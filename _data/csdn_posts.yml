@@ -1,4 +1,4 @@
-last_updated: '2026-05-28 00:00:13'
+last_updated: '2026-05-28 06:00:28'
 total_count: 123
 articles:
 - title: 【语音识别部署】— sherpa-onnx：让 ASR 模型跑得更快、跑在任何地方
@@ -45,7 +45,7 @@ articles:
   date: '2026-05-13'
   excerpt: 本文全面介绍了PaddleOCR 3.5.0中的PP-OCRv5模型，包括其架构特点、性能提升和使用方法。主要内容包括：1) PP-OCRv5相比v4在检测和识别精度上的显著提升；2)
     详细的环境搭建指南和常见问题解决方案；3) 完整的模型体系说明，涵盖文本检测、识别及辅助预处理模型；4) 核心AP...
-  views: '621'
+  views: '623'
 - title: 【全栈开发03】—— FastAPI 实战：从 Flask 迁移到 FastAPI，我踩过的坑和学到的东西
   link: https://blog.csdn.net/Lvyizhuo/article/details/160990333
   date: '2026-05-11'
@@ -110,7 +110,7 @@ articles:
   date: '2026-04-21'
   excerpt: MS-Swift框架LoRA微调实战指南：适配Qwen-1.8B医疗场景 本文深入解析LoRA微调中两个核心参数r(lora_rank)和alpha(lora_alpha)的作用原理与调参技巧。通过通俗比喻解释LoRA仅训练新增小矩阵的特性，重点阐述：
     r决定模型学习能力，推荐医疗场景使用r=16 ...
-  views: '579'
+  views: '581'
 - title: 【大模型应用开发】—— Context Engineering：从提示词到上下文工程：LLM应用落地的核心思维跃迁
   link: https://blog.csdn.net/Lvyizhuo/article/details/160345466
   date: '2026-04-20'
@@ -151,7 +151,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160252964
   date: '2026-04-17'
   excerpt: 本文介绍了MS-Swift框架如何配置医疗对话数据集，重点解析了4种支持的数据格式（Messages/ShareGPT/Alpaca/Query-Response）和3种接入方式。针对医疗多轮对话和身份认知数据集，提供了正确的dataset_info.json配置示例，包含字段映射规则和训练命令。特...
-  views: '641'
+  views: '642'
 - title: 【终端效率工具01】—— Yazi：Rust 编写的现代化终端文件管理器，告别繁琐操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/160216054
   date: '2026-04-16'
@@ -181,7 +181,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159617115
   date: '2026-03-29'
   excerpt: 本文是一篇MySQL入门教程，适合零基础新手学习。文章首先介绍如何创建数据库和表，然后重点讲解MySQL的核心操作：增删改查（CRUD），包括插入数据(INSERT)、查询数据(SELECT)、修改数据(UPDATE)和删除数据(DELETE)的基本语法和使用场景。文中提供了大量可直接执行的SQL示...
-  views: '466'
+  views: '467'
 - title: 【面试题05】—— MySQL+Redis+PostgreSQL 核心面试题=索引优化+持久化+向量存储
   link: https://blog.csdn.net/Lvyizhuo/article/details/159537393
   date: '2026-03-28'
@@ -208,7 +208,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159513614
   date: '2026-03-26'
   excerpt: 本文总结了技术面试常见问题，涵盖异步处理、事务、Redis、数据库、大模型及综合场景六大模块。异步处理部分解析了其概念、实现方式及失败处理方案；事务部分详解了ACID特性、隔离级别及分布式事务方案；Redis章节介绍了数据结构、持久化机制及分布式锁实现；数据库部分聚焦索引优化与分库分表；大模型部分阐...
-  views: '671'
+  views: '672'
 - title: 【计算机网络基础01】—— 深入理解TCP/IP协议栈：互联网通信的基石
   link: https://blog.csdn.net/Lvyizhuo/article/details/159498756
   date: '2026-03-26'
@@ -233,7 +233,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355669
   date: '2026-03-22'
   excerpt: 本文分享一套阿里云大模型工程师 ACA 认证完整学习资料，包含10 章体系化思维导图 + 逐章详细笔记，覆盖大模型基础、应用场景、API 调用、提示词工程、RAG、微调、Agent、安全合规等全考点。文中直接展示前两章思维导图框架与核心笔记，可快速上手复习。资料免费开源、拿来即用，适合备考、系统入门...
-  views: '1293'
+  views: '1294'
 - title: 【JAVA基础13】—— JAVA数组从入门到实战：一篇吃透核心用法
   link: https://blog.csdn.net/Lvyizhuo/article/details/159174422
   date: '2026-03-18'
@@ -264,13 +264,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159087631
   date: '2026-03-15'
   excerpt: 本文详细讲解了Java中的关系运算符和逻辑运算符。关系运算符（如==、!=、>、<等）用于比较两个值，返回布尔类型结果，注意避免混淆==和=。逻辑运算符（&&、||、!、^等）用于连接布尔表达式，其中短路特性（&&左假右不执，||左真右不执）是面试重点。文章通过多个代码示例演示了运算符的使用场景，并...
-  views: '230'
+  views: '231'
 - title: 【知识库笔记管理】—— 使用PARA方法高效建立自己个人知识库
   link: https://blog.csdn.net/Lvyizhuo/article/details/159054261
   date: '2026-03-14'
   excerpt: 摘要： 知识管理的核心是高效复用而非堆积。本文提出一套基于PARA分类法的极简管理方法论： 分类架构：用Projects（项目）、Areas（领域）、Resources（资源）、Archives（归档）四大类构建导航系统，层级不超过3层；
     记录规范：统一命名格式，采用4要素模板（标题/来源/要点/应...
-  views: '996'
+  views: '997'
 - title: 【JAVA基础07】—— Java 算术运算符全解析：从基础到避坑，实战必备
   link: https://blog.csdn.net/Lvyizhuo/article/details/159054098
   date: '2026-03-14'
@@ -336,7 +336,7 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '15642'
+  views: '15645'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
@@ -348,12 +348,12 @@ articles:
   date: '2026-02-27'
   excerpt: 作为一名长期关注 AI 辅助开发的工程师，我在使用 Copilot 的过程中逐渐发现：**默认的 Copilot 虽然强大，但想要真正贴合后端开发场景、提升团队协作效率，就必须深入挖掘其自定义能力**。很多开发者仅停留在
     Tab 补全和基础聊天的层面，未能发挥 Copilot 作为"开发智能体编排平...
-  views: '1296'
+  views: '1299'
 - title: 【AI开发】—— Agent Hooks的详解与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
   excerpt: VS Code Copilot Hooks 实战摘要 Copilot Hooks是VS Code新增的Agent行为管控功能，解决了传统Prompt引导的三大痛点：非确定性（Agent可能忽略约束）、无自动化流程、无统一管控。Hooks通过8个生命周期事件实现"强制触发、代码驱动"，核心场景包括安全...
-  views: '1031'
+  views: '1032'
 - title: 【AI开发】—— Copilot自定义智能体与User profile配置及默认智能体查看指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
@@ -375,7 +375,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158382558
   date: '2026-02-25'
   excerpt: 本文解析了Copilot指令文件的三种类型：.github/copilot-instructions.md（项目全局规则）、AGENTS.md（Agent任务配置）和.instructions.md（目录级规则）。通过表格对比了三者的定位、生效范围和使用场景，并提供了Python项目的实战配置示例。...
-  views: '2408'
+  views: '2409'
 - title: 【Ubuntu实用工具】—— Gnome拓展管理器及实用拓展
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322723
   date: '2026-02-23'
@@ -387,13 +387,13 @@ articles:
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '3776'
+  views: '3778'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '7708'
+  views: '7713'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -410,7 +410,7 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '9255'
+  views: '9258'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -447,18 +447,18 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157692953
   date: '2026-02-04'
   excerpt: 经常需要远程操控家里的电脑终端？比如在公司改家里服务器的配置、户外用手机应急处理电脑上的文件，却被“没有公网IP”“端口映射复杂”“跨网络无法连接”这些问题卡住？之前陆续分享了Termius连接电脑终端、Tailscale的基础使用，今天就把两者结合起来，分享一套亲测有效的跨网络远程访问方案——Te...
-  views: '2185'
+  views: '2186'
 - title: 【AI开发】—— OpenCode双插件协同开发指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157686197
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '6596'
+  views: '6597'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '13044'
+  views: '13047'
 - title: 【Node.js管理01】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
@@ -474,7 +474,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
   excerpt: 摘要： 本文为阿里云ECS主机新手配置指南，涵盖选购建议与实操配置。选购推荐1核2G/2核2G+CentOS 8.x+40G云盘+1M带宽，优先就近地域。配置步骤包括：1）通过控制台或Xshell登录；2）更新系统、重置密码、修改主机名；3）安全组必开22/80/443端口，限制授权IP提升安全；4...
-  views: '1311'
+  views: '1312'
 - title: 【LangChain】—— RAG核心向量存储Vector Stores
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552645
   date: '2026-01-30'
@@ -538,7 +538,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157299968
   date: '2026-01-25'
   excerpt: 本文介绍了使用Apifox进行接口测试的完整流程。首先概述了软件开发的5个阶段（需求分析、设计、编码、测试、上线运维），然后以苍穹外卖项目为例，详细演示了单元测试和集成测试的操作步骤。在单元测试部分，展示了新增员工接口的测试过程；在集成测试部分，构建了包含登录、查询、修改等操作的全流程测试场景，并通...
-  views: '917'
+  views: '918'
 - title: 【JAVA基础】—— 面向对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/157293376
   date: '2026-01-24'
