@@ -16,3 +16,5 @@ package-lock.json
 # Only ignore vendor in root directory, not _sass/vendor
 /vendor/
 .bundle/
+
+.DS_Store
