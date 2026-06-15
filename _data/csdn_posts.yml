@@ -1,4 +1,4 @@
-last_updated: '2026-06-16 00:00:15'
+last_updated: '2026-06-16 06:00:14'
 total_count: 132
 articles:
 - title: 【大模型部署01】—— vLLM 部署大模型服务实操：从 0 到 1 搭建 OpenAI 兼容 API
@@ -6,12 +6,12 @@ articles:
   date: '2026-06-15'
   excerpt: 文章摘要： 本文详细介绍了使用vLLM工具从零部署大模型服务的全流程，重点以农业大模型Sinong1.0-8B为例。vLLM通过PagedAttention显存管理、连续批处理和OpenAI兼容API等特性，显著提升推理效率（比传统方案快5-10倍）。内容涵盖环境配置（推荐Python
     3.10+、...
-  views: '35'
+  views: '48'
 - title: 【LeetCode02】—— 两数之和：哈希表入门经典详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/161898065
   date: '2026-06-11'
   excerpt: 文章摘要 LeetCode经典题目"两数之和"是哈希表应用的入门典范。文章详细解析了两种解法：暴力枚举（O(n²)）和哈希表（O(n)），重点推荐后者。通过图解和代码演示（Python/Java/Go/C++），解释哈希表"先查后存"的关键逻辑以避免重复使用元素。对比两种解法的优劣，指出哈希表是面试...
-  views: '274'
+  views: '276'
 - title: 【LeetCode01】—— 无重复字符的最长子串：滑动窗口经典题详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/161897765
   date: '2026-06-11'
@@ -28,7 +28,7 @@ articles:
   date: '2026-06-10'
   excerpt: Google Gemma 4 是 DeepMind 推出的新一代开源轻量级 AI 模型家族，包含 2B-31B 四种规模的 Dense 和 MoE
     架构模型，支持文本、图像、视频和音频多模态处理。相比前代，Gemma 4 的创新包括：256K 上下文窗口、MoE 架构降低计算成本、新增可控的 Thi...
-  views: '311'
+  views: '314'
 - title: 【AI工作流搭建】—— n8n 自部署完全指南：从 Docker 安装到第一个自动化工作流
   link: https://blog.csdn.net/Lvyizhuo/article/details/161838846
   date: '2026-06-09'
@@ -52,7 +52,7 @@ articles:
   date: '2026-06-08'
   excerpt: 本文深入浅出拆解 Kubernetes 核心原理，从集群解决的实际运维痛点切入，完整讲解控制平面、工作节点两大模块的组件分工与协作逻辑。同时详解
     Pod、Deployment、Service 三大核心资源的设计理念、使用场景与关联关系，梳理 Pod 从创建到运行的全流程、调度机制、网络模型，以及 K...
-  views: '339'
+  views: '340'
 - title: 【Mac开发环境部署01】—— Mac 最全 NVM 安装 & Node 版本管理指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/161714182
   date: '2026-06-05'
@@ -68,7 +68,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/161256550
   date: '2026-05-20'
   excerpt: FunASR是阿里达摩院开源的端到端语音识别工具包，集成了语音活动检测(VAD)、语音识别(ASR)、标点恢复等功能。本文重点介绍了轻量级模型Fun-ASR-Nano的使用方法，包括环境搭建、AutoModel机制、热词增强等特性，并提供了完整的实战代码示例。文章还分享了处理长音频时的OOM避坑技巧...
-  views: '1161'
+  views: '1164'
 - title: 【RAG进阶03】—— RAGFlow — 当 RAG 引擎学会了“看懂“文档
   link: https://blog.csdn.net/Lvyizhuo/article/details/161186023
   date: '2026-05-19'
@@ -126,7 +126,7 @@ articles:
   date: '2026-05-09'
   excerpt: 本文详细介绍了在Ubuntu 24.04系统上安装配置Docker Desktop的全过程，重点解决了登录报错问题，并区分了Docker CLI与Docker
     AI(Gordon)的功能差异。安装步骤包括卸载旧版、添加官方源、安装依赖等关键操作，特别强调了pass和gnupg2的必要性。针对常见的登...
-  views: '473'
+  views: '474'
 - title: 【LangGraph01】—— “从零认识 LangGraph：一个 Hello World 搞懂图编排“
   link: https://blog.csdn.net/Lvyizhuo/article/details/160864046
   date: '2026-05-07'
@@ -184,7 +184,7 @@ articles:
   date: '2026-04-19'
   excerpt: 本文基于 MS-Swift 3.12 官方文档整理，详细介绍了该版本的核心参数及使用规范。内容涵盖基本参数、模型参数、数据参数、模板参数、训练参数和
     LoRA 参数六大模块，重点说明 3.12 版本的改进特性与注意事项。文章提供了参数的标准用法和实战示例，适用于 SFT 微调、RLHF 对齐、模型导...
-  views: '537'
+  views: '538'
 - title: 【大模型微调与部署03】—— ms-swift-3.12 命令行参数（训练、推理、对齐、量化、部署全参数）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160257454
   date: '2026-04-19'
@@ -286,12 +286,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355791
   date: '2026-03-22'
   excerpt: 阿里云学生认证2026最新教程：在校大学生可领取300元无门槛代金券+低价云服务器（年付低至99元）。认证条件包括全日制学籍、个人实名认证和18-28岁年龄限制。通过支付宝扫码5分钟即可完成认证，自动发放优惠券。推荐选购2核2G配置服务器，用券后近乎免费。常见问题包括学籍不一致、毕业失效等，需注意实...
-  views: '3010'
+  views: '3013'
 - title: 阿里云大模型工程师 ACA 认证通关笔记｜思维导图 + 逐章精讲 + 一站式复习（附开源地址）
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355669
   date: '2026-03-22'
   excerpt: 本文分享一套阿里云大模型工程师 ACA 认证完整学习资料，包含10 章体系化思维导图 + 逐章详细笔记，覆盖大模型基础、应用场景、API 调用、提示词工程、RAG、微调、Agent、安全合规等全考点。文中直接展示前两章思维导图框架与核心笔记，可快速上手复习。资料免费开源、拿来即用，适合备考、系统入门...
-  views: '1397'
+  views: '1398'
 - title: 【JAVA基础13】—— JAVA数组从入门到实战：一篇吃透核心用法
   link: https://blog.csdn.net/Lvyizhuo/article/details/159174422
   date: '2026-03-18'
@@ -301,7 +301,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159130421
   date: '2026-03-17'
   excerpt: 本文介绍了Java中两种分支结构：if分支和switch分支。if分支适用于复杂条件判断，包括单分支、双分支、多分支和嵌套形式；switch分支适合固定值匹配，具有case穿透特性。文章对比了两者的适用场景：if用于范围判断和复杂条件，switch用于等值匹配。同时指出了常见易错点，如=与==混淆、...
-  views: '244'
+  views: '245'
 - title: 【JAVA基础11】—— 吃透原码、反码、补码：计算机数值表示的底层逻辑
   link: https://blog.csdn.net/Lvyizhuo/article/details/159122662
   date: '2026-03-16'
@@ -338,13 +338,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159009993
   date: '2026-03-13'
   excerpt: Java基本数据类型转换可分为自动转换和强制转换两类。自动转换适用于小范围类型转大范围类型（如byte→int），由编译器自动完成；强制转换则需显式声明，可能造成数据溢出或精度丢失（如long→int）。转换的本质是对二进制数据的重新解释，不同类型存储长度和取值范围差异决定了转换规则。特别要注意bo...
-  views: '348'
+  views: '349'
 - title: 【JAVA基础05】—— JAVA常见编码类型与详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/159009850
   date: '2026-03-13'
   excerpt: 字符编码详解：从原理到实战 核心摘要 字符编码是计算机存储和处理文本的基础规则，决定了字节与字符的转换关系。本文系统讲解了编码原理，对比分析了ASCII、GBK、UTF-8等常用编码的特点和适用场景，并提供了Java中的编码处理最佳实践：
     编码本质：解决字符与字节的映射问题，核心是平衡兼容性与空间效...
-  views: '358'
+  views: '359'
 - title: 【JAVA基础04】—— Java注释详解：从基础注释到Javadoc文档注释，让代码更有“温度”
   link: https://blog.csdn.net/Lvyizhuo/article/details/158970905
   date: '2026-03-12'
@@ -394,7 +394,7 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '17485'
+  views: '17491'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
@@ -411,7 +411,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
   excerpt: VS Code Copilot Hooks 实战摘要 Copilot Hooks是VS Code新增的Agent行为管控功能，解决了传统Prompt引导的三大痛点：非确定性（Agent可能忽略约束）、无自动化流程、无统一管控。Hooks通过8个生命周期事件实现"强制触发、代码驱动"，核心场景包括安全...
-  views: '1161'
+  views: '1164'
 - title: 【AI开发】—— Copilot自定义智能体与User profile配置及默认智能体查看指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
@@ -422,7 +422,7 @@ articles:
   date: '2026-02-26'
   excerpt: 简单来说，**Agent Skills 是包含指令、脚本、资源的标准化文件夹**，GitHub Copilot 能根据任务相关性自动加载这些技能，完成专业化的开发任务。它是一套**开放标准**，不仅能在
     VS Code 的 Copilot 中使用，还能无缝兼容 Copilot CLI、Copilot...
-  views: '2955'
+  views: '2956'
 - title: 【Copilot配置】—— Copilot 设置全解析 + 最佳实践｜解锁 AI 辅助开发效率天花板
   link: https://blog.csdn.net/Lvyizhuo/article/details/158383327
   date: '2026-02-25'
@@ -451,7 +451,7 @@ articles:
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '8279'
+  views: '8280'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -468,7 +468,7 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '10139'
+  views: '10141'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -490,7 +490,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157907026
   date: '2026-02-09'
   excerpt: 本文系统解析了LLM、Agent、MCP、Skill四大核心概念的区别与联系。LLM作为基础认知层提供语言理解能力；Skill是原子执行单元，实现具体任务；Agent整合LLM和Skill，具备自主完成复杂任务的能力；MCP则是多智能体协同的平台支撑。文章通过层级关系梳理、易混点辨析和工程案例，阐明...
-  views: '1191'
+  views: '1192'
 - title: 【JAVA开发】—— 使用SDK管理Ubuntu的jdk
   link: https://blog.csdn.net/Lvyizhuo/article/details/157903120
   date: '2026-02-09'
@@ -506,7 +506,7 @@ articles:
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '6830'
+  views: '6832'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
@@ -522,7 +522,7 @@ articles:
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '2153'
+  views: '2155'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
@@ -533,7 +533,7 @@ articles:
   date: '2026-01-30'
   excerpt: 本文详细介绍了LangChain中的Vector Stores（向量存储）组件，这是RAG（检索增强生成）架构的核心部分。文章首先解释了为什么RAG需要Vector
     Stores来解决大模型的三大痛点：上下文窗口有限、知识无法实时更新和语义理解落地问题。然后阐述了LangChain Vector S...
-  views: '756'
+  views: '757'
 - title: 【LangChain】—— Document Loaders文档加载器
   link: https://blog.csdn.net/Lvyizhuo/article/details/157513267
   date: '2026-01-29'
@@ -586,7 +586,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157295268
   date: '2026-01-25'
   excerpt: 本文系统梳理了HTTP请求参数的类型、特点与适用场景，帮助开发者合理选择参数传递方式。文章将参数分为业务参数（Query、Body、Path）、元信息参数（Header、Cookie）和特殊参数三类，通过快递类比形象说明其差异。详细解析了Query（公开筛选）、Header（元数据）、Body（核心...
-  views: '1006'
+  views: '1007'
 - title: 【JAVA开发】—— Apifox测试教程
   link: https://blog.csdn.net/Lvyizhuo/article/details/157299968
   date: '2026-01-25'
@@ -617,12 +617,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '2700'
+  views: '2702'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
   excerpt: Apifox是一款全生命周期API管理工具，集设计、Mock、调试、测试、文档功能于一体。核心优势包括多协议支持、智能Mock服务、自动化测试和团队协作能力。安装后通过新建项目→设计接口→Mock调试→自动化测试→文档生成的流程，实现高效API管理。支持可视化接口设计、自定义Mock规则、批量测试场...
-  views: '1607'
+  views: '1608'
 - title: 【JAVA开发】—— Maven核心用法与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157207460
   date: '2026-01-21'
