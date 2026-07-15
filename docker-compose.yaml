@@ -1,8 +1,36 @@
+# ============================================================
+# docker-compose.yaml — Jekyll 本地开发
+# 使用: docker compose up -d
+# 访问: http://localhost:4000
+# ============================================================
 services:
-  jekyll-site:
-    image: jekyll-site
+  jekyll:
     build: .
-    volumes: [ .:/usr/src/app ]
-    ports: [ 4000:4000 ]
-    user: 1000:1000
-    command: jekyll serve -H 0.0.0.0 -w
+    volumes:
+      # 挂载项目源码（文件变化自动触发 Jekyll 重构建）
+      - .:/usr/src/app
+      # 持久化 bundle 缓存，避免每次重建都重新下载 gem
+      - bundle_data:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    environment:
+      - JEKYLL_ENV=development
+      # 在 Docker + macOS 下使用轮询模式监听文件变化
+      - LISTEN_USE_POLLING=true
+    # Jekyll 开发服务器：支持 live reload 和增量构建
+    command: >
+      jekyll serve
+      -H 0.0.0.0
+      -w
+      --force_polling
+      --incremental
+      --livereload
+      --livereload-port 35729
+      --trace
+    # 保持容器前台运行并响应信号
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+volumes:
+  bundle_data:

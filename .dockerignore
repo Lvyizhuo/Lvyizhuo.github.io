@@ -1,0 +1,17 @@
+.git
+.gitignore
+.gitattributes
+_site/
+.sass-cache/
+.bundle/
+node_modules/
+.DS_Store
+*.log
+docker-compose.yaml
+Dockerfile
+.dockerignore
+README.md
+LICENSE
+auto_update_blog.sh
+auto_update_blog.log
+crontab_blog.log
