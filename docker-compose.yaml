@@ -19,14 +19,12 @@ services:
       - LISTEN_USE_POLLING=true
     # Jekyll 开发服务器：支持 live reload 和增量构建
     command: >
-      jekyll serve
+      bundle exec jekyll serve
       -H 0.0.0.0
       -w
       --force_polling
       --incremental
       --livereload
-      --livereload-port 35729
-      --trace
     # 保持容器前台运行并响应信号
     stdin_open: true
     tty: true
