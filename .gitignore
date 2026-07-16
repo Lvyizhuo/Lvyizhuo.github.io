@@ -18,3 +18,5 @@ package-lock.json
 .bundle/
 
 .DS_Store
+# Jekyll incremental build cache
+.jekyll-metadata

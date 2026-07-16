@@ -27,6 +27,19 @@ Jekyll "Minimal-Mistakes" academic personal blog (machine learning / data mining
 - `_plugins/dev_url.rb` 现在已冗余（链接不再含 0.0.0.0），可日后清理。
 - 以后本地预览：`docker compose up -d` → http://localhost:4000。改文件后 Jekyll watch 自动重建，浏览器硬刷新（Cmd+Shift+R）即可。
 
+## 结构梳理与冗余清单（2026-07-16 全库引用检索确认）
+- 报告：`PROJECT_STRUCTURE_REVIEW.md`（逐文件用途 + 冗余清单 + Jekyll 规范内的目录规划）。
+- **孤立死代码链**（无任何页面引用，可安全删）：
+  - CV 子系统整链：`_data/cv.json`、`_includes/cv-template.html`、`_includes/archive-single-cv.html`、`_includes/archive-single-talk-cv.html`、`_layouts/cv-layout.html`、`assets/css/cv-layout.css`、`assets/css/cv-style.css`、`scripts/cv_markdown_to_json.py`、`scripts/update_cv_json.sh`（无页面用 `layout: cv-layout`，导航也无 CV 入口）。
+  - Talks 子系统：`_layouts/talk.html`、`_includes/archive-single-talk.html`。
+  - 折叠组件：`assets/css/collapse.css`、`assets/js/collapse.js`（无引用）。
+- **主题 demo 残留**：`files/` 全部 PDF/bib；`images/` 中 500x300、image-alignment-*、foo-bar-*、3953273590*、editing-talk.png、paragraph-*.png、homepage.png、bio-photo*.jpg；根目录 `site-preview.png`。
+- **缓存/垃圾**：`.jekyll-metadata`（被误 git 跟踪，应 `git rm --cached`+gitignore）、`.DS_Store`、`.sass-cache/`、`_site/`、空 `logs/`。
+- **冗余补丁**：`_plugins/dev_url.rb` 已被 base_path 相对路径 + `_config.dev.yml` 双重覆盖，可删（删前本地预览验证）。
+- **归位建议**：根目录 `auto_update_blog.sh` → `scripts/`（注意同步改 ECS crontab 路径，脚本内硬编码 `PYTHON_SCRIPT=.../scripts/fetch_csdn_articles.py`）。
+- **在用勿删**：profile.png/site-logo.png/favicon*/manifest.json/images/{projects,themes}、_data/{navigation,csdn_posts,ui-text}.yml、assets/css/custom.css、assets/webfonts(FontAwesome)、assets/fonts(academicons)、_config.dev.yml（compose --config 加载）。
+- **Jekyll 约束**：`_config.yml/_data/_includes/_layouts/_pages/_sass/assets` 目录名固定不可改名/迁移，"重规划"只能在此约束内做（脚本归位、文档合并、删冗余）。
+
 ## 内容维护映射（对用户的长期说明）
 - 首页内容（About / News / Publications / Honors / Education / Internships）→ 编辑 `_pages/about.md`（Markdown + front matter）。之前它 front matter 的 `title` 和正文 `# About Me` 重复，导致两个标题；已改为只在 front matter 留标题。
 - 博客文章 → 编辑或新增 `_posts/YYYY-MM-DD-title.md`。
