@@ -18,6 +18,12 @@ $serif                      : Georgia, Times, serif;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
+/* Academic serif stack (English: Times New Roman; CJK fallback to Songti/SimSun) */
+$times-new-roman            : 'Times New Roman', Times, 'Songti SC', 'SimSun', serif;
+
+/* Emit the serif stack as a CSS custom property so custom.css can reference it via var() */
+:root { --reading-serif: #{$times-new-roman}; }
+
 /* Sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
@@ -39,8 +45,8 @@ $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$global-font-family         : $times-new-roman;
+$header-font-family         : $times-new-roman;
 $caption-font-family        : $serif;
 
 /* ==========================================================================

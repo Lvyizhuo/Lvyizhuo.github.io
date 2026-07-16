@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Custom typography layer
+   - Serif (Times New Roman) reading stack, refined rhythm & heading hierarchy
+   - Values tuned from ZhChHoooi.github.io and then tweaked:
+     root 16px, body line-height 1.6, container max-width 1280px
+   - Colors are intentionally left untouched (light theme preserved)
+   ========================================================================== */
+
+/* --reading-serif 源自 _sass/_themes.scss 的 $times-new-roman 变量 */
+/* Root size mirrors the reference site (16px, one notch larger than 15).
+   The theme's reset hardcodes 18px; this override (loaded after main.css)
+   corrects it and keeps the em()-based sizing math consistent. */
+html{ font-size: 16px; }
+
+/* Reinforce the serif stack across the whole UI.
+   Code / pre / keyboard are also switched to the reading serif per request;
+   note that the reference site keeps these in monospace for readability. */
+body,
+h1, h2, h3, h4, h5, h6,
+p, li, a, span, strong, em, small, blockquote,
+.page__content,
+.page__content p, .page__content li, .page__content ul, .page__content ol,
+.author__name, .author__bio, .author__content,
+.sidebar, .author__urls, .author__urls li, .author__urls a,
+.masthead, .greedy-nav, .greedy-nav a, .masthead a,
+.page__title, .page__meta,
+.archive__item-title, .archive__item-excerpt,
+.toc, .toc li, .notice, .btn,
+table, th, td,
+pre, code, kbd, samp, tt{
+  font-family: var(--reading-serif) !important;
+}
+
+/* ---- Page width: match the reference site (1280px) and stay centered ----
+   Only widen on large screens; below that the theme stays responsive.
+   1280px is the theme's own wide-screen width, so this restores the
+   original centered position instead of hugging the left edge. */
+@media (min-width: 1280px){
+  .masthead__inner-wrap,
+  .page__inner-wrap,
+  .page__footer footer,
+  #main{
+    max-width: 1280px;
+  }
+}
+
+/* ---- Reading comfort: slightly airier than the reference's 1.5 ---- */
+body{ line-height: 1.6; }
+
+.page__content{
+  line-height: 1.6;
+  font-size: 1.0em;
+}
+.page__content p{
+  margin-bottom: 1.3em;
+  line-height: 1.6;
+}
+.page__content li{
+  margin-bottom: 0.4em;
+  line-height: 1.6;
+}
+
+/* ---- Heading hierarchy: clearer jumps + breathing room ----
+   (line-heights kept at the reference's 1.2) */
+h1, .page__content h1, .page__title{ font-size: 2.05em; line-height: 1.2; margin-top: 1.4em; margin-bottom: 0.55em; font-weight: 700; }
+h2, .page__content h2{ font-size: 1.55em; line-height: 1.2; margin-top: 1.6em; margin-bottom: 0.5em; font-weight: 700; }
+h3, .page__content h3{ font-size: 1.28em; line-height: 1.2; margin-top: 1.3em; margin-bottom: 0.45em; font-weight: 700; }
+h4, .page__content h4{ font-size: 1.12em; line-height: 1.2; margin-top: 1.1em; margin-bottom: 0.4em; font-weight: 700; }
+h5, .page__content h5,
+h6, .page__content h6{ font-size: 1.0em; line-height: 1.2; margin-top: 1em; margin-bottom: 0.35em; font-weight: 700; }
+
+/* keep the very first heading on a page flush to the top */
+.page__content > h1:first-child,
+.page__title{ margin-top: 0; }
+
+/* ---- Paper-like justified body text on wider screens ---- */
+@media (min-width: 768px){
+  .page__content p{
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}
+
+/* ---- Blockquote: softer, more elegant ---- */
+.page__content blockquote{
+  border-left: 3px solid var(--global-border-color, #bdc1c4);
+  padding-left: 1em;
+  font-style: italic;
+  color: var(--global-text-color-light, #9ba1a6);
+}
+
+/* ---- Sidebar / author card ---- */
+.author__name{ font-size: 1.3em; letter-spacing: .3px; }
+.author__bio{ line-height: 1.6; }
+.author__urls li{ line-height: 1.6; }
+
+/* ---- Top navigation: a touch larger, more refined ---- */
+.greedy-nav a{ font-size: 1.05em; letter-spacing: .3px; }
+
+/* ---- Archive / post list titles ---- */
+.archive__item-title{ font-size: 1.3em; line-height: 1.25; }
+.archive__item-excerpt{ line-height: 1.6; }
+
+/* ---- Tables a bit more readable ---- */
+.page__content table{ font-size: 0.98em; line-height: 1.6; }

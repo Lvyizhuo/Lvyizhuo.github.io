@@ -1,5 +1,9 @@
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
-{% else %}
-  {% assign base_path = site.github.url %}
-{% endif %}
+{% comment %}
+  Emit a root-relative base path so asset/nav links resolve against the
+  current host. This avoids Jekyll serve's `-H 0.0.0.0` writing absolute
+  http://0.0.0.0:4000/... URLs that the browser cannot load (CSS/JS/images
+  would 502 and the page would render unstyled). Relative links work in both
+  local Docker preview and GitHub Pages (root deployment).
+{% endcomment %}
+{% assign base_path = site.baseurl %}
+

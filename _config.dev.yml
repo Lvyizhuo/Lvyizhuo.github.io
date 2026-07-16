@@ -1,3 +1,6 @@
-# 本地开发配置 - 使用相对 URL（不设置 url 值）
-# Jekyll serve 会覆盖 url，所以这里不做设置
-# 实际修正由 _plugins/dev_url.rb 插件完成
+# 本地开发配置
+# 通过 docker-compose.yaml 的 --config 参数与本文件一起加载。
+# Jekyll serve 在开发模式下会默认把 url 改写成 http://0.0.0.0:4000，
+# 浏览器无法连接 0.0.0.0，导致 CSS/JS/图片资源加载失败、页面裸奔。
+# 这里显式指定本地 URL，让生成的资源链接指向 localhost:4000。
+url: http://localhost:4000

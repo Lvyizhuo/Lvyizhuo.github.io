@@ -15,24 +15,20 @@ redirect_from:
 ---
 
 
-# About Me
-
 Hi there, I’m Yizhuo Lv 👋
 
 I am currently pursuing my Master’s degree at [Qilu University of Technology (QLU)](https://www.qlu.edu.cn/), under the supervision of Prof. [Chong Di](https://teacher.qlu.edu.cn/rgzn/dc2/main.htm). Concurrently, I serve as a Research Assistant in the Medical and AI Team at the [Shandong Artificial Intelligence Institute (SDAI)](http://www.sdai.net/) (2025–2027). Driven by a passion for structuring, reasoning, and decision-making in complex systems, my research lies at the intersection of Graph Learning, Reinforcement Learning, and Large Language Models.
-
 My core research interests include:
 
-* **Dynamic Graph Learning & Network Diffusion Optimization:** Developing scalable Graph Neural Networks (GNNs) to capture temporal evolutions in dynamic, non-Euclidean structures, with a particular focus on leveraging these representations to optimize dynamic influence maximization (DIM) and information diffusion control over time-varying social and cyber-physical networks.
-
-* **Reinforcement Learning in Non-Stationary Environments:** Designing sample-efficient Deep Reinforcement Learning (DRL) algorithms and Hierarchical Reinforcement Learning (HRL) frameworks to address exploration-exploitation trade-offs under dynamic constraints, aiming to optimize sequential decision-making and enhance the adaptability of autonomous agents in highly non-stationary settings.
-
-* **LLM Agents, Hybrid RAG, and Graph-LLM Integration:** Advancing the reasoning, planning, and tool-orchestration capabilities of Large Language Models (LLMs) to construct autonomous agents, specifically focusing on structural Knowledge Graph-enhanced Retrieval-Augmented Generation (RAG) and the synergistic integration of GNNs with LLMs for factual, verifiable decision-making.
+* **Dynamic Graph Learning & Spatiotemporal Data Mining**: We build scalable Temporal Graph Neural Networks (TGNNs) to model non-Euclidean topological evolutions, aiming to capture intricate spatiotemporal dependencies and solve complex sequential decision problems like Dynamic Influence Maximization (DIM) over non-stationary networks.
+* **Reinforcement Learning under Dynamic Constraints**: We design sample-efficient Deep Reinforcement Learning (DRL) and Hierarchical Reinforcement Learning (HRL) frameworks tailored for non-stationary environments, addressing exploration-exploitation trade-offs to enhance the decision-making adaptability of autonomous systems.
+* **Large Language Models & Multimodal Intelligence**: We focus on the training, alignment, and parameter-efficient finetuning (PEFT) of LLMs and Multimodal Large Language Models (MLLMs), optimizing their downstream adaptability and cross-modal cognitive capabilities for complex task execution.
+* **Autonomous Agents & Hybrid Retrieval-Augmented Generation (RAG)**: We engineer cutting-edge AI Agent systems and hybrid RAG frameworks, emphasizing tool-orchestration, multi-agent collaboration, and structured knowledge-graph integration to build highly reliable, factually grounded applications.
 
 # 🔥 News
 {: #news }
 
-* _2026.07_: 🧬 Successfully completed Phase II of the agricultural large language model platform (BreedingGPT) at the Peking University Institute of Modern Agriculture!
+* *2026.07*: 🧬 Successfully completed Phase II of the Crop Breeding Agent Platform (Breeding) at the Peking University Institute of Modern Agriculture!
 
 * _2026.03_: 💼 Joined Netthink Technology Co., Ltd. as an Algorithm Intern.
 

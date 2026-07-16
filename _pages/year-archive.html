@@ -204,39 +204,6 @@ redirect_from:
     text-decoration: underline;
   }
 
-  /* ===== 本地文章分区 ===== */
-  .local-posts-section {
-    margin-top: 3em;
-    padding-top: 2.5em;
-    border-top: 2px solid var(--global-border-color);
-  }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 0.6em;
-    margin-bottom: 0.5em;
-    color: var(--global-text-color);
-  }
-
-  .section-header i {
-    color: var(--global-link-color);
-  }
-
-  .section-desc {
-    color: var(--global-text-color-light);
-    margin-bottom: 1.5em;
-    font-size: 0.95em;
-  }
-
-  .archive__subtitle {
-    color: var(--global-text-color);
-    border-bottom: none;
-    padding-bottom: 0.3em;
-    margin-top: 2em;
-    font-weight: 600;
-  }
-
   /* ===== Dark 主题增强阴影 ===== */
   html[data-theme="dark"] .blog-card {
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
@@ -344,28 +311,6 @@ redirect_from:
       </p>
     </div>
 
-  {% endif %}
-
-  <!-- 本地精选文章 -->
-  {% if site.posts.size > 0 %}
-    <div class="local-posts-section">
-      <h2 class="section-header">
-        <i class="fa fa-star"></i> 精选文章
-      </h2>
-      <p class="section-desc">
-        以下是站内托管的精选博客文章
-      </p>
-      
-      {% capture written_year %}'None'{% endcapture %}
-      {% for post in site.posts %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% if year != written_year %}
-          <h3 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h3>
-          {% capture written_year %}{{ year }}{% endcapture %}
-        {% endif %}
-        {% include archive-single.html %}
-      {% endfor %}
-    </div>
   {% endif %}
 
 </div>
