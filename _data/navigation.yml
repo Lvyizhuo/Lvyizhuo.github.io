@@ -4,18 +4,28 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# NOTE: "Yizhuo Lv" (homepage) is rendered automatically by the masthead
+#       template using site.title. Navigation items below are appended after it.
+#       Anchor links (#section) point to corresponding sections on the homepage.
 
 main:
+  - title: "News"
+    url: /#news
+
   - title: "Publications"
-    url: /publications/
+    url: /#publications
 
   - title: "Projects"
-    url: /projects/
+    url: /#projects
+
+  - title: "Honors and Awards"
+    url: /#honors
+
+  - title: "Educations"
+    url: /#educations
+
+  - title: "Internships"
+    url: /#internships
 
   - title: "Blog Posts"
     url: /year-archive/
-
-  - title: "CV"
-    url: /cv/
