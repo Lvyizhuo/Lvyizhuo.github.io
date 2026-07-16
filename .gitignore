@@ -20,3 +20,5 @@ package-lock.json
 .DS_Store
 # Jekyll incremental build cache
 .jekyll-metadata
+
+.workbuddy/

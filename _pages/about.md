@@ -50,7 +50,26 @@ My core research interests include:
 # 🤝 Projects
 {: #projects }
 
-待补充
+<!-- 复制下面整段 .paper-box 即可新增一个项目卡片。
+     左图右文 + 悬停上浮；所有 <strong>/<a>/<em> 都用 HTML 标签写（Markdown 在原始 HTML 块内不生效）。
+     把标题链接 href 换成你的项目地址 / GitHub / 在线演示。 -->
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="badge">Full-Stack Project</div>
+    <img src="/images/projects/shandong-policy-assistant-cover.png" alt="AI Policy Consultation &amp; Agent Service Platform">
+  </div>
+  <div class="paper-box-text">
+    <p><a href="/images/projects/shandong-policy-assistant-cover.png">AI Policy Consultation &amp; Agent Service Platform</a></p>
+    <p class="paper-meta">Full-Stack Engineer · 2025.10 – 2025.12</p>
+    <ul>
+      <li><strong>Role &amp; Tech Stack</strong>: Designed and developed a full-stack, RAG-driven intelligent consultation platform tailored for local subsidy policies. Powered by Spring Boot, Spring AI, PostgreSQL, Redis, React, Docker, and Ollama.</li>
+      <li><strong>Autonomous Planning Agent</strong>: Designed an autonomous agent architecture based on the ReAct framework, incorporating intent recognition, dynamic context management, and external tool-use to resolve complex policy inquiries.</li>
+      <li><strong>System Reliability &amp; Guardrails</strong>: Engineered an intent-based tool classifier with pre-execution parameter validation, reducing invalid tool calls by 40%, coupled with multi-level fallback mechanisms to ensure high system availability.</li>
+      <li><strong>Advanced Hybrid RAG</strong>: Built a multi-source RAG pipeline integrating semantic-aware chunking, hybrid retrieval (sparse/dense), and dynamic LLM routing, boosting overall retrieval accuracy by 25%.</li>
+      <li><strong>Session Memory &amp; Optimization</strong>: Implemented a Redis-driven multi-level caching mechanism to support structured session memory and state persistence, significantly enhancing multi-turn dialogue coherence.</li>
+    </ul>
+  </div>
+</div>
 
 # 🏆 Awards & Honors
 {: #honors }

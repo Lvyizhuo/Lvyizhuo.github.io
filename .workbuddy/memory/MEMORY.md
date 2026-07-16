@@ -11,13 +11,14 @@ Jekyll "Minimal-Mistakes" academic personal blog (machine learning / data mining
 ## 排版设计系统（参考 ZhChHoooi.github.io）
 用户要求字体/排版对齐该参考站；保留浅色配色，仅优化字体与排版。
 - 字体：英文 Times New Roman 衬线，中文回退 `Songti SC`/`SimSun`。代码块按用户要求也改为衬线（参考站本身保留等宽，可读性更好）。
-- 数值：根字号 **16px**（用户要求"调大1号"，15→16）、正文行高 1.6、容器最大宽度 **1280px**（恢复主题原始宽屏居中宽度；之前 1400 在 ~1440 笔记本屏上几乎全宽、左右仅 ~20px 边距，显得"靠左"）。
+- 数值：根字号 **16px**（用户要求"调大1号"，15→16）、正文行高 1.6、容器最大宽度 **1320px**（配合 `width: 84%`）；在 1440px 笔记本屏上约 1210px 宽（左右约 131px 边距），在 1920px 显示器上达 1320px（左右约 316px 边距），既加宽又不贴边。
 - 实现位置：
   - `_sass/_themes.scss`：新增 `$times-new-roman` 变量；`$global-font-family`/`$header-font-family` 改为它；`$doc-font-size: 16`。
-  - `assets/css/custom.css`（新建）：全局衬线、行高/标题层级/段落间距、宽屏两端对齐、引用块、侧栏与导航微调、代码块衬线、容器 1280px（`@media (min-width:1280px)` 内设置，移动端保持主题响应式）。
+  - `assets/css/custom.css`（新建）：全局衬线、行高/标题层级/段落间距、宽屏两端对齐、引用块、侧栏与导航微调、代码块衬线、容器 1400px（`@media (min-width:1280px)` 内设置，移动端保持主题响应式）、左图右文悬浮卡片 `.paper-box`（图片占 44%）。
+  - 重要居中修复：主题把 `.page` 的 `suffix(2 of 12)` 以 `padding-right` 发出，导致右侧正文距屏幕边距远大于左侧侧栏距屏幕边距。在 `@media (min-width: 1024px)` 内加 `.page{ padding-right: 0 !important; }` 消除，保留左侧 padding 作为侧栏与正文间距，即可让左右外沿空隙相等、整体居中（1440px 视口：左=右=131px；1920px 视口：左=右=316px）。
   - `_includes/head.html`：在 `main.css` 之后引入 `custom.css`。
 - 临时预览文件 `typography-preview.html` 已于 2026-07-16 清理删除（不再存在）。
-- 可调旋钮：`custom.css` 的 `html{ font-size: 16px; }`（想更大改 17/18）、行高（当前 1.6）、容器 `max-width`（当前 1280px，想更宽可改但别超过 ~1360 以免笔记本上又显得靠左）。
+- 可调旋钮：`custom.css` 的 `html{ font-size: 16px; }`（想更大改 17/18）、行高（当前 1.6）、容器 `max-width`（当前 1400px，已加宽用于卡片）、`.paper-box-image` 图片占比（当前 44%）。
 
 ## 2026-07-16 修复：Docker 本地预览「页面崩了 / 靠左 / 裸奔」—— 根因与根治
 - **根因**：`docker-compose.yaml` 里 `jekyll serve -H 0.0.0.0` 既用于容器内绑定（Docker 端口映射必须绑 0.0.0.0 才能从宿主机访问），又会把生成的资源/链接主机名也写成 `http://0.0.0.0:4000`。浏览器作为客户端连不上 `0.0.0.0`，于是 CSS/JS/图片全部 502 → 页面只剩裸 HTML、呈现"靠左/崩"。

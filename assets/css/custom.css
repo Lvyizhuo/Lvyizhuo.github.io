@@ -31,16 +31,28 @@ pre, code, kbd, samp, tt{
   font-family: var(--reading-serif) !important;
 }
 
-/* ---- Page width: match the reference site (1280px) and stay centered ----
-   Only widen on large screens; below that the theme stays responsive.
-   1280px is the theme's own wide-screen width, so this restores the
-   original centered position instead of hugging the left edge. */
+/* ---- Centered two-column layout (equal left/right gutters) ----
+   #main is centered (equal L/R centering margins). The content fills the
+   area to the right of the fixed sidebar, so the text column's right edge
+   meets the same gutter as the sidebar's left edge -> symmetric, centered.
+   - ~1440px laptop  -> #main ~1325px, sidebar flush-left, content flush-right
+   - ~1920px monitor -> #main capped at 1600px, same symmetry */
+@media (min-width: 1024px){
+  /* The theme emits its right `suffix` as PADDING-right on .page (not a
+     margin), which leaves a large right gutter and makes the page's outer
+     left/right margins asymmetric. Zero it so the text column meets #main's
+     right edge -> the same gutter the sidebar has on the left -> centered.
+     Keep the left padding as the comfortable sidebar/text gutter. */
+  .page{
+    padding-right: 0 !important;
+  }
+}
 @media (min-width: 1280px){
   .masthead__inner-wrap,
-  .page__inner-wrap,
   .page__footer footer,
   #main{
-    max-width: 1280px;
+    max-width: 1320px;
+    width: 84%;
   }
 }
 
@@ -105,3 +117,87 @@ h6, .page__content h6{ font-size: 1.0em; line-height: 1.2; margin-top: 1em; marg
 
 /* ---- Tables a bit more readable ---- */
 .page__content table{ font-size: 0.98em; line-height: 1.6; }
+
+/* ==========================================================================
+   Project cards — Publications-style hover cards (image left, text right)
+   Layout mirrors ZhChHoooi.github.io's .paper-box, recolored for this
+   light theme. Drop a <div class="paper-box">…</div> block into any
+   Markdown page (raw HTML passes through kramdown untouched).
+   ========================================================================== */
+.paper-box{
+  display: flex;
+  flex-direction: row;
+  gap: 1.4rem;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.3rem;
+  background: #ffffff;
+  border: 1px solid var(--global-border-color, #e3e3e3);
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.paper-box:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+}
+.paper-box-image{
+  flex: 0 0 44%;
+  max-width: 44%;
+}
+.paper-box-image img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--global-border-color, #e3e3e3);
+}
+.badge{
+  display: inline-block;
+  margin: 0 0 0.6rem;
+  padding: 2px 11px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--global-link-color, #2a6ebb);
+}
+.paper-box-text{
+  flex: 1 1 auto;
+  min-width: 0;
+  color: var(--global-text-color);
+}
+.paper-box-text p{ margin: 0 0 0.6rem; }
+.paper-box-text .paper-meta{
+  color: var(--global-text-color-light, #6b7280);
+  font-style: italic;
+  margin-bottom: 0.7rem;
+}
+.paper-box-text ul{ margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.paper-box-text li{ margin-bottom: 0.45rem; line-height: 1.55; }
+.paper-box-text a{ color: var(--global-link-color); font-weight: 600; }
+
+/* Stack image above text on narrow screens */
+@media (max-width: 768px){
+  .paper-box{ flex-direction: column; }
+  .paper-box-image{ flex-basis: auto; max-width: 100%; margin-bottom: 0.4rem; }
+}
+
+/* ---- Dark theme: card surface follows the toggle ----
+   Uses the same theme variables the rest of the site switches on, so the
+   card recolors automatically when <html data-theme="dark"> is toggled. */
+html[data-theme="dark"] .paper-box{
+  background: #1f2937;
+  border-color: var(--global-border-color);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+html[data-theme="dark"] .paper-box:hover{
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+html[data-theme="dark"] .paper-box-image img{
+  border-color: var(--global-border-color);
+}
+html[data-theme="dark"] .badge{
+  color: #0b1220;
+}
