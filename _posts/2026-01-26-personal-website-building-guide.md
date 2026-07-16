@@ -15,14 +15,14 @@ toc_sticky: true
 
 ## 📖 项目简介
 
-**Academic Pages** 是一个为学术研究人员设计的个人学术网站模板，基于 **Jekyll** 和 **GitHub Pages** 构建。本项目集成了现代 Web 技术，提供了一套完整的解决方案，用于展示个人简历、发表论文、研究项目、讲座和教学经历。
+**Academic Pages** 是一个为学术研究人员设计的个人学术网站模板，基于 **Jekyll** 和 **GitHub Pages** 构建。本项目集成了现代 Web 技术，提供了一套完整的解决方案，用于展示个人简历、发表论文、研究项目、荣誉奖项、教育经历和实习经历。
 
 ### 核心特性
 - ✨ **简洁优雅的设计** - 专为学术工作者设计
 - 📱 **响应式布局** - 完美适配各种设备
 - 🚀 **自动发布** - 基于 GitHub Pages 的免费托管
 - 🤖 **自动化工作流** - GitHub Actions 自动同步 CSDN 博客
-- 📊 **丰富的内容类型** - 论文、项目、讲座、教学等
+- 📊 **丰富的内容类型** - 论文、项目、荣誉奖项、教育经历、实习经历等
 - 🎨 **高度可定制化** - 灵活的配置选项
 
 ---
@@ -242,70 +242,72 @@ site_theme: "default"  # 可选：default, dark, light 等
 
 ```yaml
 main:
+  - title: "News"                       # 新闻
+    url: /#news
+
   - title: "Publications"               # 论文
-    url: /publications/
-    
+    url: /#publications
+
   - title: "Projects"                   # 项目
-    url: /projects/
-    
+    url: /#projects
+
+  - title: "Honors and Awards"          # 荣誉奖项
+    url: /#honors
+
+  - title: "Educations"                 # 教育经历
+    url: /#educations
+
+  - title: "Internships"                # 实习经历
+    url: /#internships
+
   - title: "Blog Posts"                 # 博客
     url: /year-archive/
-    
-  - title: "CV"                         # 简历
-    url: /cv/
-    
-  # 添加更多菜单项
-  - title: "Teaching"                   # 教学
-    url: /teaching/
 ```
+
+> 导航菜单中的锚点链接（如 `/#news`）指向 `about.md` 首页中对应章节的 ID。这些 ID 通过在章节标题后添加 `{: #section-id }` 来定义。
+
+> 首页链接 "Yizhuo Lv" 由模板自动通过 `site.title` 渲染，无需在 `navigation.yml` 中添加。
 
 ---
 
 ## 📝 内容管理详解
 
-### 1. 发表论文与出版物
+本项目采用**单页+博客**的简洁结构：所有核心内容（个人介绍、论文、项目、荣誉奖项、教育经历、实习经历）均集中在首页 `_pages/about.md` 中管理，不再使用独立的页面和集合目录。博客文章仍通过 `_posts/` 目录管理。
 
-#### 位置：`_publications/` 目录
+### 1. 主页内容管理
 
-#### 创建新论文文件
+#### 位置：`_pages/about.md`
 
-文件名格式：`YYYY-MM-DD-短标题.md`
+这是网站唯一的首页文件，所有个人信息都按章节组织在该文件中。每个章节对应一个二级标题，标题后通过 `{: #section-id }` 标记锚点 ID，供导航栏跳转。
+
+#### 章节与导航锚点对应表
+
+| 章节 | 导航锚点 | Markdown 标题 |
+|------|---------|--------------|
+| About Me | （首页默认） | `# About Me` |
+| News | `/#news` | `# 🔥 News` |
+| Publications | `/#publications` | `# 📝 Publications` |
+| Projects | `/#projects` | `# 🤝 Projects` |
+| Honors and Awards | `/#honors` | `# 🏆 Awards & Honors` |
+| Educations | `/#educations` | `# 📖 Educations` |
+| Internships | `/#internships` | `# 💻 Internships` |
+
+#### 编辑示例
 
 ```markdown
----
-title: "论文标题：完整的学术标题"
-collection: publications
-category: manuscripts  # 或 conferences
-permalink: /publication/你的短链接
-excerpt: "论文摘要概述（50-100 字）"
-date: 2025-12-31
-venue: "期刊名称或会议名称"
-paperurl: "论文下载链接"
-citation: '引用格式 (Author, Year). "Title." <i>Venue</i>.'
----
+# 🔥 News
+{: #news }
 
-## Abstract
-这里写论文摘要...
+* _2026.07_: 🧬 最新消息 1
+* _2026.03_: 💼 最新消息 2
 
-## Key Contributions
-* 第一个贡献点
-* 第二个贡献点
-* 第三个贡献点
+# 📝 Publications
+{: #publications }
+
+* _Patent_: 发明名称, 作者, (专利号, 授权日期) [[Link]](url)
 ```
 
-#### 配置论文分类
-
-在 `_config.yml` 中修改：
-
-```yaml
-publication_category:
-  manuscripts:
-    title: 'Journal Articles'     # 期刊论文
-  conferences:
-    title: 'Conference Papers'    # 会议论文
-  # books:
-  #   title: 'Books'              # 书籍（可选）
-```
+> 标题后的 `{: #section-id }` 是锚点标识符，必须与 `_data/navigation.yml` 中的 `/#section-id` 保持一致，导航栏才能正确跳转。
 
 ### 2. 博客文章
 
@@ -356,157 +358,6 @@ share: true               # 显示分享按钮
 related: true             # 显示相关文章
 ---
 ```
-
-### 3. 研究项目
-
-#### 位置：`_portfolio/` 目录
-
-```markdown
----
-title: "项目名称"
-collection: portfolio
-date: 2025-12-01
-excerpt: "项目简介"
----
-
-## 项目描述
-
-详细的项目说明...
-
-## 技术栈
-
-- Python
-- PyTorch
-- Graph Neural Networks
-
-## 结果与成就
-
-项目成果...
-```
-
-### 4. 讲座与演讲
-
-#### 位置：`_talks/` 目录
-
-```markdown
----
-title: "讲座标题"
-collection: talks
-type: "Conference Talk"  # Talk, Tutorial, Workshop 等
-permalink: /talks/讲座短链接
-date: 2025-06-01
-location: "城市, 国家"
----
-
-## 讲座简介
-
-讲座内容概述...
-```
-
-### 5. 教学与课程
-
-#### 位置：`_teaching/` 目录
-
-```markdown
----
-title: "课程名称"
-collection: teaching
-type: "Undergraduate course" # 本科/研究生课程
-permalink: /teaching/课程短链接
-date: 2025-09-01
-semester: "2025 Fall"
----
-
-## 课程描述
-
-课程内容...
-
-## 教学材料
-
-- [讲义](链接)
-- [作业](链接)
-```
-
-### 6. 简历（CV）
-
-#### 配置 Markdown 格式简历
-
-编辑 `_pages/cv.md`，按以下格式组织：
-
-```markdown
----
-title: "Curriculum Vitae"
-permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
----
-
-## Education
-
-### Master of Science
-University Name (2023 - Present)
-
-### Bachelor of Science
-University Name (2019 - 2023)
-
-## Experience
-
-### Research Assistant
-Organization Name (2025 - Present)
-
-## Publications
-
-[自动从 _publications 目录生成]
-
-## Skills
-
-- Programming: Python, Java, C++
-- Machine Learning: PyTorch, TensorFlow
-- Tools: Git, Docker, Linux
-```
-
-#### 配置 JSON 格式简历
-
-如果希望使用结构化的 JSON 简历，编辑 `_data/cv.json`：
-
-```json
-{
-  "basics": {
-    "name": "你的名字",
-    "label": "学位或职位",
-    "image": "profile.png",
-    "email": "your.email@example.com",
-    "phone": "+86 130-XXXX-XXXX",
-    "url": "https://你的网站.github.io"
-  },
-  "work": [
-    {
-      "name": "公司或机构",
-      "position": "职位",
-      "startDate": "2025-01",
-      "endDate": "now",
-      "summary": "职位描述"
-    }
-  ],
-  "education": [
-    {
-      "institution": "大学名称",
-      "studyType": "Master",
-      "area": "专业方向",
-      "startDate": "2023",
-      "endDate": "2025"
-    }
-  ],
-  "skills": [
-    {
-      "name": "Machine Learning",
-      "keywords": ["PyTorch", "TensorFlow", "Scikit-learn"]
-    }
-  ]
-}
-```
-
 ---
 
 ## 🔧 高级配置
