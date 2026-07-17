@@ -24,7 +24,6 @@ services:
       --config _config.yml,_config.dev.yml
       -w
       --force_polling
-      --incremental
       --livereload
     # 保持容器前台运行并响应信号
     stdin_open: true

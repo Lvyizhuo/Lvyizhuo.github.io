@@ -7,8 +7,9 @@
 CONDA_BASE="/root/miniconda3"
 # 项目根目录
 PROJECT_DIR="/root/Project/i/Lvyizhuo.github.io"
-# 日志文件路径
-LOG_FILE="${PROJECT_DIR}/auto_update_blog.log"
+# 日志目录（每天一个日志文件）
+LOG_DIR="${PROJECT_DIR}/logs"
+LOG_FILE="${LOG_DIR}/auto_update_blog_$(date +'%Y-%m-%d').log"
 # Python脚本路径
 PYTHON_SCRIPT="${PROJECT_DIR}/scripts/fetch_csdn_articles.py"
 # Python解释器路径
@@ -17,8 +18,6 @@ PYTHON_PATH="${CONDA_BASE}/bin/python"
 GIT_PATH="/usr/bin/git"
 # 锁文件路径（防止重复执行）
 LOCK_FILE="/tmp/auto_update_blog.lock"
-# 日志最大行数（超过则截断旧日志）
-MAX_LOG_LINES=2000
 
 # ==================== 环境变量设置（解决cron环境问题） ====================
 # 设置PATH，确保能找到必要的命令
@@ -51,17 +50,6 @@ cleanup() {
     conda deactivate 2>/dev/null
 }
 
-# 日志轮转函数（保留最近的日志）
-rotate_log() {
-    if [ -f "${LOG_FILE}" ]; then
-        local line_count=$(wc -l < "${LOG_FILE}")
-        if [ "${line_count}" -gt "${MAX_LOG_LINES}" ]; then
-            # 保留最后 MAX_LOG_LINES 行
-            tail -n "${MAX_LOG_LINES}" "${LOG_FILE}" > "${LOG_FILE}.tmp"
-            mv "${LOG_FILE}.tmp" "${LOG_FILE}"
-        fi
-    fi
-}
 
 # Git操作重试函数
 git_with_retry() {
@@ -99,8 +87,8 @@ fi
 # 创建锁文件
 touch "${LOCK_FILE}"
 
-# 第一步：日志轮转
-rotate_log
+# 确保日志目录存在
+mkdir -p "${LOG_DIR}"
 
 # 第二步：初始化日志
 log "=======================================================================开始执行自动更新博客流程========================================================================================="

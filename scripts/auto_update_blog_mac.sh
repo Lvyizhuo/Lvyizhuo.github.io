@@ -13,15 +13,13 @@ CONDA_ENV="base"
 # 项目根目录（从脚本位置自动推导）
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-# 日志目录
+# 日志目录（每天一个日志文件）
 LOG_DIR="${PROJECT_DIR}/logs"
-LOG_FILE="${LOG_DIR}/auto_update_blog.log"
+LOG_FILE="${LOG_DIR}/auto_update_blog_$(date +'%Y-%m-%d').log"
 # Python 爬虫脚本
 PYTHON_SCRIPT="${PROJECT_DIR}/scripts/fetch_csdn_articles.py"
 # 锁文件
 LOCK_FILE="/tmp/auto_update_blog_mac.lock"
-# 日志最大行数
-MAX_LOG_LINES=2000
 
 # ==================== 参数解析 ====================
 DRY_RUN=false
@@ -46,16 +44,6 @@ handle_error() {
 
 cleanup() {
     rm -f "${LOCK_FILE}"
-}
-
-rotate_log() {
-    if [ -f "${LOG_FILE}" ]; then
-        local line_count=$(wc -l < "${LOG_FILE}")
-        if [ "${line_count}" -gt "${MAX_LOG_LINES}" ]; then
-            tail -n "${MAX_LOG_LINES}" "${LOG_FILE}" > "${LOG_FILE}.tmp"
-            mv "${LOG_FILE}.tmp" "${LOG_FILE}"
-        fi
-    fi
 }
 
 # 自动查找 conda 安装目录
@@ -90,9 +78,6 @@ if [ -f "${LOCK_FILE}" ]; then
     exit 0
 fi
 touch "${LOCK_FILE}"
-
-# 日志轮转
-rotate_log
 
 log "═══════════════════════════════════════════════════════"
 log "🚀 开始执行自动更新博客 (macOS 本地)"
