@@ -1,96 +1,142 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Lvyizhuo.github.io — 吕一卓的个人学术主页
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+[![pages-build-deployment](https://github.com/Lvyizhuo/Lvyizhuo.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Lvyizhuo/Lvyizhuo.github.io/actions/workflows/pages/pages-build-deployment)
+[![GitHub license](https://img.shields.io/github/license/Lvyizhuo/Lvyizhuo.github.io?color=blue)](LICENSE)
 
-# Getting Started
+这是 **Yizhuo Lv (吕一卓)** 的个人学术主页，基于 [Academic Pages](https://academicpages.github.io/) 模板构建，采用 Jekyll 静态站点框架。
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+**网站地址：** [https://Lvyizhuo.github.io](https://Lvyizhuo.github.io)
 
-See more info at https://academicpages.github.io/
+---
 
-## Running locally
+## 站点特性
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- **单页首页设计** — 所有内容（About、News、Publications、Projects、Honors、Education、Internships）整合在一个页面上，通过导航栏锚点跳转
+- **明/暗双主题** — 支持一键切换 light / dark 主题
+- **CSDN 博客自动同步** — Python 爬虫定时抓取 CSDN 文章并生成本站博客列表
+- **Projects 卡片组件** — 自定义 `.paper-box` 卡片样式，左图右文，悬停上浮效果
+- **学术字体排版** — 基于 Times New Roman 的 serif 阅读栈，自适应宽屏两端对齐
 
-1. Clone the repository and made updates as detailed above.
+---
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+## 🚀 快速开始 — 本地开发
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+### 前置依赖
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+```bash
+# macOS
+brew install ruby
+brew install node
+gem install bundler
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+# Linux (Ubuntu/Debian)
+sudo apt install ruby-dev ruby-bundler nodejs build-essential gcc make
+```
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+### 安装与运行
 
-## Using Docker
+```bash
+# 1. 克隆仓库
+git clone https://github.com/Lvyizhuo/Lvyizhuo.github.io.git
+cd Lvyizhuo.github.io
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+# 2. 安装 Ruby 依赖
+bundle config set --local path 'vendor/bundle'
+bundle install
 
-You can build and execute the container by running the following command in the repository:
+# 3. 启动本地服务器
+bundle exec jekyll serve -l -H localhost
+```
+
+访问 `http://localhost:4000` 即可预览。修改文件后页面会自动刷新。
+
+### 使用 Docker
 
 ```bash
 chmod -R 777 .
-docker compose up
+docker compose up -d
 ```
 
-You should now be able to access the website from `localhost:4000`.
+### 使用 VS Code DevContainer
 
-### Using the DevContainer in VS Code
-
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+在 VS Code 中打开项目，按 `F1` → **Dev Containers: Reopen in Container**，自动构建并启动开发环境。
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## 📁 项目结构
+
+```
+Lvyizhuo.github.io/
+├── _config.yml             # Jekyll 主配置
+├── _config.dev.yml         # 本地 Docker 开发覆盖配置
+├── _data/                  # 站点结构化数据
+│   ├── authors.yml         # 作者信息
+│   ├── csdn_posts.yml      # CSDN 博客数据（脚本自动生成）
+│   ├── navigation.yml      # 导航栏菜单
+│   └── ui-text.yml         # UI 多语言文本
+├── _includes/              # Jekyll 模板片段
+├── _layouts/               # Jekyll 页面布局
+├── _pages/                 # 实际页面
+│   ├── 404.md              # 404 页面
+│   ├── about.md            # 首页 (permalink: /)
+│   └── year-archive.html   # 博客列表
+├── _sass/                  # SCSS 样式源
+│   ├── _syntax.scss
+│   ├── _themes.scss
+│   ├── include/
+│   ├── layout/
+│   ├── theme/
+│   └── vendor/             # 第三方 SCSS（breakpoint, FontAwesome, susy 等）
+├── assets/                 # 编译后资源
+│   ├── css/                # main.scss + custom.css + academicons
+│   ├── js/                 # main.min.js + _main.js
+│   ├── fonts/              # academicons 字体
+│   └── webfonts/           # FontAwesome 字体
+├── images/                 # 图片资源（头像、favicon、项目封面、主题截图）
+│   ├── projects/           # 项目截图
+│   └── themes/             # 主题截图
+├── scripts/                # 自动化脚本
+│   ├── auto_update_blog.sh   # ECS cron 定时抓取博客并推送
+│   ├── fetch_csdn_articles.py # CSDN 文章爬虫
+│   ├── sync_blog.sh        # 博客同步脚本
+│   └── test_sync.sh        # 同步测试脚本
+├── Dockerfile
+├── docker-compose.yaml
+├── Gemfile / Gemfile.lock
+├── package.json
+├── .github/workflows/      # GitHub Actions 部署
+└── .devcontainer/          # VS Code DevContainer 配置
+```
+
+> 详细结构梳理与清理过程见 [PROJECT_STRUCTURE_REVIEW.md](PROJECT_STRUCTURE_REVIEW.md)。
+
+---
+
+## 📝 博客自动同步
+
+站点博客数据从 [CSDN 博客](https://blog.csdn.net/Lvyizhuo666) 自动同步，流程如下：
+
+1. **Python 爬虫** (`scripts/fetch_csdn_articles.py`) 抓取 CSDN 文章列表
+2. 生成 `_data/csdn_posts.yml` 结构化数据
+3. GitHub Actions 或 ECS cron 定时触发同步
+4. Jekyll 构建时读取数据生成博客列表页面
+
+手动触发同步：
+```bash
+python3 scripts/fetch_csdn_articles.py
+```
+
+---
+
+## 🔧 维护与贡献
+
+- 本项目为个人主页，欢迎通过 [Issues](https://github.com/Lvyizhuo/Lvyizhuo.github.io/issues) 提出建议
+- 详细贡献指南见 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## 📄 许可
+
+本项目基于 MIT 许可证开源，详见 [LICENSE](LICENSE)。
+
+原模板 [Academic Pages](https://github.com/academicpages/academicpages.github.io) 基于 [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)，© 2016 Michael Rose，MIT License。
