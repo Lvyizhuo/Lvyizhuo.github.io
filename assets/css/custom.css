@@ -51,8 +51,8 @@ pre, code, kbd, samp, tt{
   .masthead__inner-wrap,
   .page__footer footer,
   #main{
-    max-width: 1320px;
-    width: 84%;
+    max-width: 1300px;
+    width: 80%;
   }
 }
 

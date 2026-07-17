@@ -55,18 +55,30 @@ My core research interests include:
      把标题链接 href 换成你的项目地址 / GitHub / 在线演示。 -->
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">Full-Stack Project</div>
-    <img src="/images/projects/shandong-policy-assistant-cover.png" alt="AI Policy Consultation &amp; Agent Service Platform">
+    <div class="badge">Full-Stack Agent</div>
+    <img src="/images/projects/shandong-policy-assistant-cover.png" alt="AI Policy Consultation Platform">
   </div>
   <div class="paper-box-text">
-    <p><a href="/images/projects/shandong-policy-assistant-cover.png">AI Policy Consultation &amp; Agent Service Platform</a></p>
-    <p class="paper-meta">Full-Stack Engineer · 2025.10 – 2025.12</p>
+    <p><a href="https://www.ssfssp.com/contest/questionCompetition/detail/1972926746066001920?source=2&applyType=0&teamSizeLimit=1">AI Policy Consultation &amp; Agent Service Platform</a></p>
+    <p class="paper-meta">Spring Boot · Spring AI · ReAct Agent · Hybrid RAG · React</p>
     <ul>
-      <li><strong>Role &amp; Tech Stack</strong>: Designed and developed a full-stack, RAG-driven intelligent consultation platform tailored for local subsidy policies. Powered by Spring Boot, Spring AI, PostgreSQL, Redis, React, Docker, and Ollama.</li>
-      <li><strong>Autonomous Planning Agent</strong>: Designed an autonomous agent architecture based on the ReAct framework, incorporating intent recognition, dynamic context management, and external tool-use to resolve complex policy inquiries.</li>
-      <li><strong>System Reliability &amp; Guardrails</strong>: Engineered an intent-based tool classifier with pre-execution parameter validation, reducing invalid tool calls by 40%, coupled with multi-level fallback mechanisms to ensure high system availability.</li>
-      <li><strong>Advanced Hybrid RAG</strong>: Built a multi-source RAG pipeline integrating semantic-aware chunking, hybrid retrieval (sparse/dense), and dynamic LLM routing, boosting overall retrieval accuracy by 25%.</li>
-      <li><strong>Session Memory &amp; Optimization</strong>: Implemented a Redis-driven multi-level caching mechanism to support structured session memory and state persistence, significantly enhancing multi-turn dialogue coherence.</li>
+      <li><strong>Autonomous ReAct Agent</strong>: Designed a full-stack agent with intent-driven tool orchestration and dynamic context management, reducing invalid tool calls by 40%.</li>
+      <li><strong>Hybrid RAG &amp; Session Memory</strong>: Built a multi-source hybrid RAG pipeline with semantic chunking (+25% accuracy) and integrated a Redis-backed multi-level cache.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="badge">Crop Breeding Agent</div>
+    <img src="/images/projects/ntt-breeding.png" alt="Crop Breeding Agent Platform">
+  </div>
+  <div class="paper-box-text">
+    <p><a href="http://ai4b.pku-iaas.edu.cn/">Crop Breeding Agent Platform (Breeding)</a></p>
+    <p class="paper-meta">Genomic Selection · Trait Prediction · Collaborative Breeding</p>
+    <ul>
+      <li><strong>Domain LLM &amp; Agent Framework</strong>: Developed and deployed a specialized agricultural agent platform to accelerate genomic selection, trait prediction, and collaborative crop breeding pipelines.</li>
+      <li><strong>Multi-Source Integration &amp; Tool-Use</strong>: Integrated multi-source phenotypic, genomic, and environmental data with advanced tool-use capabilities to empower molecular breeders with reliable, factually grounded decision support.</li>
     </ul>
   </div>
 </div>
