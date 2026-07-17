@@ -1,0 +1,96 @@
+[2026-07-17 13:01:25] =======================================================================开始执行自动更新博客流程=========================================================================================
+[2026-07-17 13:01:25] 开始执行自动更新博客流程
+[2026-07-17 13:01:25] 当前用户: lvyizhuo
+[2026-07-17 13:01:25] 当前PATH: /Users/lvyizhuo/.codebuddy/bin:/Users/lvyizhuo/.codebuddy/bin:/Users/lvyizhuo/.jenv/shims:/Users/lvyizhuo/.jenv/bin:/opt/homebrew/opt/trash-cli/bin:/Users/lvyizhuo/.nvm/versions/node/v24.16.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/opt/homebrew/bin:/Users/lvyizhuo/.codebuddy/bin:/Users/lvyizhuo/Library/pnpm/bin:/Users/lvyizhuo/.jenv/shims:/Users/lvyizhuo/.jenv/bin:/opt/homebrew/opt/trash-cli/bin:/Users/lvyizhuo/.nvm/versions/node/v24.16.0/bin:/Users/lvyizhuo/Library/Application Support/JetBrains/Toolbox/scripts:/Users/lvyizhuo/Library/Application Support/JetBrains/Toolbox/scripts:/Users/lvyizhuo/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0/bin:/Users/lvyizhuo/.claude/plugins/cache/claude-plugins-official/context7/unknown/bin:/Users/lvyizhuo/.claude/plugins/cache/claude-plugins-official/playwright/unknown/bin:/Users/lvyizhuo/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/bin
+[2026-07-17 13:01:25] 运行环境: macOS 本地
+[2026-07-17 13:01:25] 验证关键路径...
+[2026-07-17 13:01:25] 路径验证通过
+[2026-07-17 13:01:25] macOS 本地环境，跳过 conda 激活
+[2026-07-17 13:01:25] 当前Python路径：/usr/bin/python3
+[2026-07-17 13:01:25] Python版本：Python 3.9.6
+[2026-07-17 13:01:25] 切换到项目目录：/Users/lvyizhuo/project/i/Lvyizhuo.github.io
+[2026-07-17 13:01:25] 执行git pull origin main
+From https://github.com/Lvyizhuo/Lvyizhuo.github.io
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[2026-07-17 13:01:26] Git拉取成功
+[2026-07-17 13:01:26] 开始执行爬虫脚本：/Users/lvyizhuo/project/i/Lvyizhuo.github.io/scripts/fetch_csdn_articles.py
+Traceback (most recent call last):
+  File "/Users/lvyizhuo/project/i/Lvyizhuo.github.io/scripts/fetch_csdn_articles.py", line 9, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+[2026-07-17 13:01:26] ERROR: 爬虫脚本执行失败，请检查Python依赖是否完整
+2026-07-17 13:03:42 ═══════════════════════════════════════════════════════
+2026-07-17 13:03:42 🚀 开始执行自动更新博客 (macOS 本地)
+2026-07-17 13:03:42 项目目录: /Users/lvyizhuo/project/i/Lvyizhuo.github.io
+2026-07-17 13:03:42 运行模式: 完整流程
+2026-07-17 13:03:42 📁 验证路径...
+2026-07-17 13:03:42 🔍 检查 conda 环境...
+2026-07-17 13:03:42 ❌ 错误: 未找到 conda 命令，请先安装 Miniconda / Miniforge
+2026-07-17 13:03:50 ═══════════════════════════════════════════════════════
+2026-07-17 13:03:50 🚀 开始执行自动更新博客 (macOS 本地)
+2026-07-17 13:03:50 项目目录: /Users/lvyizhuo/project/i/Lvyizhuo.github.io
+2026-07-17 13:03:50 运行模式: 完整流程
+2026-07-17 13:03:50 📁 验证路径...
+2026-07-17 13:03:50 🔍 检查 conda 环境...
+2026-07-17 13:03:51 ❌ 错误: conda 环境 'csdn-blog' 不存在，请先创建：\n  conda create -n csdn-blog python=3.10\n  conda activate csdn-blog\n  pip install requests pyyaml
+2026-07-17 13:06:35 ═══════════════════════════════════════════════════════
+2026-07-17 13:06:35 🚀 开始执行自动更新博客 (macOS 本地)
+2026-07-17 13:06:35 项目目录: /Users/lvyizhuo/project/i/Lvyizhuo.github.io
+2026-07-17 13:06:35 运行模式: 完整流程
+2026-07-17 13:06:35 📁 验证路径...
+2026-07-17 13:06:35 🔍 检测 conda 安装位置...
+2026-07-17 13:06:35    conda 根目录: /opt/miniconda3
+2026-07-17 13:06:35 🐍 使用 conda 环境: base
+2026-07-17 13:06:36 Python 版本: Python 3.13.13
+2026-07-17 13:06:36 ⬇️  执行 git pull origin main...
+From https://github.com/Lvyizhuo/Lvyizhuo.github.io
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+2026-07-17 13:06:38 ✅ Git 拉取成功
+2026-07-17 13:06:38 🕷️  执行爬虫脚本...
+Traceback (most recent call last):
+  File "/Users/lvyizhuo/project/i/Lvyizhuo.github.io/scripts/fetch_csdn_articles.py", line 15, in <module>
+    from bs4 import BeautifulSoup
+ModuleNotFoundError: No module named 'bs4'
+ERROR conda.cli.main_run:execute(148): `conda run python /Users/lvyizhuo/project/i/Lvyizhuo.github.io/scripts/fetch_csdn_articles.py` failed. (See above for error)
+2026-07-17 13:06:40 ❌ 错误: 爬虫脚本执行失败 (exit code: 1)
+2026-07-17 13:07:22 ═══════════════════════════════════════════════════════
+2026-07-17 13:07:22 🚀 开始执行自动更新博客 (macOS 本地)
+2026-07-17 13:07:22 项目目录: /Users/lvyizhuo/project/i/Lvyizhuo.github.io
+2026-07-17 13:07:22 运行模式: 完整流程
+2026-07-17 13:07:22 📁 验证路径...
+2026-07-17 13:07:22 🔍 检测 conda 安装位置...
+2026-07-17 13:07:22    conda 根目录: /opt/miniconda3
+2026-07-17 13:07:22 🐍 使用 conda 环境: base
+2026-07-17 13:07:23 Python 版本: Python 3.13.13
+2026-07-17 13:07:23 ⬇️  执行 git pull origin main...
+From https://github.com/Lvyizhuo/Lvyizhuo.github.io
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+2026-07-17 13:07:25 ✅ Git 拉取成功
+2026-07-17 13:07:25 🕷️  执行爬虫脚本...
+============================================================
+CSDN博客文章同步工具 (本地执行版)
+============================================================
+📂 已加载现有数据: 132 篇文章
+
+方法1: 尝试使用 API...
+🔍 开始使用 API 抓取CSDN博客: Lvyizhuo
+📡 正在请求第 1 页 (尝试 1/3)...
+✅ 第 1 页找到 40 篇文章
+📡 正在请求第 2 页 (尝试 1/3)...
+✅ 第 2 页找到 40 篇文章
+📡 正在请求第 3 页 (尝试 1/3)...
+✅ 第 3 页找到 40 篇文章
+📡 正在请求第 4 页 (尝试 1/3)...
+✅ 第 4 页找到 18 篇文章
+✅ 已获取所有文章
+
+✨ 总共抓取到 138 篇文章
+💾 文章列表已保存到: _data/csdn_posts.yml
+
+🎉 同步完成！
+📊 共获取 138 篇文章
+2026-07-17 13:07:35 ✅ 爬虫脚本执行成功
+2026-07-17 13:07:35 📦 执行 git add . ...
