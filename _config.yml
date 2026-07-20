@@ -29,7 +29,7 @@ author:
   location         : "Jinan, China"
   employer         : "Qilu University of Technology"
   uri              : # URL
-  email            : "Lvyizhuo1921708385@163.com" 
+  email            : "lvonezhuo@163.com" 
 
   # Academic websites
   academia         : # URL
@@ -122,7 +122,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter “mmgg04”
 facebook:
   username               :
   app_id                 :
