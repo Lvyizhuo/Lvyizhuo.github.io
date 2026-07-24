@@ -5,6 +5,9 @@ _site/
 # Ignore the directory for local files during development
 local/
 
+# Ignore runtime logs for auto-update scripts
+logs/
+
 # Note: Gemfile.lock should be committed for GitHub Pages deployment
 # Gemfile.lock
 
