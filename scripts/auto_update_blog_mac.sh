@@ -46,6 +46,34 @@ cleanup() {
     rm -f "${LOCK_FILE}"
 }
 
+commit_and_push() {
+    local commit_msg="$1"
+
+    log "📦 执行 git add . ..."
+    git add . >> "${LOG_FILE}" 2>&1 || handle_error "Git add 失败"
+
+    if git diff --quiet && git diff --staged --quiet; then
+        log "📭 无文件变更，跳过提交和推送"
+        return 0
+    fi
+
+    log "💾 执行 git commit ..."
+    git commit -m "${commit_msg}" >> "${LOG_FILE}" 2>&1 || handle_error "Git commit 失败"
+    log "✅ 提交成功: ${commit_msg}"
+
+    if [ "$DRY_RUN" = true ]; then
+        log "🔍 试运行模式，跳过 git push"
+        return 0
+    fi
+
+    log "☁️  执行 git push origin main..."
+    if git push origin main >> "${LOG_FILE}" 2>&1; then
+        log "✅ Git 推送到远程仓库成功"
+    else
+        handle_error "Git 推送失败！请检查网络或认证配置"
+    fi
+}
+
 # 自动查找 conda 安装目录
 find_conda_base() {
     # 常见 conda 安装位置（按优先级）
@@ -139,36 +167,9 @@ if [ "$CRAWL_ONLY" = true ]; then
     exit 0
 fi
 
-# Git add
-log "📦 执行 git add . ..."
-git add . >> "${LOG_FILE}" 2>&1 || handle_error "Git add 失败"
-
-# 检查是否有变更
-git diff --quiet && git diff --staged --quiet
-if [ $? -eq 0 ]; then
-    log "📭 无文件变更，跳过提交和推送"
-    log "═══════════════════════════════════════════════════════"
-    exit 0
-fi
-
-# Git commit
+# 自动提交并推送（默认流程）
 COMMIT_MSG="自动更新博客 $(date +'%Y-%m-%d %H:%M:%S')"
-log "💾 执行 git commit ..."
-git commit -m "${COMMIT_MSG}" >> "${LOG_FILE}" 2>&1 || handle_error "Git commit 失败"
-log "✅ 提交成功: ${COMMIT_MSG}"
-
-# Git push（试运行模式跳过）
-if [ "$DRY_RUN" = true ]; then
-    log "🔍 试运行模式，跳过 git push"
-    log "⚠️  若要推送，请直接执行: git push origin main"
-else
-    log "☁️  执行 git push origin main..."
-    if git push origin main >> "${LOG_FILE}" 2>&1; then
-        log "✅ Git 推送到远程仓库成功"
-    else
-        handle_error "Git 推送失败！请检查网络或认证配置"
-    fi
-fi
+commit_and_push "${COMMIT_MSG}"
 
 log "🎉 自动更新博客流程执行完毕"
 log "═══════════════════════════════════════════════════════"
