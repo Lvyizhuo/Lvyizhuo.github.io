@@ -49,10 +49,10 @@ cleanup() {
 commit_and_push() {
     local commit_msg="$1"
 
-    log "📦 执行 git add . ..."
-    git add . >> "${LOG_FILE}" 2>&1 || handle_error "Git add 失败"
+    log "📦 执行 git add -A ..."
+    git add -A >> "${LOG_FILE}" 2>&1 || handle_error "Git add 失败"
 
-    if git diff --quiet && git diff --staged --quiet; then
+    if [ -z "$(git status --porcelain --untracked-files=all 2>/dev/null)" ]; then
         log "📭 无文件变更，跳过提交和推送"
         return 0
     fi

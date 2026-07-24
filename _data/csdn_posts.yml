@@ -1,4 +1,4 @@
-last_updated: '2026-07-24 17:45:03'
+last_updated: '2026-07-24 17:47:03'
 total_count: 138
 articles:
 - title: 【Git实战技巧01】—— 团队协作必看！Git提交历史规范用法，告别杂乱日志
@@ -477,7 +477,7 @@ articles:
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '6065'
+  views: '6066'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
