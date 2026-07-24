@@ -174,4 +174,24 @@ commit_and_push "${COMMIT_MSG}"
 log "🎉 自动更新博客流程执行完毕"
 log "═══════════════════════════════════════════════════════"
 
+# 由于日志文件本身会在脚本执行过程中被持续写入，最后一轮日志需要再补一次提交
+if [ -n "$(git status --porcelain --untracked-files=all 2>/dev/null)" ]; then
+    log "📝 检测到日志文件或其他补充变更，进行补充提交..."
+    git add -A >> "${LOG_FILE}" 2>&1 || handle_error "补充 Git add 失败"
+    if git commit -m "📝 更新自动更新日志 $(date +'%Y-%m-%d %H:%M:%S')" >> "${LOG_FILE}" 2>&1; then
+        log "✅ 补充提交成功"
+        if [ "$DRY_RUN" = true ]; then
+            log "🔍 试运行模式，跳过补充 git push"
+        else
+            if git push origin main >> "${LOG_FILE}" 2>&1; then
+                log "✅ 补充推送成功"
+            else
+                handle_error "补充 Git 推送失败"
+            fi
+        fi
+    else
+        log "⚠️ 补充提交未产生新内容，跳过"
+    fi
+fi
+
 exit 0
