@@ -1,4 +1,4 @@
-last_updated: '2026-08-04 14:49:33'
+last_updated: '2026-08-04 15:07:50'
 total_count: 138
 articles:
 - title: 【Git实战技巧01】—— 团队协作必看！Git提交历史规范用法，告别杂乱日志
@@ -66,7 +66,7 @@ articles:
   date: '2026-06-09'
   excerpt: n8n 自部署指南摘要 n8n 是一款开源工作流自动化工具，可作为 Zapier/Make 的替代方案，具有数据自主、免费使用、支持 AI 集成等优势。本文详细介绍了从
     Docker 安装到生产环境部署的完整流程： 环境准备：推荐使用 Linux 系统，2GB+ 内存，需安装 Docker 和 Do...
-  views: '358'
+  views: '359'
 - title: 【Claude Code】—— Claude Code 10 个内置技能实战指南：别只会用 /help
   link: https://blog.csdn.net/Lvyizhuo/article/details/161836264
   date: '2026-06-09'
@@ -251,7 +251,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160215130
   date: '2026-04-16'
   excerpt: 摘要： tmux是解决终端操作痛点的神器，支持会话持久化、多任务管理和环境恢复。其核心原理基于客户端-服务器模型和终端虚拟化技术，通过会话-窗口-面板的三层结构实现高效管理。教程涵盖安装、基础操作（会话、窗口、面板管理）及配置优化，帮助用户快速上手。从新建会话到多面板分割，tmux显著提升终端工作效...
-  views: '1361'
+  views: '1362'
 - title: 【AI私人医生项目day02】—— 模型微调（环境配置篇）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160173549
   date: '2026-04-15'
@@ -323,7 +323,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355669
   date: '2026-03-22'
   excerpt: 本文分享一套阿里云大模型工程师 ACA 认证完整学习资料，包含10 章体系化思维导图 + 逐章详细笔记，覆盖大模型基础、应用场景、API 调用、提示词工程、RAG、微调、Agent、安全合规等全考点。文中直接展示前两章思维导图框架与核心笔记，可快速上手复习。资料免费开源、拿来即用，适合备考、系统入门...
-  views: '1593'
+  views: '1594'
 - title: 【JAVA基础13】—— JAVA数组从入门到实战：一篇吃透核心用法
   link: https://blog.csdn.net/Lvyizhuo/article/details/159174422
   date: '2026-03-18'
@@ -426,7 +426,7 @@ articles:
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '19504'
+  views: '19505'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
@@ -500,7 +500,7 @@ articles:
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '11009'
+  views: '11010'
 - title: 【AI开发】—— LangChain4j框架（JAVA）详解与实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981563
   date: '2026-02-12'
@@ -543,7 +543,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
   excerpt: 《OpenCode Superpowers插件安装使用指南》介绍了这款能提升AI编程工程化能力的插件。文章详细讲解了安装步骤，包括克隆仓库、创建符号链接和验证安装，并演示了如何使用TDD、代码审查等内置技能优化开发流程。该插件能自动遵循软件工程最佳实践，显著提升代码质量和开发效率，适合个人及团队使用...
-  views: '14774'
+  views: '14775'
 - title: 【Node.js管理01】—— Ubuntu系统使用nvm管理Node.js多版本，版本切换一键搞定（实操完整版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
