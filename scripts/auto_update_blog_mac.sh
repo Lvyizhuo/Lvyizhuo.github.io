@@ -158,6 +158,13 @@ CRAWL_EXIT=${PIPESTATUS[0]}
 if [ "${CRAWL_EXIT}" -ne 0 ]; then
     handle_error "爬虫脚本执行失败 (exit code: ${CRAWL_EXIT})"
 fi
+
+# 网络故障时爬虫会静默返回 0 退出码但抓到 0 篇文章（保留旧数据），必须显式判定为失败，
+# 否则上游会误发「✅ 同步成功」邮件（2026-08-10 事故根因）
+CRAWL_SECTION="$(awk 'p{p=p ORS $0} /🕷️  执行爬虫脚本/{p=$0} END{print p}' "${LOG_FILE}")"
+if [ -n "${CRAWL_SECTION}" ] && printf '%s\n' "${CRAWL_SECTION}" | grep -q "未抓取到任何文章"; then
+    handle_error "爬虫未抓取到任何文章（可能是网络故障），保留原有数据，本次不推送"
+fi
 log "✅ 爬虫脚本执行成功"
 
 # 仅抓取模式在此结束

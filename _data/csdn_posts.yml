@@ -1,4 +1,4 @@
-last_updated: '2026-08-11 16:13:26'
+last_updated: '2026-08-11 16:30:45'
 total_count: 138
 articles:
 - title: 【Git实战技巧01】—— 团队协作必看！Git提交历史规范用法，告别杂乱日志
@@ -90,7 +90,7 @@ articles:
   date: '2026-06-05'
   excerpt: 本文介绍了Mac端使用NVM（Node Version Manager）管理多版本Node.js的完整方案。针对前端/Node开发者常遇到的版本冲突问题，对比了Homebrew、PKG安装方式的缺陷，推荐NVM作为最佳解决方案。文章详细演示了最新版NVM
     v0.40.4的安装流程，包括安装Node2...
-  views: '420'
+  views: '421'
 - title: 【语音识别部署】— sherpa-onnx：让 ASR 模型跑得更快、跑在任何地方
   link: https://blog.csdn.net/Lvyizhuo/article/details/161256624
   date: '2026-05-20'
@@ -100,7 +100,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/161256550
   date: '2026-05-20'
   excerpt: FunASR是阿里达摩院开源的端到端语音识别工具包，集成了语音活动检测(VAD)、语音识别(ASR)、标点恢复等功能。本文重点介绍了轻量级模型Fun-ASR-Nano的使用方法，包括环境搭建、AutoModel机制、热词增强等特性，并提供了完整的实战代码示例。文章还分享了处理长音频时的OOM避坑技巧...
-  views: '1940'
+  views: '1941'
 - title: 【RAG进阶03】—— RAGFlow — 当 RAG 引擎学会了“看懂“文档
   link: https://blog.csdn.net/Lvyizhuo/article/details/161186023
   date: '2026-05-19'
@@ -152,7 +152,7 @@ articles:
   date: '2026-05-09'
   excerpt: 在接口开发、联调与测试过程中，`curl` 是命令行下**最通用、最轻量化**的 HTTP 请求工具，无需 GUI 即可快速发送 GET/POST/PUT
     等请求、上传文件、调试接口，堪称后端开发的 “瑞士军刀”。
-  views: '419'
+  views: '420'
 - title: 【Docker】—— Ubuntu 超完整安装配置Docker + Docker AI(Gordon)使用技巧
   link: https://blog.csdn.net/Lvyizhuo/article/details/160928909
   date: '2026-05-09'
@@ -477,13 +477,13 @@ articles:
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '6777'
+  views: '6778'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '9126'
+  views: '9127'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
@@ -575,7 +575,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
   excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
-  views: '1238'
+  views: '1239'
 - title: 【LangChain】—— History模块使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157475660
   date: '2026-01-28'
@@ -649,7 +649,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '4356'
+  views: '4358'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
