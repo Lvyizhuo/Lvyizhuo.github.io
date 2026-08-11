@@ -1,4 +1,4 @@
-last_updated: '2026-08-11 16:30:45'
+last_updated: '2026-08-11 16:38:45'
 total_count: 138
 articles:
 - title: 【Git实战技巧01】—— 团队协作必看！Git提交历史规范用法，告别杂乱日志
@@ -32,7 +32,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/162540304
   date: '2026-07-03'
   excerpt: 南京农业大学与南京理工大学联合发布了农业领域大模型"司农Sinong1.0"，基于Qwen3微调，包含8B和32B两个版本，覆盖8大农业学科。文章详细介绍了该模型的定位、训练数据和部署方法，重点演示了如何通过vLLM+Docker部署32B版本，包括环境准备、模型下载、容器配置和测试验证等步骤。部署...
-  views: '284'
+  views: '285'
 - title: 【大模型部署01】—— vLLM 部署大模型服务实操：从 0 到 1 搭建 OpenAI 兼容 API
   link: https://blog.csdn.net/Lvyizhuo/article/details/162013399
   date: '2026-06-15'
@@ -443,7 +443,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
   excerpt: VS Code Copilot Hooks 实战摘要 Copilot Hooks是VS Code新增的Agent行为管控功能，解决了传统Prompt引导的三大痛点：非确定性（Agent可能忽略约束）、无自动化流程、无统一管控。Hooks通过8个生命周期事件实现"强制触发、代码驱动"，核心场景包括安全...
-  views: '1408'
+  views: '1409'
 - title: 【AI开发】—— Copilot自定义智能体与User profile配置及默认智能体查看指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
