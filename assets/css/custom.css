@@ -201,3 +201,14 @@ html[data-theme="dark"] .paper-box-image img{
 html[data-theme="dark"] .badge{
   color: #0b1220;
 }
+
+/* ---- Dark theme: GitHub icon made visible (brand color is near-black) ----
+   main.css hardcodes .social-icons .fa-github with the near-black $github-color
+   and has no dark variant, so on a dark background the GitHub icon blends in.
+   This override (loaded after main.css, higher specificity) turns just the
+   GitHub icon white in dark mode; every other social icon keeps its brand color. */
+html[data-theme="dark"] .social-icons .fa-github,
+html[data-theme="dark"] .social-icons .fa-github-alt,
+html[data-theme="dark"] .social-icons .fa-github-square{
+  color: #fff;
+}
