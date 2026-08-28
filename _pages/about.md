@@ -24,8 +24,8 @@ My core research interests include:
 # 🔥 News
 
 {: #news }
-
-* *2026.07*: 🧬 Successfully completed Phase II of the Crop Breeding Agent Platform (Breeding) at the Peking University Institute of Modern Agriculture!
+* _2026.09_: 📝 Invited to serve as a reviewer for _IEEE Transactions on Network Science and Engineering (TNSE)_.
+* _2026.07_: 🧬 Successfully completed Phase II of the Crop Breeding Agent Platform (Breeding) at the Peking University Institute of Modern Agriculture!
 * _2026.03_: 💼 Joined Netthink Technology Co., Ltd. as an Algorithm Intern.
 * _2026.01_: 🎉 The invention patent "A Temporal-Aware Dynamic Influence Maximization Method for Smart Homes" was authorized.
 * _2025.12_: 🏆 Won the National Second Prize in the "Huawei Cup" Post-Graduate Mathematical Modeling Contest!
