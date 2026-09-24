@@ -24,6 +24,7 @@ My core research interests include:
 # 🔥 News
 
 {: #news }
+
 * _2026.09_: 📝 Invited to serve as a reviewer for _IEEE Transactions on Network Science and Engineering (TNSE)_.
 * _2026.07_: 🧬 Successfully completed Phase II of the Crop Breeding Agent Platform (Breeding) at the Peking University Institute of Modern Agriculture!
 * _2026.03_: 💼 Joined Netthink Technology Co., Ltd. as an Algorithm Intern.
@@ -53,7 +54,7 @@ My core research interests include:
     <img src="/images/projects/shandong-policy-assistant-cover.png" alt="AI Policy Consultation Platform">
   </div>
   <div class="paper-box-text">
-    <p><a href="https://www.ssfssp.com/contest/questionCompetition/detail/1972926746066001920?source=2&applyType=0&teamSizeLimit=1">AI Policy Consultation & Agent Service Platform</a></p>
+    <p><a href="https://github.com/Lvyizhuo/MyProject-SDAgent">AI Policy Consultation & Agent Service Platform</a></p>
     <p class="paper-meta">Spring Boot · Spring AI · ReAct Agent · Hybrid RAG · React</p>
     <ul>
       <li><strong>Autonomous ReAct Agent</strong>: Designed a full-stack agent with intent-driven tool orchestration and dynamic context management, reducing invalid tool calls by 40%.</li>
