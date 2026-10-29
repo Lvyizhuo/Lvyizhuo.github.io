@@ -25,6 +25,7 @@ My core research interests include:
 
 {: #news }
 
+* _2026.10_: 🎉 Our paper "OHRL-DIM" was accepted by the _26th IEEE International Conference on Data Mining (ICDM 2026)_!
 * _2026.09_: 📝 Invited to serve as a reviewer for _IEEE Transactions on Network Science and Engineering (TNSE)_.
 * _2026.07_: 🧬 Successfully completed Phase II of the Crop Breeding Agent Platform (Breeding) at the Peking University Institute of Modern Agriculture!
 * _2026.03_: 💼 Joined Netthink Technology Co., Ltd. as an Algorithm Intern.
@@ -38,7 +39,8 @@ My core research interests include:
 
 {: #publications }
 
-* _Chinese Invention Patent_: A Time-Aware Dynamic Influence Maximization Method for Smart Homes, Chong Di#, **Yizhuo Lv**, Minglei Shu, Zhaoyang Liu, Zhen Cui, Yunlong Tian, Yukai Zhu (# corresponding author) (Patent No. ZL202511475850.5, Authorized, Jan. 2026) [[Link](https://www.patentstar.com.cn/Search/Detail?ANE=8AGA9FFB9GIH9DGF6DCA9DGB9EAD9DHB9ADA4CCA4AAADIIA)]
+* **Yizhuo Lu**, Li Guo, Jinchao Huang, Pengyao Xu, Chong Di, Jinbao Li. OHRL-DIM: Hierarchical Deep Reinforcement Learning for Online Combinatorial Influence Maximization in Non-Stationary Networks. In _Proceedings of the 26th IEEE International Conference on Data Mining (ICDM 2026)_, 2026. (Accepted) [[ICDM 2026](https://icdm2026.org/)]
+* _Chinese Invention Patent_: A Time-Aware Dynamic Influence Maximization Method for Smart Homes, Chong Di#, **Yizhuo Lv**, Minglei Shu, Zhaoyang Liu, Zhen Cui, Yunlong Tian, Yukai Zhu (# corresponding author) (Patent No. ZL202511806044.8, Authorized, Jan. 2026) [[Link](https://www.patentstar.com.cn/Search/Detail?ANE=8AGA9FFB9GIH9DGF6DCA9DGB9EAD9DHB9ADA4CCA4AAADIIA)]
 
 # 🤝 Projects
 
@@ -85,8 +87,10 @@ My core research interests include:
 * _2025_: National Second Prize, 22nd HUAWEI Cup China Postgraduate Mathematical Modeling Contest
 * _2024_: First Prize, 15th National College Students Mathematics Competition (Non-Mathematics Category A)
 * _2024_: Outstanding Graduate, Xinyang University (XYU)
+* _2024_: Outstanding Learning Model Graduate, Xinyang University (XYU)
 * _2022_: First Prize (Provincial Level), China Undergraduate Mathematical Contest in Modeling (CUMCM), Henan Division
 * _2022_: Third Prize, 15th SPSSPRO Cup Mathematical Modeling Competition of China Math Union
+* _2021_: Third Prize, National Artificial Intelligence Knowledge Competition
 * _2025_: Third Prize Academic Scholarship (Postgraduate Level), Qilu University of Technology (QLU)
 * _2024_: Third Prize Academic Scholarship (Postgraduate Level), Qilu University of Technology (QLU)
 * _2023_: Third Prize Academic Scholarship (Undergraduate Level), Xinyang University (XYU)
