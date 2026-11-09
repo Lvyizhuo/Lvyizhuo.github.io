@@ -1,6 +1,6 @@
 #!/bin/bash
-# 脚本功能：自动执行CSDN爬虫脚本 + Git提交推送（macOS 本地专用版）
-# 自动检测 conda 安装路径并激活环境，日志输出到 logs/ 目录
+# 脚本功能：自动执行 CSDN 爬虫脚本 + Git 提交推送（macOS 本地专用版）
+# 使用 uv 管理项目内虚拟环境（.venv，由 pyproject.toml 声明依赖），日志输出到 logs/ 目录
 #
 # 使用方法：
 #   ./scripts/auto_update_blog_mac.sh          # 完整流程
@@ -8,8 +8,6 @@
 #   ./scripts/auto_update_blog_mac.sh --crawl  # 只抓取，不推送
 
 # ==================== 配置 ====================
-# conda 环境名（用户已将依赖安装在 base 环境）
-CONDA_ENV="base"
 # 项目根目录（从脚本位置自动推导）
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
@@ -18,6 +16,9 @@ LOG_DIR="${PROJECT_DIR}/logs"
 LOG_FILE="${LOG_DIR}/auto_update_blog_$(date +'%Y-%m-%d').log"
 # Python 爬虫脚本
 PYTHON_SCRIPT="${PROJECT_DIR}/scripts/fetch_csdn_articles.py"
+# uv 虚拟环境（pyproject.toml + uv sync 生成）
+VENV_DIR="${PROJECT_DIR}/.venv"
+PYTHON="${VENV_DIR}/bin/python"
 # 锁文件
 LOCK_FILE="/tmp/auto_update_blog_mac.lock"
 
@@ -44,6 +45,28 @@ handle_error() {
 
 cleanup() {
     rm -f "${LOCK_FILE}"
+}
+
+# 定位 uv（launchd/cron 下 PATH 极简，优先用户级安装路径）
+find_uv() {
+    if [ -x "${HOME}/.local/bin/uv" ]; then
+        echo "${HOME}/.local/bin/uv"
+    elif command -v uv >/dev/null 2>&1; then
+        command -v uv
+    fi
+}
+
+# 确保虚拟环境与依赖就绪（缺失则自动创建/同步）
+ensure_venv() {
+    if [ ! -x "${PYTHON}" ]; then
+        log "📦 未发现 .venv，使用 uv 创建并安装依赖..."
+        "${UV_BIN}" sync >> "${LOG_FILE}" 2>&1 || handle_error "uv 创建虚拟环境失败"
+    fi
+    # 依赖自检：关键包缺失则重新同步
+    if ! "${PYTHON}" -c "import requests, yaml, bs4, lxml, curl_cffi" >/dev/null 2>&1; then
+        log "🔧 依赖不完整，重新执行 uv sync..."
+        "${UV_BIN}" sync >> "${LOG_FILE}" 2>&1 || handle_error "uv sync 失败"
+    fi
 }
 
 commit_and_push() {
@@ -74,26 +97,6 @@ commit_and_push() {
     fi
 }
 
-# 自动查找 conda 安装目录
-find_conda_base() {
-    # 常见 conda 安装位置（按优先级）
-    local candidates=(
-        "/opt/miniconda3"
-        "/usr/local/miniconda3"
-        "${HOME}/miniconda3"
-        "${HOME}/miniforge3"
-        "${HOME}/anaconda3"
-        "/opt/anaconda3"
-    )
-    for dir in "${candidates[@]}"; do
-        if [ -f "${dir}/etc/profile.d/conda.sh" ]; then
-            echo "${dir}"
-            return 0
-        fi
-    done
-    return 1
-}
-
 # ==================== 主流程 ====================
 trap cleanup EXIT
 
@@ -108,7 +111,7 @@ fi
 touch "${LOCK_FILE}"
 
 log "═══════════════════════════════════════════════════════"
-log "🚀 开始执行自动更新博客 (macOS 本地)"
+log "🚀 开始执行自动更新博客 (macOS 本地，uv 虚拟环境)"
 log "项目目录: ${PROJECT_DIR}"
 log "运行模式: $([ "$DRY_RUN" = true ] && echo '试运行 (--dry)' || ([ "$CRAWL_ONLY" = true ] && echo '仅抓取 (--crawl)' || echo '完整流程'))"
 
@@ -117,26 +120,13 @@ log "📁 验证路径..."
 [ -d "${PROJECT_DIR}" ] || handle_error "项目目录不存在：${PROJECT_DIR}"
 [ -f "${PYTHON_SCRIPT}" ] || handle_error "Python脚本不存在：${PYTHON_SCRIPT}"
 
-# ---- conda 自动检测与激活 ----
-log "🔍 检测 conda 安装位置..."
-CONDA_BASE=$(find_conda_base)
-if [ -z "${CONDA_BASE}" ]; then
-    # 如果常见位置没找到，尝试用 conda info 命令定位
-    if command -v conda &>/dev/null; then
-        CONDA_BASE="$(conda info --base 2>/dev/null)"
-    fi
-fi
-if [ -z "${CONDA_BASE}" ]; then
-    handle_error "未找到 conda 安装目录，请确认 conda 已安装"
-fi
+# ---- uv 虚拟环境检测与就绪 ----
+UV_BIN="$(find_uv)"
+[ -n "${UV_BIN}" ] || handle_error "未找到 uv，请先安装（curl -LsSf https://astral.sh/uv/install.sh | sh）"
+log "🔍 uv 路径: ${UV_BIN}"
+ensure_venv
 
-log "   conda 根目录: ${CONDA_BASE}"
-
-# 加载 conda.sh 使 conda 命令可用（subshell 中也有效）
-source "${CONDA_BASE}/etc/profile.d/conda.sh" || handle_error "加载 conda.sh 失败"
-
-log "🐍 使用 conda 环境: ${CONDA_ENV}"
-log "Python 版本: $(conda run -n "${CONDA_ENV}" python --version 2>&1)"
+log "🐍 Python 版本: $("${PYTHON}" --version 2>&1)"
 
 # 切换到项目目录
 cd "${PROJECT_DIR}" || handle_error "切换到项目目录失败"
@@ -144,7 +134,7 @@ cd "${PROJECT_DIR}" || handle_error "切换到项目目录失败"
 # Git pull（仅在完整流程下执行）
 if [ "$CRAWL_ONLY" = false ]; then
     log "⬇️  执行 git pull origin main..."
-    if conda run -n "${CONDA_ENV}" git pull origin main >> "${LOG_FILE}" 2>&1; then
+    if git pull origin main >> "${LOG_FILE}" 2>&1; then
         log "✅ Git 拉取成功"
     else
         log "⚠️  Git 拉取失败（可能无远程变更或无网络），继续执行..."
@@ -153,7 +143,7 @@ fi
 
 # 执行爬虫
 log "🕷️  执行爬虫脚本..."
-conda run -n "${CONDA_ENV}" python "${PYTHON_SCRIPT}" 2>&1 | tee -a "${LOG_FILE}"
+"${PYTHON}" "${PYTHON_SCRIPT}" 2>&1 | tee -a "${LOG_FILE}"
 CRAWL_EXIT=${PIPESTATUS[0]}
 if [ "${CRAWL_EXIT}" -ne 0 ]; then
     handle_error "爬虫脚本执行失败 (exit code: ${CRAWL_EXIT})"

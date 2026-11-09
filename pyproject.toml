@@ -1,0 +1,16 @@
+[project]
+name = "lvyizhuo-blog"
+version = "0.1.0"
+description = "CSDN 文章抓取与 GitHub Pages 同步"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32",
+    "pyyaml>=6.0",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "curl-cffi>=0.17.0",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
