@@ -1,60 +1,65 @@
-last_updated: '2026-11-13 10:33:07'
-total_count: 208
+last_updated: '2026-11-14 10:51:33'
+total_count: 209
 articles:
+- title: 【计算基础｜Redis10】缓存穿透、击穿、雪崩
+  link: https://blog.csdn.net/Lvyizhuo/article/details/170633144
+  date: '2026-11-14'
+  excerpt: 缓存穿透、击穿、雪崩是Redis使用中的三大典型问题。穿透因查询不存在数据导致频繁访问DB，可用空值缓存或布隆过滤器防御；击穿指热点Key过期瞬间并发冲击DB，可通过互斥锁或逻辑过期解决；雪崩由大量Key同时过期或Redis宕机引发，宜采用随机TTL、多级缓存、高可用架构及限流降级应对。三者本质不同...
+  views: '9'
 - title: 【计算基础｜Redis09】过期删除与内存淘汰
   link: https://blog.csdn.net/Lvyizhuo/article/details/170632749
   date: '2026-11-13'
   excerpt: Redis过期删除采用“惰性删除+定期删除”组合策略，避免即时清理开销；内存满时通过淘汰策略（如allkeys-lru）主动释放空间。实测显示，热点Key在内存压力下可存活，冷Key被优先淘汰。noeviction策略则直接拒绝写入。淘汰算法基于近似采样，LRU关注访问时间，LFU侧重频率，生产推荐...
-  views: '7'
+  views: '155'
 - title: 【计算基础｜Redis08】持久化（下）：AOF 与大 Key
   link: https://blog.csdn.net/Lvyizhuo/article/details/170616133
   date: '2026-11-13'
   excerpt: 本文详解Redis AOF持久化机制：通过记录写命令而非数据快照，实现高数据安全性。重点解析AOF刷盘策略（everysec为生产推荐）、重写原理（子进程fork+缓冲区同步）及文件瘦身效果。实测显示，100次冗余INCR命令可由3138字节压缩至167字节，显著降低存储开销。同时揭示大Key问题—...
-  views: '16'
+  views: '186'
 - title: 【计算基础｜Redis06】底层数据结构
   link: https://blog.csdn.net/Lvyizhuo/article/details/170509250
   date: '2026-11-12'
   excerpt: 本文详解Redis 7.4底层数据结构设计：以SDS替代C字符串实现O(1)长度查询与二进制安全；ZSet采用跳表+哈希表组合，兼顾排序与快速查找；小对象用listpack取代ziplist，根除连锁更新问题；List通过quicklist融合紧凑与链表优势；哈希表采用渐进式rehash避免阻塞；整...
-  views: '314'
+  views: '339'
 - title: 【计算基础｜Redis07】持久化（上）：RDB 快照
   link: https://blog.csdn.net/Lvyizhuo/article/details/170509773
   date: '2026-11-12'
   excerpt: Redis RDB 持久化通过 BGSAVE 创建内存快照，实现数据备份、迁移与灾难恢复。其核心依赖 fork + 写时复制（COW），确保快照一致性。虽加载快、文件小，但存在两次快照间数据丢失风险，且大内存实例
     fork 时可能阻塞。生产中建议搭配 AOF 并禁用高危命令，避免误操作导致数据不可逆...
-  views: '94'
+  views: '209'
 - title: 【计算基础｜Redis05】五种数据类型与应用场景（进阶选型）
   link: https://blog.csdn.net/Lvyizhuo/article/details/170502923
   date: '2026-11-11'
   excerpt: 本文深入解析Redis五种数据类型的核心应用场景与选型策略，强调“场景→类型→原理→避坑”的实战思维。通过实测对比String存JSON与Hash的优劣、List做队列的局限、ZSet实现排行榜与延迟队列的巧妙设计，揭示底层编码优化对性能的影响。重点指出：高频更新用Hash，去重计数用HyperLo...
-  views: '303'
+  views: '304'
 - title: 【计算基础｜Redis04】Redis 单线程模型为什么快
   link: https://blog.csdn.net/Lvyizhuo/article/details/170424428
   date: '2026-11-11'
   excerpt: Redis虽为单线程模型，却凭借内存操作、IO多路复用（epoll/kqueue）与事件驱动架构实现高并发。命令执行在主线程顺序处理，避免锁竞争与上下文切换；网络I/O通过多路复用高效管理海量连接，仅6.0引入的io-threads用于并行化读写操作，不提升命令吞吐。核心优势在于：纯内存+无锁+非阻...
-  views: '94'
+  views: '102'
 - title: 【开源模型（文本转语音）｜IndexTTS2.5】—— Mac本地部署IndexTTS2.5零样本音色克隆与踩坑全记录
   link: https://blog.csdn.net/Lvyizhuo/article/details/170420911
   date: '2026-11-10'
   excerpt: 本文详细记录了在 Apple Silicon Mac 上本地部署 IndexTTS 2.5 的完整流程，涵盖环境配置、依赖管理、权重下载及常见问题排查。重点解决
     Mac 系统下 uv 全局安装、避免 --all-extras 导致的 CUDA 依赖报错，并推荐使用 ModelScope 下载模型以规...
-  views: '769'
+  views: '776'
 - title: 【开发工具（Python项目）｜uv】—— Python项目管理实战-uv原理命令与工程规范全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/170370473
   date: '2026-11-10'
   excerpt: 是 Astral 基于 Rust 开发的一体化高速 Python 包与项目管理工具，旨在整合并替代 pip、venv、pyenv、Poetry、pipx
     等传统碎片化工具链，依靠原生二进制、全局缓存硬链接、高性能依赖解析实现大幅提速。本文围绕现代 Python 工程规范展开，先剖析传统工具链痛点、u...
-  views: '756'
+  views: '766'
 - title: 【计算基础｜Redis03】【上手】Python 连接 Redis
   link: https://blog.csdn.net/Lvyizhuo/article/details/170370302
   date: '2026-11-09'
   excerpt: 本文以实战方式详解用 Python 3.14 + redis-py 8.1.0 连接 Redis 7.4，涵盖连接配置、连接池使用、五种数据类型
     CRUD、过期设置、Pipeline 批量操作及事务。重点解决 decode_responses=True 避免 bytes 混乱、连接池提升性能、命令映...
-  views: '242'
+  views: '244'
 - title: 【计算基础｜Redis02】【上手】五大数据类型命令逐条实操
   link: https://blog.csdn.net/Lvyizhuo/article/details/170370112
   date: '2026-11-09'
   excerpt: 本文详解Redis五大数据类型：String（计数、缓存）、List（队列、时间线）、Hash（对象存储）、Set（去重、交集）、ZSet（排序、排行榜）。通过真实命令实操（如INCR、LPUSH、HSET、ZADD），结合商品库存、消息队列、用户信息等五大业务场景，直观展示每类数据结构的适用场景与...
-  views: '447'
+  views: '450'
 - title: 【macOS开发环境：Java配置】—— Mac上的Java版本管理-SDKMAN安装、多版本切换与项目实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/169357656
   date: '2026-10-28'
@@ -84,7 +89,7 @@ articles:
   date: '2026-10-27'
   excerpt: Buffer Pool 是 MySQL InnoDB 的核心内存缓存，以16KB页为单位提升读写性能。通过Free、LRU、Flush三链表管理空闲页、热点数据与脏页。为防缓存污染，采用中点插入与年轻/老年区分离的优化LRU策略，并设置1秒二次访问门槛。脏页由page
     cleaner线程按innod...
-  views: '114'
+  views: '116'
 - title: 【计算基础｜MySQL17】三大日志：undo / redo / binlog
   link: https://blog.csdn.net/Lvyizhuo/article/details/169168473
   date: '2026-10-26'
@@ -122,7 +127,7 @@ articles:
   date: '2026-10-21'
   excerpt: 本文详解MySQL事务的ACID特性及隔离级别，通过实测演示脏读、不可重复读、幻读问题，揭示InnoDB默认REPEATABLE-READ隔离级别下“可重复读”的实现机制——基于MVCC的一致性视图（ReadView）在首次查询时创建并复用。对比READ
     COMMITTED下每次查询重建视图导致不可...
-  views: '1361'
+  views: '1376'
 - title: 【计算基础｜MySQL10】【工程实战】explain 与慢查询优化
   link: https://blog.csdn.net/Lvyizhuo/article/details/168653881
   date: '2026-10-21'
@@ -134,7 +139,7 @@ articles:
   date: '2026-10-20'
   excerpt: 联合索引(a,b,c)先按 a 排、再按 b、再按 c，查询必须从最左列连续匹配。key_len是手测"索引用了几列"的利器：可空 INT=5，三列全用=15。索引列套函数、做运算、被隐式类型转换，都会让索引报废——列要"裸奔"，变换挪到右边。字符串列别用数字查；关联表字符集要统一
     utf8mb4。...
-  views: '339'
+  views: '340'
 - title: 【计算基础｜MySQL08】索引（上）：为什么是 B+ 树
   link: https://blog.csdn.net/Lvyizhuo/article/details/168542455
   date: '2026-10-20'
@@ -185,7 +190,7 @@ articles:
   date: '2026-10-15'
   excerpt: 本文手把手教你用Docker快速部署MySQL 8，避开安装难题。通过一条命令启动容器，配置好密码与端口，再用命令行或图形工具连接。重点讲解建库时必须使用utf8mb4字符集以支持emoji，避免“Incorrect
     string value”错误。详细演示建库、建表、插入数据全流程，并创建电商de...
-  views: '824'
+  views: '825'
 - title: 【计算基础｜网络16】【工程实战】Nginx 部署与反向代理
   link: https://blog.csdn.net/Lvyizhuo/article/details/167893334
   date: '2026-10-14'
@@ -196,12 +201,12 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/167893074
   date: '2026-10-14'
   excerpt: 本文手把手教你用Python标准库socket实现TCP/UDP网络编程：从零搭建TCP echo服务端与客户端，复现粘包问题，并通过selectors编写支持多客户端的并发服务器。代码均在本地实跑验证，无需第三方依赖，涵盖Socket核心方法、连接流程、数据收发及常见陷阱，助你深入理解网络编程底层...
-  views: '180'
+  views: '181'
 - title: 【计算基础｜网络14】网络层：IP、ICMP 与 ping
   link: https://blog.csdn.net/Lvyizhuo/article/details/167785055
   date: '2026-10-13'
   excerpt: 本文深入解析网络层核心协议：IP与ICMP。IP负责寻址与路由，具不可靠、无连接、尽最大努力交付特性，通过版本、TTL、协议号等字段实现数据包传输；ICMP用于错误报告与探测，如ping和traceroute即基于此。重点讲解了IPv4首部结构、特殊地址（如127.0.0.1）、子网划分与CIDR计...
-  views: '300'
+  views: '301'
 - title: 【计算基础｜网络13】UDP 与可靠传输
   link: https://blog.csdn.net/Lvyizhuo/article/details/167784848
   date: '2026-10-13'
@@ -217,7 +222,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/167669473
   date: '2026-10-12'
   excerpt: 本文详解TCP拥塞控制机制，解析慢启动、拥塞避免、快重传与快恢复四算法协同逻辑，对比Reno、Cubic与BBR等现代算法优劣。指出Linux默认使用Cubic，BBR适用于高带宽低丢包场景。结合生产实践，系统梳理关键内核参数调优策略：连接队列、TIME_WAIT管理、缓冲区设置及拥塞控制配置，强调...
-  views: '164'
+  views: '165'
 - title: 【计算基础｜网络10】TCP（中）：可靠传输
   link: https://blog.csdn.net/Lvyizhuo/article/details/167578057
   date: '2026-10-11'
@@ -239,7 +244,7 @@ articles:
   date: '2026-10-10'
   excerpt: 本文详解HTTPS中的ECDHE密钥交换机制，通过椭圆曲线实现前向保密，确保即使服务器私钥泄露，历史通信也无法被解密。对比RSA握手，ECDHE采用临时密钥对，用完即焚，彻底解决长期密钥风险。结合TLS
     1.3的全面优化——移除不安全算法、握手从2-RTT降至1-RTT，支持0-RTT恢复，并引入会...
-  views: '267'
+  views: '268'
 - title: 【计算基础｜网络06】HTTPS（上）：加密体系与 RSA 握手
   link: https://blog.csdn.net/Lvyizhuo/article/details/167373261
   date: '2026-10-09'
@@ -274,12 +279,12 @@ articles:
   date: '2026-10-06'
   excerpt: 本文系统解析Java垃圾回收机制，核心聚焦分代内存模型与收集器职责。JVM将堆划分为年轻代（Eden/Survivor）与老年代，基于“弱分代假说”实现高效回收。年轻代采用复制算法（如ParNew、Parallel
     Scavenge），老年代用标记-整理（如Serial Old、Parallel O...
-  views: '530'
+  views: '531'
 - title: 【计算基础｜网络04】—— HTTP接口实战（下）：接口测试、鉴权与跨域排错
   link: https://blog.csdn.net/Lvyizhuo/article/details/166256813
   date: '2026-09-21'
   excerpt: 本文详解HTTP接口实战中的三大核心问题：接口测试（用Apifox/Postman自动化+断言）、鉴权机制（对比Cookie+Session与JWT优劣及实现）、跨域问题（CORS预检与配置）。通过FastAPI搭建实验服务，演示登录、鉴权、限流、Webhook等真实场景，附状态码排错表，支持Pyt...
-  views: '486'
+  views: '487'
 - title: 【计算基础｜网络03】—— HTTP接口实战（上）：方法、参数位置、请求头与请求体.md
   link: https://blog.csdn.net/Lvyizhuo/article/details/166256745
   date: '2026-09-21'
@@ -296,7 +301,7 @@ articles:
   date: '2026-09-19'
   excerpt: Codex与Claude Code均实现跨会话持久化记忆，却摒弃向量库与Embedding。Codex采用离线两阶段管线：先用小模型从rollout中提取结构化记忆，存入SQLite（事实源），再由受限子代理通过git
     diff判断变更后合并为四层Markdown；Claude Code则在回合内直...
-  views: '330'
+  views: '331'
 - title: 【Python基础02】—— 迭代器与生成器：从迭代协议到惰性求值实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/165891494
   date: '2026-09-18'
@@ -312,20 +317,20 @@ articles:
   date: '2026-09-17'
   excerpt: 本文厘清KV Cache（存什么）与Prefix Caching（怎么复用）的本质区别：前者是注意力机制中缓存的历史键值对，后者是跨请求复用这些缓存的调度策略。KV
     Cache解决重复计算问题，将复杂度从O(t²)降至线性；而Prefix Caching通过共享相同前缀的KV Cache，显著降低P...
-  views: '353'
+  views: '356'
 - title: 【大模型基础｜大模型API上】—— 大模型对话三套主流接口协议拆解：Anthropic Messages vs OpenAI Chat Completions
     vs Responses
   link: https://blog.csdn.net/Lvyizhuo/article/details/165623464
   date: '2026-09-17'
   excerpt: 本文深度拆解Anthropic Messages、OpenAI Chat Completions与Responses三套主流LLM接口协议，从端点、鉴权、系统指令、输入输出容器、状态归属及Content
     Block六层对比，揭示协议本质差异。重点剖析“无状态”与“有状态”对话模型的根本分岔，详解各协...
-  views: '360'
+  views: '362'
 - title: 【大模型基础｜大模型API下】—— Responses API 与 Chat Completions：搞懂 Agent 时代的接口分岔
   link: https://blog.csdn.net/Lvyizhuo/article/details/165604810
   date: '2026-09-16'
   excerpt: 2026年起，OpenAI Codex移除Chat Completions支持，标志着API生态进入“单向兼容”时代。旧接口仅支持简单对话，无法承载Agent所需的多轮推理与工具调用轨迹；而新推出的Responses
     API以input/output序列化结构，原生支持状态延续、工具链追踪与推理过程...
-  views: '473'
+  views: '478'
 - title: 【大模型基础｜推理篇03】—— KV Cache 与缓存命中：搞懂大模型推理为什么快、缓存为什么便宜
   link: https://blog.csdn.net/Lvyizhuo/article/details/165604005
   date: '2026-09-16'
@@ -359,13 +364,13 @@ articles:
   date: '2026-09-06'
   excerpt: LangChain 通过人工介入（HITL）机制，让 Agent 在执行删除、支付、发邮件等不可逆操作前暂停，等待审批后继续。技术核心是 LangGraph
     的 interrupt() 配合 Checkpointer 保存状态，支持在工具内部中断或通过 interrupt_before/after ...
-  views: '254'
+  views: '258'
 - title: 【LangChain进阶03：Long-term memory】—— LangChain 跨会话存储（Store）实战：让 Agent 记住你，而不是只记住对话
   link: https://blog.csdn.net/Lvyizhuo/article/details/164337623
   date: '2026-09-06'
   excerpt: 本文介绍 LangChain 跨会话存储(Store)，用于持久化用户偏好等数据，区别于 Checkpointer 仅限单线程对话。Store
     用命名空间、键值对组织数据，支持增删查搜。在 Agent 中通过 InjectedStore 注入，工具可访问共享存储，实现跨对话长期记忆。简洁实用。
-  views: '488'
+  views: '489'
 - title: 【LangChain组件06：Memory】—— LangChain 对话记忆 Checkpointer 实战详解——让 Agent 真正记住多轮对话
   link: https://blog.csdn.net/Lvyizhuo/article/details/164337036
   date: '2026-09-05'
@@ -389,7 +394,7 @@ articles:
   date: '2026-09-04'
   excerpt: 本摘要介绍 LangChain 中间件的进阶用法，重点讲解 wrap_model_call 和 wrap_tool_call 钩子如何“接管”模型与工具调用。通过
     handler 回调控制执行，实现失败重试、主备降级、结果缓存、请求改写等能力，使 Agent 从“能跑”变为“扛得住”，是生产环境可靠...
-  views: '232'
+  views: '233'
 - title: 【LangChain组件00：Models】—— LangChain Chat Model 详解：从常用参数到 bind_tools 与结构化输出
   link: https://blog.csdn.net/Lvyizhuo/article/details/164302723
   date: '2026-09-03'
@@ -434,13 +439,13 @@ articles:
   date: '2026-08-31'
   excerpt: 本文系统讲解LangChain工具开发全链路：@tool装饰器定义工具、Pydantic/JSON Schema定义参数，重点阐述ToolRuntime运行时上下文——包含State（短时记忆）、Context（不可变配置）、Store（长时记忆）、Stream
     Writer、Execution I...
-  views: '1544'
+  views: '1545'
 - title: 【大模型基础｜推理篇02】—— vLLM 部署与推理优化实战：从启动参数到显存优化，KV 调优
   link: https://blog.csdn.net/Lvyizhuo/article/details/163922791
   date: '2026-08-20'
   excerpt: 本文详解 vLLM 在 4×A100 80G 环境下的部署与推理优化，聚焦显存管理核心痛点。通过 PagedAttention 实现 KV Cache
     分页管理，将显存浪费从 60%–80% 降至 4% 以下，吞吐提升至 HuggingFace Transformers 的 24 倍。重点解析启动参...
-  views: '550'
+  views: '553'
 - title: 【全栈开发00】从源码到上线！Java项目底层运行原理 + 企业级Docker部署全流程（实战案例）
   link: https://blog.csdn.net/Lvyizhuo/article/details/163729634
   date: '2026-08-13'
@@ -466,7 +471,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/162637296
   date: '2026-07-06'
   excerpt: 摘要： 大模型部署与微调的显存占用有固定规律，核心公式为“显存(GB)=参数量(B)×单参数字节数”，不同精度（FP16/INT8/INT4）对应不同字节数。推理显存包括权重、KV缓存和激活值，而微调显存更高，需额外考虑梯度和优化器状态。LoRA微调通过冻结主干模型、仅训练两个低秩矩阵大幅降低显存，...
-  views: '377'
+  views: '380'
 - title: 【终端效率工具01】—— Starship：Rust 打造的极速终端提示符，配置从入门到实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/162541037
   date: '2026-07-03'
@@ -482,7 +487,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/161897765
   date: '2026-06-11'
   excerpt: 文章摘要： LeetCode第3题"无重复字符的最长子串"是考察滑动窗口算法的经典题目。文章详解了三种解法：1)暴力枚举法(O(n³))仅用于理解问题本质；2)标准滑动窗口+哈希集合法(O(n))，通过双指针维护无重复字符窗口；3)优化版滑动窗口+哈希表法(O(n))，通过记录字符最后出现位置直接跳...
-  views: '257'
+  views: '258'
 - title: 【AI工作流搭建n8n】—— Docker + PostgreSQL 生产环境部署全攻略：MCP 集成与 Skills 技能实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/161867964
   date: '2026-06-10'
@@ -500,7 +505,7 @@ articles:
   date: '2026-06-09'
   excerpt: n8n 自部署指南摘要 n8n 是一款开源工作流自动化工具，可作为 Zapier/Make 的替代方案，具有数据自主、免费使用、支持 AI 集成等优势。本文详细介绍了从
     Docker 安装到生产环境部署的完整流程： 环境准备：推荐使用 Linux 系统，2GB+ 内存，需安装 Docker 和 Do...
-  views: '475'
+  views: '477'
 - title: 【Claude Code】—— Claude Code 10 个内置技能实战指南：别只会用 /help
   link: https://blog.csdn.net/Lvyizhuo/article/details/161836264
   date: '2026-06-09'
@@ -512,13 +517,13 @@ articles:
   date: '2026-06-08'
   excerpt: 本文详细介绍了使用kubeadm搭建1个Master+2个Worker的三节点Kubernetes集群的完整过程。主要内容包括： 环境准备：Ubuntu
     22.04系统配置，包括关闭swap、设置主机名和网络参数 安装containerd容器运行时，并配置cgroup驱动为systemd 安装kub...
-  views: '442'
+  views: '445'
 - title: 【Kubernetes01】—— K8s核心原理一文吃透：从架构到调度的完整拆解
   link: https://blog.csdn.net/Lvyizhuo/article/details/161804458
   date: '2026-06-08'
   excerpt: 本文深入浅出拆解 Kubernetes 核心原理，从集群解决的实际运维痛点切入，完整讲解控制平面、工作节点两大模块的组件分工与协作逻辑。同时详解
     Pod、Deployment、Service 三大核心资源的设计理念、使用场景与关联关系，梳理 Pod 从创建到运行的全流程、调度机制、网络模型，以及 K...
-  views: '468'
+  views: '469'
 - title: 【Mac开发环境部署01】—— Mac 最全 NVM 安装 & Node 版本管理指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/161714182
   date: '2026-06-05'
@@ -529,24 +534,24 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/161256624
   date: '2026-05-20'
   excerpt: 文章摘要 sherpa-onnx是一个专注于语音识别(ASR)模型高效推理的开源库，由k2-fsa项目组维护。它基于ONNX Runtime，支持将多种ASR模型(如Paraformer、Whisper等)导出为ONNX格式进行跨平台部署。主要特点包括：轻量级(不依赖PyTorch)、支持多平台(L...
-  views: '1649'
+  views: '1659'
 - title: 【语音识别】— FunASR 项目详解与 Fun-ASR-Nano 实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/161256550
   date: '2026-05-20'
   excerpt: FunASR是阿里达摩院开源的端到端语音识别工具包，集成了语音活动检测(VAD)、语音识别(ASR)、标点恢复等功能。本文重点介绍了轻量级模型Fun-ASR-Nano的使用方法，包括环境搭建、AutoModel机制、热词增强等特性，并提供了完整的实战代码示例。文章还分享了处理长音频时的OOM避坑技巧...
-  views: '2522'
+  views: '2527'
 - title: 【RAG进阶03】—— RAGFlow — 当 RAG 引擎学会了“看懂“文档
   link: https://blog.csdn.net/Lvyizhuo/article/details/161186023
   date: '2026-05-19'
   excerpt: RAGFlow：深度文档理解的RAG引擎 RAGFlow是一款开箱即用的RAG引擎，其核心创新在于"深度文档理解"技术。与传统RAG框架不同，它针对不同文档类型（论文、法律文书、PPT等）提供专门的解析模板，在切块前就保留文档的语义结构，解决了常规RAG系统中表格错乱、图片丢失等痛点。
     该引擎采用微...
-  views: '201'
+  views: '202'
 - title: 【RAG进阶04】—— RAG 技术选型 — 传统 RAG、GraphRAG、LlamaIndex、RAGFlow 怎么选？
   link: https://blog.csdn.net/Lvyizhuo/article/details/161186063
   date: '2026-05-19'
   excerpt: RAG技术选型指南：四种主流方案对比 本文对比了四种主流RAG技术方案的特点和适用场景： 传统RAG：基础模式，适合快速验证想法，成本低但全局理解能力弱
     GraphRAG：微软提出的增强方案，擅长跨文档分析和全局推理，但构建成本高 LlamaIndex：灵活的开发框架，适合需要高度定制的场景，生态丰...
-  views: '1333'
+  views: '1338'
 - title: 【RAG进阶02】—— LlamaIndex — 用数据框架给 LLM 装上“外脑“
   link: https://blog.csdn.net/Lvyizhuo/article/details/161185970
   date: '2026-05-18'
@@ -558,18 +563,18 @@ articles:
   excerpt: GraphRAG：知识图谱赋能的下一代RAG技术 微软研究院提出的GraphRAG通过构建知识图谱突破了传统RAG的局限性。其核心创新在于：
     索引阶段使用LLM抽取实体关系构建知识图谱，通过社区检测算法形成层次化语义结构 查询时提供四种搜索模式，既能回答具体事实查询，也能处理需要全局视角的综合问题
     ...
-  views: '562'
+  views: '564'
 - title: 【Langchain进阶01】—— LangSmith 全面指南：LLM 应用的可观测性、调试与评估平台
   link: https://blog.csdn.net/Lvyizhuo/article/details/161053832
   date: '2026-05-13'
   excerpt: 文章摘要： LangSmith是专为LLM应用开发设计的全生命周期观测平台，提供四大核心功能：链路追踪(Tracing)、效果评估(Evaluation)、提示词管理和监控。它能解决开发者最头疼的问题——快速定位LLM应用中的错误来源，无论是prompt问题、检索上下文还是模型异常。平台支持多种开发...
-  views: '427'
+  views: '430'
 - title: 【PaddleOCR教程01】PP-OCRv5 全面指南：从模型架构到实战部署
   link: https://blog.csdn.net/Lvyizhuo/article/details/161052840
   date: '2026-05-13'
   excerpt: 本文全面介绍了PaddleOCR 3.5.0中的PP-OCRv5模型，包括其架构特点、性能提升和使用方法。主要内容包括：1) PP-OCRv5相比v4在检测和识别精度上的显著提升；2)
     详细的环境搭建指南和常见问题解决方案；3) 完整的模型体系说明，涵盖文本检测、识别及辅助预处理模型；4) 核心AP...
-  views: '2287'
+  views: '2294'
 - title: 【全栈开发03】—— FastAPI 实战：从 Flask 迁移到 FastAPI，我踩过的坑和学到的东西
   link: https://blog.csdn.net/Lvyizhuo/article/details/160990333
   date: '2026-05-11'
@@ -592,7 +597,7 @@ articles:
   date: '2026-05-09'
   excerpt: 本文详细介绍了在Ubuntu 24.04系统上安装配置Docker Desktop的全过程，重点解决了登录报错问题，并区分了Docker CLI与Docker
     AI(Gordon)的功能差异。安装步骤包括卸载旧版、添加官方源、安装依赖等关键操作，特别强调了pass和gnupg2的必要性。针对常见的登...
-  views: '587'
+  views: '588'
 - title: 【Ubuntu实用工具】—— 高颜值实用ls命令工具lsd
   link: https://blog.csdn.net/Lvyizhuo/article/details/160852470
   date: '2026-05-07'
@@ -615,7 +620,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160408900
   date: '2026-04-22'
   excerpt: 本文详解偏好对齐三大主流方法：RLHF、DPO与KTO。指出SFT后模型“听话但不讨喜”的核心问题，强调偏好对齐旨在实现质量、安全与风格对齐。对比三者：RLHF效果强但流程复杂、成本高；DPO绕过奖励模型，训练稳定、效率高，成工业首选；KTO仅需二元标签，数据易得、抗噪性强，适合线上反馈场景。结合P...
-  views: '688'
+  views: '692'
 - title: 【大模型基础｜微调篇01】—— 后训练之大模型微调（Fine Tuning）详解：SFT、FFT核心流程及常见微调方法详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/160408713
   date: '2026-04-22'
@@ -631,7 +636,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160345466
   date: '2026-04-20'
   excerpt: 文章摘要 随着大语言模型(LLM)应用复杂度提升，单纯的提示词优化已无法满足需求，上下文工程(Context Engineering)应运而生。它从静态的"写提示词"升级为动态管理所有输入信息，通过7大核心组件（指令、知识、工具、记忆、状态、查询及隐藏组件）的结构化组合，解决长上下文臃肿、注意力漂移...
-  views: '604'
+  views: '607'
 - title: 【Node.js包管理02】—— 从npm迁移到pnpm：高效包管理的实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/160260751
   date: '2026-04-20'
@@ -642,7 +647,7 @@ articles:
   date: '2026-04-19'
   excerpt: ms-swift 3.12 命令行参数全解聚焦核心功能，按四层结构梳理参数体系，强调集成参数为实际生效项。详解传参格式（list、dict、bool），重点标注默认值易错点：train_type=lora、learning_rate分档（全参1e-5，LoRA
     1e-4）、gradient_chec...
-  views: '845'
+  views: '846'
 - title: 【大模型微调与部署03】—— ms-swift-3.12 命令行参数（训练、推理、对齐、量化、部署全参数）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160257454
   date: '2026-04-19'
@@ -657,7 +662,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160256948
   date: '2026-04-18'
   excerpt: 本文基于MS-Swift框架实战，聚焦LoRA微调中最关键的两个参数`lora_rank (r)`和`lora_alpha`，从原理到实战，讲清作用、关系、调参技巧，适配Qwen-1.8B等小模型、医疗等垂直领域场景，看完直接套用。
-  views: '736'
+  views: '742'
 - title: 【大模型微调与部署03】—— ms-swift-4.1命令行参数（训练、推理、对齐、量化、部署全参数）
   link: https://blog.csdn.net/Lvyizhuo/article/details/160254064
   date: '2026-04-17'
@@ -667,7 +672,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160252964
   date: '2026-04-17'
   excerpt: 本文介绍了MS-Swift框架如何配置医疗对话数据集，重点解析了4种支持的数据格式（Messages/ShareGPT/Alpaca/Query-Response）和3种接入方式。针对医疗多轮对话和身份认知数据集，提供了正确的dataset_info.json配置示例，包含字段映射规则和训练命令。特...
-  views: '1184'
+  views: '1188'
 - title: 【终端效率工具01】—— Yazi：Rust 编写的现代化终端文件管理器，告别繁琐操作
   link: https://blog.csdn.net/Lvyizhuo/article/details/160216054
   date: '2026-04-16'
@@ -682,7 +687,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/160173549
   date: '2026-04-15'
   excerpt: 本文介绍了大模型微调开发环境的配置过程，针对服务器（Ubuntu20.04+V100）和本地（1660s显卡）两种场景提供了详细指导。核心内容包括：使用Anaconda创建Python3.11虚拟环境，安装兼容的Torch2.4.0+cu121版本，通过源码安装ms-swift3.12.6微调工具，...
-  views: '1050'
+  views: '1051'
 - title: 【AI私人家庭医生day01】—— 项目介绍
   link: https://blog.csdn.net/Lvyizhuo/article/details/160172421
   date: '2026-04-15'
@@ -692,7 +697,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159617129
   date: '2026-03-29'
   excerpt: 摘要： ToolCall（工具调用）并非LLM的黑科技，本质是通过提示词引导模型输出结构化指令（如JSON），后端解析后执行真实工具并返回结果。实现流程分三步：定义工具函数（如加法）、用提示词约束输出格式、解析并执行指令。早期FunctionCall仅支持单函数调用，而ToolCall升级为多工具并...
-  views: '917'
+  views: '918'
 - title: 【MySQL基础】—— MySQL入门｜从零开始学基本操作，看完就能上手
   link: https://blog.csdn.net/Lvyizhuo/article/details/159617115
   date: '2026-03-29'
@@ -724,7 +729,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159513614
   date: '2026-03-26'
   excerpt: 本文总结了技术面试常见问题，涵盖异步处理、事务、Redis、数据库、大模型及综合场景六大模块。异步处理部分解析了其概念、实现方式及失败处理方案；事务部分详解了ACID特性、隔离级别及分布式事务方案；Redis章节介绍了数据结构、持久化机制及分布式锁实现；数据库部分聚焦索引优化与分库分表；大模型部分阐...
-  views: '820'
+  views: '821'
 - title: 【计算机网络基础01】—— 深入理解TCP/IP协议栈：互联网通信的基石
   link: https://blog.csdn.net/Lvyizhuo/article/details/159498756
   date: '2026-03-26'
@@ -739,17 +744,17 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159470101
   date: '2026-03-25'
   excerpt: 本文全面介绍了Java二维数组的核心知识点。首先从基本概念入手，解释二维数组作为"数组的数组"的本质特性及其常见应用场景。重点讲解了两种初始化方式：动态初始化（指定行列数或不规则数组）和静态初始化（直接赋值）。详细演示了二维数组的基本操作，包括元素访问、获取长度和两种遍历方法（普通for循环和增强f...
-  views: '596'
+  views: '597'
 - title: 2026最新｜阿里云学生认证完整教程（含300元无门槛券+免费云服务器领取）
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355791
   date: '2026-03-22'
   excerpt: 阿里云学生认证2026最新教程：在校大学生可领取300元无门槛代金券+低价云服务器（年付低至99元）。认证条件包括全日制学籍、个人实名认证和18-28岁年龄限制。通过支付宝扫码5分钟即可完成认证，自动发放优惠券。推荐选购2核2G配置服务器，用券后近乎免费。常见问题包括学籍不一致、毕业失效等，需注意实...
-  views: '12814'
+  views: '12843'
 - title: 阿里云大模型工程师 ACA 认证通关笔记｜思维导图 + 逐章精讲 + 一站式复习（附开源地址）
   link: https://blog.csdn.net/Lvyizhuo/article/details/159355669
   date: '2026-03-22'
   excerpt: 本文分享一套阿里云大模型工程师 ACA 认证完整学习资料，包含10 章体系化思维导图 + 逐章详细笔记，覆盖大模型基础、应用场景、API 调用、提示词工程、RAG、微调、Agent、安全合规等全考点。文中直接展示前两章思维导图框架与核心笔记，可快速上手复习。资料免费开源、拿来即用，适合备考、系统入门...
-  views: '1925'
+  views: '1928'
 - title: 【JAVA基础13】—— JAVA数组从入门到实战：一篇吃透核心用法
   link: https://blog.csdn.net/Lvyizhuo/article/details/159174422
   date: '2026-03-18'
@@ -764,7 +769,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/159122662
   date: '2026-03-16'
   excerpt: 计算机采用原码、反码和补码来解决带符号数的存储与运算问题。原码最直观但存在运算缺陷；反码通过数值位取反改进运算，但仍存在±0问题；补码在反码基础上末位加1，统一了±0表示，使加减法运算可直接通过加法实现，成为计算机标准方案。正数的三种码相同，负数则通过取反加一转换为补码，最终实现了高效准确的二进制运...
-  views: '646'
+  views: '647'
 - title: 【JAVA基础10】—— 彻底搞懂Java四种进制：从底层原理到实操避坑指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/159119496
   date: '2026-03-16'
@@ -786,7 +791,7 @@ articles:
   date: '2026-03-14'
   excerpt: 摘要： 知识管理的核心是高效复用而非堆积。本文提出一套基于PARA分类法的极简管理方法论： 分类架构：用Projects（项目）、Areas（领域）、Resources（资源）、Archives（归档）四大类构建导航系统，层级不超过3层；
     记录规范：统一命名格式，采用4要素模板（标题/来源/要点/应...
-  views: '2070'
+  views: '2076'
 - title: 【JAVA基础07】—— Java 算术运算符全解析：从基础到避坑，实战必备
   link: https://blog.csdn.net/Lvyizhuo/article/details/159054098
   date: '2026-03-14'
@@ -802,7 +807,7 @@ articles:
   date: '2026-03-13'
   excerpt: 字符编码详解：从原理到实战 核心摘要 字符编码是计算机存储和处理文本的基础规则，决定了字节与字符的转换关系。本文系统讲解了编码原理，对比分析了ASCII、GBK、UTF-8等常用编码的特点和适用场景，并提供了Java中的编码处理最佳实践：
     编码本质：解决字符与字节的映射问题，核心是平衡兼容性与空间效...
-  views: '446'
+  views: '449'
 - title: 【JAVA基础04】—— Java注释详解：从基础注释到Javadoc文档注释，让代码更有“温度”
   link: https://blog.csdn.net/Lvyizhuo/article/details/158970905
   date: '2026-03-12'
@@ -818,7 +823,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/158931194
   date: '2026-03-11'
   excerpt: 本文全面解析Java数据类型与变量，涵盖8种内置数据类型（整数型、浮点型、布尔型、字符型）及其取值范围、默认值和使用场景。详细讲解引用数据类型、Java常量定义与使用规范，重点分析数据类型转换规则（自动转换和强制转换）。系统介绍Java四大变量类型（局部变量、实例变量、类变量、参数变量）及其作用域、...
-  views: '585'
+  views: '586'
 - title: 【JAVA基础01】——类和对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/158923921
   date: '2026-03-11'
@@ -846,35 +851,35 @@ articles:
   date: '2026-03-07'
   excerpt: Mac开发者配置指南摘要 本文提供完整的Mac开发者配置流程，涵盖三大核心模块： 系统优化：调整触摸板、程序坞、键盘等设置，提升操作效率 必备工具：安装Homebrew、oh-my-zsh、Git等开发必备工具，配置GitHub
     SSH连接 开发环境：搭建前端(Node/NVM/PNPM)、Rust...
-  views: '1238'
+  views: '1239'
 - title: 【Claude Code】—— Claude Code 最全启动参数+权限配置｜彻底告别确认弹窗，实现全自动执行
   link: https://blog.csdn.net/Lvyizhuo/article/details/158509613
   date: '2026-02-28'
   excerpt: 参数作用--system-prompt "内容"覆盖默认系统提示--append-system-prompt "内容"追加自定义规则只放行文件编辑，命令类操作默认需要确认使用可实现安全无弹窗全自动持久化+
     别名 alias，大幅提升开发效率生产/敏感环境严禁使用完全跳过权限参数这套配置适合 Java...
-  views: '21106'
+  views: '21116'
 - title: 【AI开发】—— Copilot最佳使用方式与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158432315
   date: '2026-02-28'
   excerpt: 本人使用过很多智能体开发工具，Claude Code、Codex、Cursor、Google Studio、Coze，其实千篇一律，大同小异。各厂商对
     Agent 的 Prompt 设定与思考逻辑等略有差异，例如 Claude Code、Codex 等都有内置的系统提示词，作为开箱即用的 Codin...
-  views: '3179'
+  views: '3180'
 - title: 【Copilot高阶技巧】—— 自定义智能体与后端开发工作流实战
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430161
   date: '2026-02-27'
   excerpt: 作为一名长期关注 AI 辅助开发的工程师，我在使用 Copilot 的过程中逐渐发现：**默认的 Copilot 虽然强大，但想要真正贴合后端开发场景、提升团队协作效率，就必须深入挖掘其自定义能力**。很多开发者仅停留在
     Tab 补全和基础聊天的层面，未能发挥 Copilot 作为"开发智能体编排平...
-  views: '2064'
+  views: '2065'
 - title: 【AI开发】—— Agent Hooks的详解与实战指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158430438
   date: '2026-02-27'
   excerpt: VS Code Copilot Hooks 实战摘要 Copilot Hooks是VS Code新增的Agent行为管控功能，解决了传统Prompt引导的三大痛点：非确定性（Agent可能忽略约束）、无自动化流程、无统一管控。Hooks通过8个生命周期事件实现"强制触发、代码驱动"，核心场景包括安全...
-  views: '1684'
+  views: '1687'
 - title: 【AI开发】—— Copilot自定义智能体与User profile配置及默认智能体查看指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/158428643
   date: '2026-02-26'
   excerpt: 本文汇总VS Code中GitHub Copilot自定义智能体与User profile（用户配置文件）的关联配置、操作步骤，以及Copilot默认智能体的查看方法，覆盖Windows/macOS/Linux三系统，兼顾基础操作与进阶技巧，适配日常开发中的智能体管理需求。
-  views: '1729'
+  views: '1730'
 - title: 【AI开发】—— Agent Skills详解及Copilot 进阶玩法
   link: https://blog.csdn.net/Lvyizhuo/article/details/158387100
   date: '2026-02-26'
@@ -886,47 +891,47 @@ articles:
   date: '2026-02-25'
   excerpt: '# Copilot 设置全解析 + 最佳实践｜解锁 AI 辅助开发效率天花板使用 GitHub Copilot 有一段时间的开发者，大概率会有一个共同感受：默认设置能满足基础需求，但想要让它真正贴合自己的开发习惯、兼顾效率与安全，就必须深入挖掘其设置面板的细节。很多人忽略了
     Copilot 丰富的可...'
-  views: '2641'
+  views: '2644'
 - title: 【Copilot配置】—— copilot-instructions.md vs AGENTS.md vs .instructions.md三种指令文件解析与配置
   link: https://blog.csdn.net/Lvyizhuo/article/details/158382558
   date: '2026-02-25'
   excerpt: 本文解析了Copilot指令文件的三种类型：.github/copilot-instructions.md（项目全局规则）、AGENTS.md（Agent任务配置）和.instructions.md（目录级规则）。通过表格对比了三者的定位、生效范围和使用场景，并提供了Python项目的实战配置示例。...
-  views: '3605'
+  views: '3607'
 - title: 【Ubuntu实用工具】—— Gnome拓展管理器及实用拓展
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322723
   date: '2026-02-23'
   excerpt: Ubuntu系统通过Gnome拓展管理器可轻松安装和管理桌面拓展，显著提升使用体验。本文详细介绍拓展管理器的安装方法（支持APT和Flatpak两种方式）及基础使用指南，并分类推荐9款实用拓展：效率类如Dash
     to Panel和PaperWM优化多任务处理；美化类如Hanabi动态壁纸增强视觉体验...
-  views: '1990'
+  views: '1992'
 - title: 【Ubuntu实用工具】—— Fcitx5 输入法安装与完整配置指南（新手友好+避坑版）
   link: https://blog.csdn.net/Lvyizhuo/article/details/158322639
   date: '2026-02-23'
   excerpt: Ubuntu系统Fcitx5输入法安装与配置指南 本文详细介绍了在Ubuntu系统上安装和配置Fcitx5输入法的完整流程。主要内容包括： Fcitx5优势：相比默认IBus和旧版Fcitx4，Fcitx5具有更快的响应速度、更好的兼容性和丰富的定制功能。
     安装步骤： 先卸载旧版Fcitx4 安装F...
-  views: '9295'
+  views: '9327'
 - title: 【OpenCode插件】—— oh-my-opencode详解及使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010762
   date: '2026-02-14'
   excerpt: 摘要： Oh My OpenCode (OMO) 是 OpenCode 的增强插件，将其升级为全流程 AI 开发团队。OMO 通过 11 个专业智能体（如
     Sisyphus、Atlas、Hephaestus）分工协作，覆盖规划、编码、调试等环节，支持多模型切换（Claude、GPT、Gemini 等...
-  views: '9989'
+  views: '9993'
 - title: 【AI开发】—— ReAct Agent模式自主规划智能体架构详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158038860
   date: '2026-02-14'
   excerpt: 在AI智能体（Agent）爆发的今天，我们聊到的Manus、AutoGPT、GPT-4o Agent，甚至LangChain里的各类工具调用框架，背后都藏着一个共同的“底层密码”——ReAct。很多人第一次接触ReAct，会把它和具体的智能体产品混淆（比如之前有人问“Manus是不是ReAct的一种...
-  views: '1216'
+  views: '1217'
 - title: 【AI开发】——Agent开发框架之Agent SDK详解
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010594
   date: '2026-02-13'
   excerpt: 摘要： Agent SDK是降低AI智能体开发门槛的工具包，封装了核心组件和工作流程，让开发者无需从零造轮子。它连接大语言模型（LLM）与外部工具，支持智能体生命周期管理、工具集成、多智能体协作等功能，显著提升开发效率。主流选项包括OpenAI
     Agents SDK（多Agent协作）、Micros...
-  views: '2136'
+  views: '2141'
 - title: 【OpenCode插件】—— Superpowers的Skills详细介绍与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/158010538
   date: '2026-02-13'
   excerpt: Superpowers工具安装完成，提供14个核心开发技能，覆盖从头脑风暴到代码验证的全流程。安装过程顺利通过4个关键步骤验证，无需额外排查。技能包括创意激发、并行任务处理、Git管理、测试驱动开发等实用功能，通过简单命令即可加载使用。所有功能需重启OpenCode后生效，支持后续通过git
     pul...
-  views: '11358'
+  views: '11361'
 - title: 【手搓项目-AI政策咨询智能体】—— 多模态处理01：图片识别功能落地实录
   link: https://blog.csdn.net/Lvyizhuo/article/details/157981087
   date: '2026-02-11'
@@ -942,7 +947,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157907026
   date: '2026-02-09'
   excerpt: 本文系统解析了LLM、Agent、MCP、Skill四大核心概念的区别与联系。LLM作为基础认知层提供语言理解能力；Skill是原子执行单元，实现具体任务；Agent整合LLM和Skill，具备自主完成复杂任务的能力；MCP则是多智能体协同的平台支撑。文章通过层级关系梳理、易混点辨析和工程案例，阐明...
-  views: '1350'
+  views: '1354'
 - title: 【JAVA开发】—— 使用SDK管理Ubuntu的jdk
   link: https://blog.csdn.net/Lvyizhuo/article/details/157903120
   date: '2026-02-09'
@@ -958,7 +963,7 @@ articles:
   date: '2026-02-03'
   excerpt: OpenCode双插件协同开发指南：Oh My OpenCode（OMOC）与Superpowers的完美配合 核心要点： 定位互补：OMOC是"项目开发总指挥"负责效率提升，Superpowers是"代码质检员"确保规范
     协同优势：单用OMOC代码质量差，单用Superpowers效率低，组合使用...
-  views: '7343'
+  views: '7345'
 - title: 【AI开发】—— OpenCode Superpowers 插件安装+使用全指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157685664
   date: '2026-02-03'
@@ -968,28 +973,28 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157653311
   date: '2026-02-02'
   excerpt: 本文介绍在Ubuntu系统中使用nvm管理Node.js多版本的完整方案。首先强调nvm的优势：解决版本冲突、灵活切换、隔离全局包。详细步骤包括：1)彻底清理旧Node环境；2)安装配置nvm；3)安装多版本Node并进行版本切换；4)处理全局包适配问题；5)常见问题排查。最后提供nvm常用命令速查...
-  views: '1419'
+  views: '1420'
 - title: 【AI开发】—— OpenCode的安装与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157652092
   date: '2026-02-02'
   excerpt: 《开源AI编码助手OpenCode全攻略》摘要： 本文详细介绍了开源AI编程工具OpenCode的完整使用流程。首先强调安装前的两项准备：选择适配的终端模拟器（推荐WezTerm/Alacritty）和获取LLM
     API密钥（新手建议用OpenCode Zen）。接着提供多平台安装方案，包括通用一键...
-  views: '2511'
+  views: '2512'
 - title: 【阿里云服务器】—— 云服务器 ECS搭建与使用
   link: https://blog.csdn.net/Lvyizhuo/article/details/157552745
   date: '2026-01-30'
   excerpt: 摘要： 本文为阿里云ECS主机新手配置指南，涵盖选购建议与实操配置。选购推荐1核2G/2核2G+CentOS 8.x+40G云盘+1M带宽，优先就近地域。配置步骤包括：1）通过控制台或Xshell登录；2）更新系统、重置密码、修改主机名；3）安全组必开22/80/443端口，限制授权IP提升安全；4...
-  views: '1650'
+  views: '1652'
 - title: 【Linux】—— FTP服务搭建与使用（Ubuntu实操版，适配办公内网）
   link: https://blog.csdn.net/Lvyizhuo/article/details/157510184
   date: '2026-01-29'
   excerpt: 摘要：Ubuntu办公内网FTP服务搭建指南 本文详细介绍了在Ubuntu系统中搭建vsftpd FTP服务的完整流程，特别适配办公内网环境。主要内容包括：安装vsftpd、创建共享目录、配置文件修改（解决端口冲突、中文支持等问题）、防火墙设置，以及Windows端通过FileZilla连接的详细步...
-  views: '1312'
+  views: '1314'
 - title: 【LLM基础】—— 余弦相似度算法
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432704
   date: '2026-01-28'
   excerpt: 本文介绍了大语言模型（LLM）中的核心算法——余弦相似度，重点解析其原理与应用。余弦相似度通过计算向量夹角来衡量文本语义相似度，具有"重方向、轻长度"的特性，成为LLM语义匹配的基础工具。文章详细讲解了向量在LLM中的作用、余弦相似度的几何原理和数学公式，并展示了在RAG检索、文本聚类等场景的实际应...
-  views: '1039'
+  views: '1040'
 - title: 【LLM基础】—— RAG检索增强生成
   link: https://blog.csdn.net/Lvyizhuo/article/details/157432322
   date: '2026-01-27'
@@ -999,13 +1004,13 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157399944
   date: '2026-01-26'
   excerpt: 本文详细介绍Ollama本地部署大模型的全流程：从安装（支持多平台）、模型拉取与对话，到通过Modelfile固化参数配置，以及API调用（含OpenAI兼容接口）。适用于本地开发、数据隐私敏感场景及原型验证，强调配置显式化与性能优化，适合希望快速在本地运行开源大模型的开发者。
-  views: '1396'
+  views: '1398'
 - title: 【个人网站搭建】—— Academic Pages 个人学术网站完整配置指南
   link: https://blog.csdn.net/Lvyizhuo/article/details/157391122
   date: '2026-01-26'
   excerpt: 📚 Academic Pages 学术网站模板 核心功能 基于 Jekyll + GitHub Pages 的学术网站解决方案 提供论文展示、项目介绍、教学经历等模块
     支持响应式设计和多终端适配 部署方式 GitHub Pages 自动部署（推荐） 使用模板创建仓库 自动构建发布 本地Jekyll环...
-  views: '1676'
+  views: '1681'
 - title: 【JAVA开发】—— HTTP请求参数及类型
   link: https://blog.csdn.net/Lvyizhuo/article/details/157295268
   date: '2026-01-25'
@@ -1015,7 +1020,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157299968
   date: '2026-01-25'
   excerpt: 本文介绍了使用Apifox进行接口测试的完整流程。首先概述了软件开发的5个阶段（需求分析、设计、编码、测试、上线运维），然后以苍穹外卖项目为例，详细演示了单元测试和集成测试的操作步骤。在单元测试部分，展示了新增员工接口的测试过程；在集成测试部分，构建了包含登录、查询、修改等操作的全流程测试场景，并通...
-  views: '957'
+  views: '958'
 - title: 【JAVA基础】—— 面向对象
   link: https://blog.csdn.net/Lvyizhuo/article/details/157293376
   date: '2026-01-24'
@@ -1030,7 +1035,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157283764
   date: '2026-01-23'
   excerpt: 本文详细解析了HTTP协议中的核心请求方法，包括GET、POST、PUT、DELETE、PATCH等常用方法，以及HEAD、OPTIONS等辅助方法。文章从方法定义、核心特点、适用场景和实操示例四个方面进行阐述，特别强调了幂等性和安全性这两个关键概念。通过对比表格清晰展示了GET与POST的核心区别...
-  views: '1001'
+  views: '1002'
 - title: 【JAVA开发】—— MySQL基础
   link: https://blog.csdn.net/Lvyizhuo/article/details/157257809
   date: '2026-01-23'
@@ -1041,7 +1046,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249509
   date: '2026-01-22'
   excerpt: 本文摘要介绍了一个严苛精准的学术审稿人角色设定及其系统化评审流程。该角色要求具备前沿洞察力、理论功底和逻辑审查能力，强调对研究原创性、方法论严谨性、数据分析等核心要素的严格评估。审稿流程分为明确输入和分析搜索两个阶段，最终生成结构化报告，包含综合评估、必须解决的核心问题和其他改进建议三部分。报告要求...
-  views: '7210'
+  views: '7237'
 - title: 【JAVA开发】—— Apifox接口工具
   link: https://blog.csdn.net/Lvyizhuo/article/details/157249080
   date: '2026-01-22'
@@ -1133,7 +1138,7 @@ articles:
   link: https://blog.csdn.net/Lvyizhuo/article/details/142992883
   date: '2024-10-16'
   excerpt: 本文提出了一种基于TV-CLT模型的迁移学习强化学习方法来解决TC-CIM问题。具体来说，我们将源网络和目标网络的状态表示归一化，以便有效地利用源网络上获得的知识。进一步，我们在RL域扩展了TL的起点方法，提出了NSQ-TL算法来解决源目标网络和代理设置之间的异构性。
-  views: '1462'
+  views: '1463'
 - title: 【数据挖掘｜影响力最大化】—— 书籍推荐《大数据网络传播模型和算法》（陈卫）
   link: https://blog.csdn.net/Lvyizhuo/article/details/142965718
   date: '2024-10-15'
